@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAConfigPlan xmlns:jca="http://platform.integration.oracle/blocks/adapter/fw/metadata" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:orawsp="http://schemas.oracle.com/ws/2006/01/policy" xmlns:edl="http://schemas.oracle.com/events/edl" xmlns="http://schemas.oracle.com/soa/configplan">
+   <composite name="Fetch_SCM_MFG_WO_By_getWorkOrder">
+      <!--Add search and replace rules for the import section of a composite
+	Example:
+	<searchReplace>
+		<search>http://my-dev-server</search>
+		<replace>http://my-test-server</replace>
+	<searchReplace>
+	<searchReplace>
+		<search>8888</search>
+		<replace>8889</replace>
+	<searchReplace>-->
+      <import>
+         <searchReplace>
+            <search/>
+            <replace/>
+         </searchReplace>
+      </import>
+      <service name="SCM_MFG_WO_FETCH_BY_getWorkOrder_WS">
+         <!--Add search and replace rules for the binding properties-->
+         <binding type="jca">
+            <property name="singleton">
+               <replace>true</replace>
+            </property>
+            <property name="jca.retry.count">
+               <replace>3</replace>
+            </property>
+            <property name="jca.retry.interval">
+               <replace>120</replace>
+            </property>
+            <property name="jca.retry.backoff">
+               <replace>2</replace>
+            </property>
+            <property name="jca.retry.maxInterval">
+               <replace>2000</replace>
+            </property>
+         </binding>
+      </service>
+      <property name="productVersion">
+         <replace>11.1.1.7.8</replace>
+      </property>
+      <!--Add search and replace rules for the component properties
+	For components and service/reference bindings, you can add policy references.
+	Example:
+	<component name="*">
+		<wsp:PolicyReference orawsp:category="management" orawsp:status="enabled" URI="oracle/log_policy"/>
+	</component>-->
+      <component name="FETCH_WORK_ORDER_DETAILS">
+         <property name="bpel.config.transaction">
+            <replace>required</replace>
+         </property>
+         <property name="bpel.config.oneWayDeliveryPolicy">
+            <replace>sync</replace>
+         </property>
+      </component>
+      <reference name="SCM_MFG_Internal_WorkOrderService">
+         <!--Add search and replace rules for the binding properties-->
+         <binding type="ws">
+            <attribute name="port">
+               <replace>http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/#wsdl.endpoint(WorkOrderService/WorkOrderServiceSoapHttpPort)</replace>
+            </attribute>
+            <attribute name="location">
+               <replace>WorkOrderService.wsdl</replace>
+            </attribute>
+            <property name="weblogic.wsee.wsat.transaction.flowOption">
+               <replace>WSDLDriven</replace>
+            </property>
+         </binding>
+         <callback>
+            <binding type="ws">
+               <attribute name="port">
+                  <replace>http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/#wsdl.endpoint(WorkOrderService/WorkOrderServiceResponse_pt)</replace>
+               </attribute>
+            </binding>
+         </callback>
+      </reference>
+      <reference name="SCM_MFG_WO_getWorkOrder_WS_response">
+         <binding type="jca"/>
+      </reference>
+   </composite>
+   <!--To configure monitor.config: 
+	<property name="enabled"><replace>true</replace></property>
+	<property name="dataObjectsFolder"><searchReplace><search>mydev</search><replace>myproduction</replace></searchReplace></property>
+	
+	sample properties to configure for JMS adapter: 
+	<jca:property name="DestinationName"><replace>jms/DemoSupplierTopic</replace></jca:property>
+	<jca:property name="TimeToLive"><replace>0</replace></jca:property>
+	
+	To add search and replace rules for wsdls, xsd and jca files
+	Example:
+	<searchReplace>
+		<search>http://my-dev-server</search>
+		<replace>http://my-test-server</replace>
+	<searchReplace>
+	<searchReplace>
+		<search>8888</search>
+		<replace>8889</replace>
+	<searchReplace>
+	-->
+   <wsdlAndSchema name="FETCH_WORK_ORDER_DETAILS.wsdl|SCM_MFG_WO_FETCH_BY_getWorkOrder_WS.wsdl|SCM_MFG_WO_FETCH_BY_getWorkOrder_WS_jms.jca|SCM_MFG_WO_getWorkOrder_WS_response.wsdl|SCM_MFG_WO_getWorkOrder_WS_response_jms.jca|ServiceException.wsdl|WorkOrderService.wsdl|xsd/BC4JService.xsd|xsd/datagraph.xsd|xsd/MessageInformation.xsd|xsd/OperationMaterialInput.xsd|xsd/OperationResourceInput.xsd|xsd/oracle_webservices_async_fault_11_0.xsd|xsd/POLL_SCM_WIE_WORK_ORDERS_V_table.xsd|xsd/RequestStatusInformation.xsd|xsd/sdoJava.xsd|xsd/sdoModel.xsd|xsd/sdoXML.xsd|xsd/SerialInput.xsd|xsd/ServiceException.xsd|xsd/SourceSystemForCreateWorkOrder.xsd|xsd/SourceSystemForUpdateWorkOrder.xsd|xsd/temporaryVariables.xsd|xsd/TokenInformation.xsd|xsd/UpdateWorkOrder.xsd|xsd/WoOperation.xsd|xsd/WoOperationMaterial.xsd|xsd/WoOperationResource.xsd|xsd/WoProductSerial.xsd|xsd/WorkOrder.xsd|xsd/WorkOrderAttachment.xsd|xsd/WorkOrderInformation.xsd|xsd/WorkOrderInput.xsd|xsd/WorkOrderOperation.xsd|xsd/WorkOrderOperationInput.xsd|xsd/WorkOrderOperationMaterial.xsd|xsd/WorkOrderOperationResource.xsd|xsd/WorkOrderOperationTranslation.xsd|xsd/WorkOrderProductSerial.xsd|xsd/WorkOrderService.xsd|xsd/WorkOrderTranslation.xsd|xsd/WorkOrderTraveler.xsd|xsd/WorkOrderTravelerInput.xsd|xsd/WoTravelerAttachmentContent.xsd|xsd/WoTravelerAttachmentDescription.xsd|xsd/WoTravelerAttachmentInput.xsd|xsd/WoTravelerBasicInfo.xsd|xsd/WoTravelerWoHeader.xsd|xsd/WoTravelerWoOperation.xsd|xsd/WoTravelerWoOperationMaterial.xsd|xsd/WoTravelerWoOperationResource.xsd|xsd/WoTravelerWoProductSerial.xsd|xsd/WoTravelerWoReservation.xsd|xsd/WoTravelerWorkDefinition.xsd|xsd/WoTravelerWoTIAValues.xsd">
+      <searchReplace>
+         <search>http://slc10gek.us.oracle.com:7011</search>
+         <replace>http://unit43486.oracleads.com:7824</replace>
+      </searchReplace>
+   </wsdlAndSchema>
+</SOAConfigPlan>

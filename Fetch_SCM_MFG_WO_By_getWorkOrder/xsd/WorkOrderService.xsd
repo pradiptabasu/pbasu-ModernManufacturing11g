@@ -1,0 +1,195 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/types/"
+     xmlns:ns0="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:ns1="http://xmlns.oracle.com/adf/svc/errors/" xmlns:tns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/types/"
+     xmlns="http://www.w3.org/2001/XMLSchema">
+    <import namespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+         schemaLocation="SourceSystemForUpdateWorkOrder.xsd"/>
+    <import namespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+         schemaLocation="SourceSystemForCreateWorkOrder.xsd"/>
+    <import namespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+         schemaLocation="WorkOrderTraveler.xsd"/>
+    <import namespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+         schemaLocation="WorkOrderTravelerInput.xsd"/>
+    <import namespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+         schemaLocation="WoTravelerAttachmentInput.xsd"/>
+    <import namespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+         schemaLocation="WorkOrder.xsd"/>
+    <import namespace="http://xmlns.oracle.com/adf/svc/errors/" schemaLocation="ServiceException.xsd"/>
+    <import namespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+         schemaLocation="WoTravelerAttachmentContent.xsd"/>
+    <import namespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+         schemaLocation="RequestStatusInformation.xsd"/>
+    <element name="getWorkOrder">
+        <complexType>
+            <sequence>
+                <element name="WorkOrderNumber" type="string"/>
+                <element name="OrganizationCode" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderResponse">
+        <complexType>
+            <sequence>
+                <element maxOccurs="unbounded" minOccurs="0" name="result" type="ns0:WorkOrder"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderAsync">
+        <complexType>
+            <sequence>
+                <element name="WorkOrderNumber" type="string"/>
+                <element name="OrganizationCode" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderAsyncResponse">
+        <complexType>
+            <sequence>
+                <element maxOccurs="unbounded" minOccurs="0" name="result" type="ns0:WorkOrder"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="createWorkOrder">
+        <complexType>
+            <sequence>
+                <element name="input" type="ns0:SourceSystemForCreateWorkOrder"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="createWorkOrderResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:RequestStatusInformation"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="createWorkOrderAsync">
+        <complexType>
+            <sequence>
+                <element name="input" type="ns0:SourceSystemForCreateWorkOrder"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="createWorkOrderAsyncResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:RequestStatusInformation"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="updateWorkOrder">
+        <complexType>
+            <sequence>
+                <element name="input" type="ns0:SourceSystemForUpdateWorkOrder"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="updateWorkOrderResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:RequestStatusInformation"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="updateWorkOrderAsync">
+        <complexType>
+            <sequence>
+                <element name="input" type="ns0:SourceSystemForUpdateWorkOrder"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="updateWorkOrderAsyncResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:RequestStatusInformation"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="importWorkOrders">
+        <complexType>
+            <sequence>
+                <element name="batchId" type="long"/>
+                <element name="partitionNumber" type="long"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="importWorkOrdersResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="importWorkOrdersAsync">
+        <complexType>
+            <sequence>
+                <element name="batchId" type="long"/>
+                <element name="partitionNumber" type="long"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="importWorkOrdersAsyncResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderTraveler">
+        <complexType>
+            <sequence>
+                <element name="input" type="ns0:WorkOrderTravelerInput"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderTravelerResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:WorkOrderTraveler"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderTravelerAsync">
+        <complexType>
+            <sequence>
+                <element name="input" type="ns0:WorkOrderTravelerInput"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderTravelerAsyncResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:WorkOrderTraveler"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderTravelerAttachment">
+        <complexType>
+            <sequence>
+                <element name="input" type="ns0:WoTravelerAttachmentInput"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderTravelerAttachmentResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:WoTravelerAttachmentContent"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderTravelerAttachmentAsync">
+        <complexType>
+            <sequence>
+                <element name="input" type="ns0:WoTravelerAttachmentInput"/>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="getWorkOrderTravelerAttachmentAsyncResponse">
+        <complexType>
+            <sequence>
+                <element name="result" type="ns0:WoTravelerAttachmentContent"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

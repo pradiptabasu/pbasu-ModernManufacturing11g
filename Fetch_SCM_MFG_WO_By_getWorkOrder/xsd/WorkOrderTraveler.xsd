@@ -1,0 +1,23 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:include schemaLocation="WoTravelerBasicInfo.xsd"/>
+    <xsd:include schemaLocation="WoTravelerAttachmentDescription.xsd"/>
+    <xsd:complexType name="WorkOrderTraveler">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>WorkOrderId</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="WorkOrderTravelerBasicInfo" type="WoTravelerBasicInfo"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="Attachment" type="WoTravelerAttachmentDescription"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="workOrderTraveler" type="WorkOrderTraveler"/>
+</xsd:schema>

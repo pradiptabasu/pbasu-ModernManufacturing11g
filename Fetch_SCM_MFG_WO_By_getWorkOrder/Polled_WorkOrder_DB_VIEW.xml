@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<WieWorkOrdersVCollection xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/POLL_SCM_WIE_WORK_ORDERS_V"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="http://xmlns.oracle.com/pcbpel/adapter/db/top/POLL_SCM_WIE_WORK_ORDERS_V xsd/POLL_SCM_WIE_WORK_ORDERS_V_table.xsd">
+  <WieWorkOrdersV>
+    <rowId>QUFGWlpBQUFtQUFEUnFiQUFE</rowId>
+    <objectVersionNumber>7</objectVersionNumber>
+    <organizationId>300000047274447</organizationId>
+    <workOrderId>300000129421501</workOrderId>
+    <workOrderNumber>WO-002-1007</workOrderNumber>
+    <workOrderDescription nil="true"></workOrderDescription>
+    <workMethodId>300000118326260</workMethodId>
+    <workMethodCode>DISCRETE_MANUFACTURING</workMethodCode>
+    <workOrderType>STANDARD</workOrderType>
+    <workOrderSubType nil="true"></workOrderSubType>
+    <inventoryItemId>300000129417427</inventoryItemId>
+    <itemRevision>A</itemRevision>
+    <workDefinitionAsOfDate>2016-07-22T10:49:15.05+00:00</workDefinitionAsOfDate>
+    <workDefinitionId>300000129421496</workDefinitionId>
+    <workDefinitionVersionId>300000129421497</workDefinitionVersionId>
+    <workOrderPriority nil="true"></workOrderPriority>
+    <workOrderStatusId>10002</workOrderStatusId>
+    <userStatusCode>ORA_COMPLETED</userStatusCode>
+    <systemStatusCode>COMPLETED</systemStatusCode>
+    <schedulingMethod>DEFAULT_SCHEDULER</schedulingMethod>
+    <plannedStartQuantity>10</plannedStartQuantity>
+    <nettableSupplyQtyOverride nil="true"></nettableSupplyQtyOverride>
+    <uomCode>zzu</uomCode>
+    <firmPlannedFlag>N</firmPlannedFlag>
+    <plannedStartDate>2016-07-22T10:48:00.000+00:00</plannedStartDate>
+    <plannedCompletionDate>2016-07-22T10:48:00.000+00:00</plannedCompletionDate>
+    <actualStartDate>2016-07-22T10:53:31.000+00:00</actualStartDate>
+    <actualCompletionDate>2016-07-22T11:21:52.000+00:00</actualCompletionDate>
+    <releasedDate>2016-07-22T10:53:31.000+00:00</releasedDate>
+    <closedDate nil="true"></closedDate>
+    <canceledDate nil="true"></canceledDate>
+    <canceledReason nil="true"></canceledReason>
+    <statusChangeReason nil="true"></statusChangeReason>
+    <completedQuantity>10</completedQuantity>
+    <scrappedQuantity nil="true"></scrappedQuantity>
+    <rejectedQuantity nil="true"></rejectedQuantity>
+    <overcomplToleranceType nil="true"></overcomplToleranceType>
+    <overcomplToleranceValue nil="true"></overcomplToleranceValue>
+    <complSubinventoryCode>Completed</complSubinventoryCode>
+    <complLocatorId nil="true"></complLocatorId>
+    <supplyType>7</supplyType>
+    <serialTrackingFlag>N</serialTrackingFlag>
+    <backToBackFlag>N</backToBackFlag>
+    <orchestrationCode nil="true"></orchestrationCode>
+    <interfaceSourceCode nil="true"></interfaceSourceCode>
+    <scoSupplyOrderId nil="true"></scoSupplyOrderId>
+    <contractMfgFlag>N</contractMfgFlag>
+    <cmPoHeaderId nil="true"></cmPoHeaderId>
+    <cmPoLineId nil="true"></cmPoLineId>
+    <cmPoLineLocId nil="true"></cmPoLineLocId>
+    <sourceSystemType nil="true"></sourceSystemType>
+    <sourceSystemId nil="true"></sourceSystemId>
+    <sourceHeaderRef nil="true"></sourceHeaderRef>
+    <sourceHeaderRefId nil="true"></sourceHeaderRefId>
+    <sourceLineRef nil="true"></sourceLineRef>
+    <sourceLineRefId nil="true"></sourceLineRefId>
+    <orderLessFlag>N</orderLessFlag>
+    <createdBy>SCM_IMPL</createdBy>
+    <creationDate>2016-07-22T10:48:56.000+00:00</creationDate>
+    <lastUpdatedBy>SCM_IMPL</lastUpdatedBy>
+    <lastUpdateDate>2016-07-22T11:21:52.000+00:00</lastUpdateDate>
+    <lastUpdateLogin>E8FE22C8E56883EFE040548C2C041E85</lastUpdateLogin>
+    <attributeCategory nil="true"></attributeCategory>
+    <attributeChar1 nil="true"></attributeChar1>
+    <attributeChar2 nil="true"></attributeChar2>
+    <attributeChar3 nil="true"></attributeChar3>
+    <attributeChar4 nil="true"></attributeChar4>
+    <attributeChar5 nil="true"></attributeChar5>
+    <attributeChar6 nil="true"></attributeChar6>
+    <attributeChar7 nil="true"></attributeChar7>
+    <attributeChar8 nil="true"></attributeChar8>
+    <attributeChar9 nil="true"></attributeChar9>
+    <attributeChar10 nil="true"></attributeChar10>
+    <attributeChar11 nil="true"></attributeChar11>
+    <attributeChar12 nil="true"></attributeChar12>
+    <attributeChar13 nil="true"></attributeChar13>
+    <attributeChar14 nil="true"></attributeChar14>
+    <attributeChar15 nil="true"></attributeChar15>
+    <attributeChar16 nil="true"></attributeChar16>
+    <attributeChar17 nil="true"></attributeChar17>
+    <attributeChar18 nil="true"></attributeChar18>
+    <attributeChar19 nil="true"></attributeChar19>
+    <attributeChar20 nil="true"></attributeChar20>
+    <attributeNumber1 nil="true"></attributeNumber1>
+    <attributeNumber2 nil="true"></attributeNumber2>
+    <attributeNumber3 nil="true"></attributeNumber3>
+    <attributeNumber4 nil="true"></attributeNumber4>
+    <attributeNumber5 nil="true"></attributeNumber5>
+    <attributeNumber6 nil="true"></attributeNumber6>
+    <attributeNumber7 nil="true"></attributeNumber7>
+    <attributeNumber8 nil="true"></attributeNumber8>
+    <attributeNumber9 nil="true"></attributeNumber9>
+    <attributeNumber10 nil="true"></attributeNumber10>
+    <attributeDate1 nil="true"></attributeDate1>
+    <attributeDate2 nil="true"></attributeDate2>
+    <attributeDate3 nil="true"></attributeDate3>
+    <attributeDate4 nil="true"></attributeDate4>
+    <attributeDate5 nil="true"></attributeDate5>
+    <attributeTimestamp1 nil="true"></attributeTimestamp1>
+    <attributeTimestamp2 nil="true"></attributeTimestamp2>
+    <attributeTimestamp3 nil="true"></attributeTimestamp3>
+    <attributeTimestamp4 nil="true"></attributeTimestamp4>
+    <attributeTimestamp5 nil="true"></attributeTimestamp5>
+    <requestId nil="true"></requestId>
+    <jobDefinitionName nil="true"></jobDefinitionName>
+    <jobDefinitionPackage nil="true"></jobDefinitionPackage>
+  </WieWorkOrdersV>
+</WieWorkOrdersVCollection>

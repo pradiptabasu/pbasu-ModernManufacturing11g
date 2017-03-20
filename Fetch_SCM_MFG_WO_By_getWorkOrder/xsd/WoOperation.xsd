@@ -1,0 +1,113 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation>
+        <xsd:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+            <name>Update Work Order Operation Details</name>
+            <description>An object, representing a set of work order operation, that is
+                used to provide values while updating the work order operations</description>
+            <oer:category name="lbo">
+                <value>SCM-SCM : WIE-Common Work Execution : ORA_WORK_ORDER-Work
+                    Order</value>
+            </oer:category>
+            <oer:attributes>
+                <oer:attribute description="Provides the work order operation interface action codes such as: Create, Update, Delete"
+                     name="ActionCode"/>
+                <oer:attribute description="Sequence number of the operation is the sequence in which operation is performed in the work order"
+                     name="OperationSequence"/>
+                <oer:attribute description="Standard operation which can be referred in creating the operation"
+                     name="StandardOperationCode"/>
+                <oer:attribute description="Unique identifier of the standard operation" name="StandardOperationId"/>
+                <oer:attribute description="Name of the operation" name="OperationName"/>
+                <oer:attribute description="Description of the operation" name="OperationDescription"/>
+                <oer:attribute description="Work center where the operation is executed" name="WorkCenterCode"/>
+                <oer:attribute description="Unique identifier of the work center" name="WorkCenterId"/>
+                <oer:attribute description="The operation start date is generally calculated by the scheduling API and is also referred to as scheduled start date"
+                     name="ScheduledStartDate"/>
+                <oer:attribute description="The operation completion date is generally calculated by the scheduling API and is also referred to as scheduled completion date"
+                     name="ScheduledCompletionDate"/>
+                <oer:attribute description="Indicates whether you always perform an operation on the shop floor, and mandates manual reporting of the corresponding operation transaction (complete, scrap, or reject) in the system"
+                     name="CountPointFlag"/>
+                <oer:attribute description="Indicates if you always perform an operation on the shop floor. Manually recording the corresponding operation transaction (complete, scrap, or reject) in the system is not required"
+                     name="AutoTransactFlag"/>
+                <oer:attribute description="Work order operation materials details" name="WoOperationMaterial"/>
+                <oer:attribute description="Work order operaton resource details" name="WoOperationResource"/>
+            </oer:attributes>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="BC4JService.xsd"/>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:include schemaLocation="WoOperationMaterial.xsd"/>
+    <xsd:include schemaLocation="WoOperationResource.xsd"/>
+    <xsd:complexType name="WoOperation">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>OperationSequence</attribute>
+                    <attribute>OperationName</attribute>
+                    <attribute>HeaderNumber</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ActionCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="OperationSequence" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="StandardOperationCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="StandardOperationId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="OperationName" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="OperationDescription" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkCenterCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkCenterId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="ScheduledStartDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="ScheduledCompletionDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="CountPointFlag" nillable="true" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="AutoTransactFlag" nillable="true" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="AttributeCategory" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar1" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar2" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar3" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar4" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar5" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar6" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar7" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar8" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar9" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar10" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar11" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar12" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar13" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar14" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar15" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar16" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar17" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar18" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar19" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar20" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeNumber1" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber2" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber3" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber4" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber5" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber6" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber7" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber8" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber9" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber10" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeDate1" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate2" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate3" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate4" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate5" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp1" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp2" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp3" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp4" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp5" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="WoOperationMaterial" type="WoOperationMaterial"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="WoOperationResource" type="WoOperationResource"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="woOperation" type="WoOperation"/>
+</xsd:schema>

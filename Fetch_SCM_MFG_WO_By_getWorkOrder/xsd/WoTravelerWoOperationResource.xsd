@@ -1,0 +1,41 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="BC4JService.xsd"/>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:complexType name="WoTravelerWoOperationResource">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>WoOperationResourceId</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ResourceName" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="BasisType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="UOMCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="UOM" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="UsageRate" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ResourceType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ResourceCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ResourceDescription" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ActualResourceUsage" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AssignedUnits" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ChargeType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="InverseRequiredUsage" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="PlannedCompletionDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="PlannedStartDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="RequiredUsage" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ActivityCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SequenceNumber" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="Activity" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="RequiredQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="IssuedQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="OpenQuantity" nillable="true" type="ns0:MeasureType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="woTravelerWoOperationResource" type="WoTravelerWoOperationResource"/>
+</xsd:schema>

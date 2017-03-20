@@ -1,0 +1,63 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation>
+        <xsd:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+            <name>Work Order Output Message Information</name>
+            <description>An object, representing a set of work order output message
+                information, that is returned for a given work order</description>
+            <oer:category name="lbo">
+                <value>SCM-SCM : WIE-Common Work Execution : ORA_WORK_ORDER-Work
+                    Order</value>
+            </oer:category>
+            <oer:attributes>
+                <oer:attribute description="Provides the work order open interface details action codes such as: Create, Update, Delete or serial numbers related actions"
+                     name="ActionCode"/>
+                <oer:attribute description="Sequence number of the operation. This is the sequence in which operations are performed in the work order"
+                     name="OperationSequence"/>
+                <oer:attribute description="Sequence in which material is consumed in the operation"
+                     name="ComponentSequence"/>
+                <oer:attribute description="Resource sequence number is used to define the sequence in which resources work together in finishing the operation"
+                     name="ResourceSequence"/>
+                <oer:attribute description="The resource used to execute the operation" name="ResourceCode"/>
+                <oer:attribute description="Unique identifier of the resource" name="ResourceId"/>
+                <oer:attribute description="The generated serial number that is associated to the item of the work order"
+                     name="SerialNumber"/>
+                <oer:attribute description="Alphanumeric value that denotes the message" name="MessageCode"/>
+                <oer:attribute description="Message severity can be any of the following Error, Warning, Information"
+                     name="MessageSeverity"/>
+                <oer:attribute description="The text of the message rendered in contextual language with token values incorporated"
+                     name="MessageText"/>
+                <oer:attribute description="Message token details are Token Name and Token Value"
+                     name="TokenInformation"/>
+            </oer:attributes>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:include schemaLocation="TokenInformation.xsd"/>
+    <xsd:complexType name="MessageInformation">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>InterfaceErrorId</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="ActionCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="OperationSequence" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ComponentSequence" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ResourceSequence" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ResourceCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ResourceId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="SerialNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="MessageCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="MessageSeverity" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="MessageText" nillable="true" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="TokenInformation" type="TokenInformation"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="messageInformation" type="MessageInformation"/>
+</xsd:schema>

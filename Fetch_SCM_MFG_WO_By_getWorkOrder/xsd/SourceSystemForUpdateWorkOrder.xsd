@@ -1,0 +1,45 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation>
+        <xsd:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+            <name>Update Work Order Source System Details</name>
+            <description>An object, representing a set of work order source system
+                details, that is used to provide values while updating a work
+                order</description>
+            <oer:category name="lbo">
+                <value>SCM-SCM : WIE-Common Work Execution : ORA_WORK_ORDER-Work
+                    Order</value>
+            </oer:category>
+            <oer:attributes>
+                <oer:attribute description="Source System" name="SourceSystem"/>
+                <oer:attribute description="Source System Id" name="SourceSystemId"/>
+                <oer:attribute description="Source System Type" name="SourceSystemType"/>
+                <oer:attribute description="Input details to update a work order" name="UpdateWorkOrder"/>
+            </oer:attributes>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:include schemaLocation="UpdateWorkOrder.xsd"/>
+    <xsd:complexType name="SourceSystemForUpdateWorkOrder">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>SourceSystem</attribute>
+                    <attribute>SourceSystemId</attribute>
+                    <attribute>SourceSystemType</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="SourceSystem" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SourceSystemId" nillable="true" type="xsd:long"/>
+            <xsd:element default="&apos;INTERNAL&apos;" minOccurs="0" name="SourceSystemType" nillable="true"
+                 type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="UpdateWorkOrder" type="UpdateWorkOrder"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="sourceSystemForUpdateWorkOrder" type="SourceSystemForUpdateWorkOrder"/>
+</xsd:schema>

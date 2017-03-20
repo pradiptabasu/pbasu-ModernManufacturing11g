@@ -1,0 +1,39 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation>
+        <xsd:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+            <name>Work Order Attachment Details</name>
+            <description>An object, representing the work order attachment details, that
+                is returned for the given work order</description>
+            <oer:category name="lbo">
+                <value>SCM-SCM : WIE-Common Work Execution : ORA_WORK_ORDER-Work
+                    Order</value>
+            </oer:category>
+            <oer:attributes>
+                <oer:attribute description="Unique identifier of the work order" name="WorkOrderId"/>
+            </oer:attributes>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:complexType name="WorkOrderAttachment">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>WorkOrderId</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="WorkOrderId" nillable="true" type="xsd:long"/>
+            <xsd:element default="WORK_ORDER" minOccurs="0" name="AttachmentEntity" nillable="true" type="xsd:string"/>
+            <xsd:element default="To_Contract_Manufacturer" minOccurs="0" name="AttachmentCategory"
+                 nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttachedDocumentId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="DocumentId" nillable="true" type="xsd:long"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="workOrderAttachment" type="WorkOrderAttachment"/>
+</xsd:schema>

@@ -1,0 +1,43 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="BC4JService.xsd"/>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:include schemaLocation="WoTravelerWoOperationMaterial.xsd"/>
+    <xsd:include schemaLocation="WoTravelerWoOperationResource.xsd"/>
+    <xsd:complexType name="WoTravelerWoOperation">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>WoOperationId</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="OperationName" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SequenceNumber" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="Description" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkCenterCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkCenterName" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="PlannedStartDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="PlannedCompletionDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="ActualStartDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="ActualCompletionDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AutoTransactFlag" nillable="true" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="CountPointFlag" nillable="true" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="SerialTrackingFlag" nillable="true" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="ReadyQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="RejectedQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="ScrappedQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="CompletedQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="ScheduledQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="UOMCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="StandardOperationCode" nillable="true" type="xsd:string"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="WorkOrderOperationMaterial" type="WoTravelerWoOperationMaterial"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="WorkOrderOperationResource" type="WoTravelerWoOperationResource"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="woTravelerWoOperation" type="WoTravelerWoOperation"/>
+</xsd:schema>

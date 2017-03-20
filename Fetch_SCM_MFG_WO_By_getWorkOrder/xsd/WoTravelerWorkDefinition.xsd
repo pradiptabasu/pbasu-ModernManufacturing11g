@@ -1,0 +1,29 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="BC4JService.xsd"/>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:complexType name="WoTravelerWorkDefinition">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>WorkDefinitionId</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="WorkDefinitionName" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkDefinitionCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="VersionNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SerializationStartOperation" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CompletionSubInventory" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CompletionLocator" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkDefinitionType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkDefinitionAsOfDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AlternateWorkDefinition" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="woTravelerWorkDefinition" type="WoTravelerWorkDefinition"/>
+</xsd:schema>

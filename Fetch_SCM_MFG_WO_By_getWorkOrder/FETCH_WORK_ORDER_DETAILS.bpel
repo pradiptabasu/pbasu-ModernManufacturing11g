@@ -1,0 +1,131 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Oracle JDeveloper BPEL Designer 
+  
+  Created: Thu Aug 11 11:57:25 IST 2016
+  Author:  prabasu
+  Type: BPEL 2.0 Process
+  Purpose: One Way BPEL Process
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<process name="FETCH_WORK_ORDER_DETAILS"
+               targetNamespace="http://xmlns.oracle.com/ModernManufacturing_v1_111171/Fetch_SCM_MFG_WO_By_getWorkOrder/FETCH_WORK_ORDER_DETAILS"
+               xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+               xmlns:client="http://xmlns.oracle.com/ModernManufacturing_v1_111171/Fetch_SCM_MFG_WO_By_getWorkOrder/FETCH_WORK_ORDER_DETAILS"
+               xmlns:ora="http://schemas.oracle.com/xpath/extension"
+               xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:ns1="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+         xmlns:ns2="http://xmlns.oracle.com/pcbpel/adapter/jms/ModernManufacturing_v1_111171/Fetch_SCM_MFG_WO_By_getWorkOrder/SCM_MFG_WO_getWorkOrder_WS_response"
+         xmlns:bpelx="http://schemas.oracle.com/bpel/extension"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ns4="http://xmlns.oracle.com/pcbpel/adapter/db/top/POLL_SCM_WIE_WORK_ORDERS_V"
+         xmlns:ns3="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/types/"
+         xmlns:xp20="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.Xpath20"
+         xmlns:aia="http://www.oracle.com/XSL/Transform/java/oracle.apps.aia.core.xpath.AIAFunctions"
+         xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/"
+         xmlns:oraext="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.ExtFunc"
+         xmlns:dvm="http://www.oracle.com/XSL/Transform/java/oracle.tip.dvm.LookupValue"
+         xmlns:hwf="http://xmlns.oracle.com/bpel/workflow/xpath"
+         xmlns:ids="http://xmlns.oracle.com/bpel/services/IdentityService/xpath"
+         xmlns:bpm="http://xmlns.oracle.com/bpmn20/extensions"
+         xmlns:xdk="http://schemas.oracle.com/bpel/extension/xpath/function/xdk"
+         xmlns:xref="http://www.oracle.com/XSL/Transform/java/oracle.tip.xref.xpath.XRefXPathFunctions"
+         xmlns:ldap="http://schemas.oracle.com/xpath/extension/ldap"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <import namespace="http://xmlns.oracle.com/ModernManufacturing_v1_111171/Fetch_SCM_MFG_WO_By_getWorkOrder/FETCH_WORK_ORDER_DETAILS" location="FETCH_WORK_ORDER_DETAILS.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      PARTNERLINKS                                                      
+      List of services participating in this BPEL process               
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  --> 
+  <partnerLinks>
+    <!-- 
+      The 'client' role represents the requester of this service. It is 
+      used for callback. The location and correlation information associated
+      with the client role are automatically set using WS-Addressing.
+    -->
+    <partnerLink name="fetch_work_order_details_client" partnerLinkType="client:FETCH_WORK_ORDER_DETAILS" myRole="FETCH_WORK_ORDER_DETAILSProvider"/>
+    <partnerLink name="SCM_MFG_Internal_WorkOrderService"
+                 partnerLinkType="ns1:WorkOrderService"
+                 partnerRole="WorkOrderServiceProvider"
+                 myRole="WorkOrderServiceRequestor"/>
+    <partnerLink name="SCM_MFG_WO_getWorkOrder_WS_response"
+                 partnerLinkType="ns2:Produce_Message_plt"
+                 partnerRole="Produce_Message_role"/>
+  </partnerLinks>
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      VARIABLES                                                        
+      List of messages and XML documents used within this BPEL process 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <variables>
+    <!-- Reference to the message passed as input during initiation -->
+    <variable name="inputVariable" messageType="client:FETCH_WORK_ORDER_DETAILSRequestMessage"/>
+    <variable name="getWorkOrderResponse_Produce_Message_InputVariable"
+              messageType="ns2:Produce_Message_msg"/>
+    <variable name="getWorkOrder_InputVariable"
+              messageType="ns1:WorkOrderService_getWorkOrder"/>
+    <variable name="getWorkOrder_OutputVariable"
+              messageType="ns1:WorkOrderService_getWorkOrderResponse"/>
+    <variable name="workOrderNumber" type="xsd:string"/>
+  </variables>
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ORCHESTRATION LOGIC                                               
+     Set of activities coordinating the flow of messages across the    
+     services integrated within this business process                  
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <sequence name="main">
+
+    <!-- Receive input from requestor. (Note: This maps to operation defined in FETCH_WORK_ORDER_DETAILS.wsdl) -->
+    <receive name="receiveInput" partnerLink="fetch_work_order_details_client" portType="client:FETCH_WORK_ORDER_DETAILS" operation="process" variable="inputVariable" createInstance="yes">
+      <bpelx:fromProperties>
+        <bpelx:fromProperty name="jca.jms.JMSCorrelationID"
+                            variable="workOrderNumber"/>
+      </bpelx:fromProperties>
+      <bpelx:conversationId>$inputVariable.payload/ns4:WieWorkOrdersV/ns4:workOrderNumber</bpelx:conversationId>
+    </receive>
+    <assign name="Assign_getWorkOrder_Input">
+      <copy>
+        <from>$inputVariable.payload/ns4:WieWorkOrdersV/ns4:workOrderNumber</from>
+        <to>$getWorkOrder_InputVariable.parameters/ns3:WorkOrderNumber</to>
+      </copy>
+      <copy>
+        <from>substring($inputVariable.payload/ns4:WieWorkOrdersV/ns4:workOrderNumber,4,3)</from>
+        <to>$getWorkOrder_InputVariable.parameters/ns3:OrganizationCode</to>
+      </copy>
+    </assign>
+    <invoke name="Invoke_getWorkOrder"
+            partnerLink="SCM_MFG_Internal_WorkOrderService"
+            portType="ns1:WorkOrderService" operation="getWorkOrder"
+            inputVariable="getWorkOrder_InputVariable"
+            outputVariable="getWorkOrder_OutputVariable"
+            bpelx:invokeAsDetail="no">
+      <bpelx:conversationId>$inputVariable.payload/ns4:WieWorkOrdersV/ns4:workOrderNumber</bpelx:conversationId>
+    </invoke>
+    <assign name="assign_getWorkOrder_response">
+      <copy>
+        <from>$getWorkOrder_OutputVariable.parameters</from>
+        <to>$getWorkOrderResponse_Produce_Message_InputVariable.body</to>
+      </copy>
+    </assign>
+    <invoke name="push_getWorkOrderResponse"
+            partnerLink="SCM_MFG_WO_getWorkOrder_WS_response"
+            portType="ns2:Produce_Message_ptt" operation="Produce_Message"
+            inputVariable="getWorkOrderResponse_Produce_Message_InputVariable"
+            bpelx:invokeAsDetail="no">
+      <bpelx:toProperties>
+        <bpelx:toProperty name="jca.jms.JMSCorrelationID"
+                          variable="workOrderNumber"/>
+      </bpelx:toProperties>
+      <bpelx:conversationId>$getWorkOrder_InputVariable.parameters/ns3:WorkOrderNumber</bpelx:conversationId>
+    </invoke>
+  </sequence>
+</process>

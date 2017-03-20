@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<getWorkOrderResponse xmlns:ns0="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/types/"
+                      xmlns:wsa="http://www.w3.org/2005/08/addressing"
+                      xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/types/">
+   <ns2:result xmlns:ns2="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/types/"
+               xmlns:ns1="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+               xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:type="ns1:WorkOrder">
+      <ns1:ActualCompletionDate xsi:nil="true"
+                                xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:ActualStartDate xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">2016-07-29T05:32:39.0Z</ns1:ActualStartDate>
+      <ns1:BackToBackFlag xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">false</ns1:BackToBackFlag>
+      <ns1:CanceledDate xsi:nil="true"
+                        xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:CanceledReason xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:ClosedDate xsi:nil="true"
+                      xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:CmPoHeaderId xsi:nil="true"
+                        xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:CmPoLineId xsi:nil="true"
+                      xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:CmPoLineLocId xsi:nil="true"
+                         xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:ComplLocatorId xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:ComplSubinventoryCode xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">Completed</ns1:ComplSubinventoryCode>
+      <ns1:CompletedQuantity xsi:nil="true"
+                             xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:ContractMfgFlag xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">false</ns1:ContractMfgFlag>
+      <ns1:FirmPlannedFlag xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">false</ns1:FirmPlannedFlag>
+      <ns1:InterfaceSourceCode xsi:nil="true"
+                               xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:InventoryItemId xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">300000129417716</ns1:InventoryItemId>
+      <ns1:ItemRevision xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">A</ns1:ItemRevision>
+      <ns1:OrchestrationCode xsi:nil="true"
+                             xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:OrderLessFlag xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">false</ns1:OrderLessFlag>
+      <ns1:OrganizationId xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">300000047274447</ns1:OrganizationId>
+      <ns1:OvercomplToleranceType xsi:nil="true"
+                                  xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:OvercomplToleranceValue xsi:nil="true"
+                                   xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:PlannedCompletionDate xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">2016-07-28T16:00:00.0Z</ns1:PlannedCompletionDate>
+      <ns1:PlannedStartDate xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">2016-07-28T08:00:00.0Z</ns1:PlannedStartDate>
+      <ns1:PlannedStartQuantity xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/"
+                                unitCode="zzu"
+                                xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">1</ns1:PlannedStartQuantity>
+      <ns1:RejectedQuantity xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:ReleasedDate xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">2016-07-29T05:32:39.0Z</ns1:ReleasedDate>
+      <ns1:SchedulingMethod xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">DEFAULT_SCHEDULER</ns1:SchedulingMethod>
+      <ns1:ScoSupplyOrderId xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:ScrappedQuantity xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:SerialTrackingFlag xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">false</ns1:SerialTrackingFlag>
+      <ns1:SourceHeaderRef xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:SourceHeaderRefId xsi:nil="true"
+                             xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:SourceLineRef xsi:nil="true"
+                         xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:SourceLineRefId xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:SourceSystemId xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:SourceSystemType xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:SupplyType xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">7</ns1:SupplyType>
+      <ns1:UomCode xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">zzu</ns1:UomCode>
+      <ns1:WorkDefinitionAsOfDate xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">2016-07-29T05:31:03.09Z</ns1:WorkDefinitionAsOfDate>
+      <ns1:WorkDefinitionId xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">300000129421539</ns1:WorkDefinitionId>
+      <ns1:WorkDefinitionVersionId xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">300000129421540</ns1:WorkDefinitionVersionId>
+      <ns1:WorkMethodId xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">300000118326260</ns1:WorkMethodId>
+      <ns1:WorkOrderDescription xsi:nil="true"
+                                xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:WorkOrderId xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">300000129421717</ns1:WorkOrderId>
+      <ns1:WorkOrderNumber xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">WO-002-1008</ns1:WorkOrderNumber>
+      <ns1:WorkOrderPriority xsi:nil="true"
+                             xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:WorkOrderStatusId xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">10004</ns1:WorkOrderStatusId>
+      <ns1:WoStatusCode xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">ORA_RELEASED</ns1:WoStatusCode>
+      <ns1:WorkOrderSubType xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:WorkOrderType xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">STANDARD</ns1:WorkOrderType>
+      <ns1:OrganizationCode xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">002</ns1:OrganizationCode>
+      <ns1:OrganizationId1 xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">300000047274447</ns1:OrganizationId1>
+      <ns1:NettableSupplyQtyOverride xsi:nil="true"
+                                     xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:WoWipQty xsi:nil="true"
+                    xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeCategory xsi:nil="true"
+                             xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar1 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar10 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar11 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar12 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar13 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar14 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar15 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar16 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar17 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar18 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar19 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar2 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar20 xsi:nil="true"
+                           xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar3 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar4 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar5 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar6 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar7 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar8 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeChar9 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeDate1 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeDate2 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeDate3 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeDate4 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeDate5 xsi:nil="true"
+                          xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber1 xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber10 xsi:nil="true"
+                             xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber2 xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber3 xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber4 xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber5 xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber6 xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber7 xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber8 xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeNumber9 xsi:nil="true"
+                            xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeTimestamp1 xsi:nil="true"
+                               xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeTimestamp2 xsi:nil="true"
+                               xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeTimestamp3 xsi:nil="true"
+                               xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeTimestamp4 xsi:nil="true"
+                               xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:AttributeTimestamp5 xsi:nil="true"
+                               xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"/>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>AR</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>D</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>DK</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>E</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>F</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>FRC</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>I</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>JA</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>KO</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>N</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>NL</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>PL</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>PTB</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>RU</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>S</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>SF</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>US</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>ZHS</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderTranslation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:Language>ZHT</ns1:Language>
+         <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+         <ns1:SourceLang>US</ns1:SourceLang>
+         <ns1:WorkOrderDescription xsi:nil="true"/>
+      </ns1:WorkOrderTranslation>
+      <ns1:WorkOrderOperation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:ActualCompletionDate xsi:nil="true"/>
+         <ns1:ActualStartDate xsi:nil="true"/>
+         <ns1:AutoTransactFlag>false</ns1:AutoTransactFlag>
+         <ns1:CompletedQuantity xsi:nil="true"/>
+         <ns1:CountPointOperationFlag>true</ns1:CountPointOperationFlag>
+         <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+         <ns1:OperationSeqNumber>10</ns1:OperationSeqNumber>
+         <ns1:PlannedCompletionDate>2016-07-28T16:00:00.0Z</ns1:PlannedCompletionDate>
+         <ns1:PlannedStartDate>2016-07-28T08:00:00.0Z</ns1:PlannedStartDate>
+         <ns1:ReadyQuantity xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/">1</ns1:ReadyQuantity>
+         <ns1:RejectedQuantity xsi:nil="true"/>
+         <ns1:ScrappedQuantity xsi:nil="true"/>
+         <ns1:SerialTrackingFlag>false</ns1:SerialTrackingFlag>
+         <ns1:WdOperationId>300000129421541</ns1:WdOperationId>
+         <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+         <ns1:WorkCenterId>300000129421519</ns1:WorkCenterId>
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:StandardOperationId>300000129421521</ns1:StandardOperationId>
+         <ns1:Uom xsi:nil="true"/>
+         <ns1:AttributeCategory xsi:nil="true"/>
+         <ns1:AttributeChar1 xsi:nil="true"/>
+         <ns1:AttributeChar10 xsi:nil="true"/>
+         <ns1:AttributeChar11 xsi:nil="true"/>
+         <ns1:AttributeChar12 xsi:nil="true"/>
+         <ns1:AttributeChar13 xsi:nil="true"/>
+         <ns1:AttributeChar14 xsi:nil="true"/>
+         <ns1:AttributeChar15 xsi:nil="true"/>
+         <ns1:AttributeChar16 xsi:nil="true"/>
+         <ns1:AttributeChar17 xsi:nil="true"/>
+         <ns1:AttributeChar18 xsi:nil="true"/>
+         <ns1:AttributeChar19 xsi:nil="true"/>
+         <ns1:AttributeChar2 xsi:nil="true"/>
+         <ns1:AttributeChar20 xsi:nil="true"/>
+         <ns1:AttributeChar3 xsi:nil="true"/>
+         <ns1:AttributeChar4 xsi:nil="true"/>
+         <ns1:AttributeChar5 xsi:nil="true"/>
+         <ns1:AttributeChar6 xsi:nil="true"/>
+         <ns1:AttributeChar7 xsi:nil="true"/>
+         <ns1:AttributeChar8 xsi:nil="true"/>
+         <ns1:AttributeChar9 xsi:nil="true"/>
+         <ns1:AttributeDate1 xsi:nil="true"/>
+         <ns1:AttributeDate2 xsi:nil="true"/>
+         <ns1:AttributeDate3 xsi:nil="true"/>
+         <ns1:AttributeDate4 xsi:nil="true"/>
+         <ns1:AttributeDate5 xsi:nil="true"/>
+         <ns1:AttributeNumber1 xsi:nil="true"/>
+         <ns1:AttributeNumber10 xsi:nil="true"/>
+         <ns1:AttributeNumber2 xsi:nil="true"/>
+         <ns1:AttributeNumber3 xsi:nil="true"/>
+         <ns1:AttributeNumber4 xsi:nil="true"/>
+         <ns1:AttributeNumber5 xsi:nil="true"/>
+         <ns1:AttributeNumber6 xsi:nil="true"/>
+         <ns1:AttributeNumber7 xsi:nil="true"/>
+         <ns1:AttributeNumber8 xsi:nil="true"/>
+         <ns1:AttributeNumber9 xsi:nil="true"/>
+         <ns1:AttributeTimestamp1 xsi:nil="true"/>
+         <ns1:AttributeTimestamp2 xsi:nil="true"/>
+         <ns1:AttributeTimestamp3 xsi:nil="true"/>
+         <ns1:AttributeTimestamp4 xsi:nil="true"/>
+         <ns1:AttributeTimestamp5 xsi:nil="true"/>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>AR</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>D</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>DK</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>E</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>F</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>FRC</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>I</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>JA</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>KO</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>N</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>NL</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>PL</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>PTB</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>RU</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>S</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>SF</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>US</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>ZHS</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:Language>ZHT</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Assemble (Blower Assembly)</ns1:OperationName>
+            <ns1:OperationDescription>Assemble (Blower Assembly)</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationMaterial>
+            <ns1:BasisType>1</ns1:BasisType>
+            <ns1:IncludeInPlanningFlag>true</ns1:IncludeInPlanningFlag>
+            <ns1:InventoryItemId>300000129417729</ns1:InventoryItemId>
+            <ns1:IssuedQuantity xsi:nil="true"/>
+            <ns1:ItemRevision xsi:nil="true"/>
+            <ns1:MaterialSeqNumber>20</ns1:MaterialSeqNumber>
+            <ns1:MaterialType>COMPONENT</ns1:MaterialType>
+            <ns1:ProducedQuantity xsi:nil="true"/>
+            <ns1:Quantity xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/"
+                          unitCode="zzu">1</ns1:Quantity>
+            <ns1:RequiredDate>2016-07-28T08:00:00.0Z</ns1:RequiredDate>
+            <ns1:SupplyLocatorId xsi:nil="true"/>
+            <ns1:SupplySubinventory>Stores</ns1:SupplySubinventory>
+            <ns1:SupplyType>2</ns1:SupplyType>
+            <ns1:UomCode>zzu</ns1:UomCode>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:WoOperationMaterialId>300000129421722</ns1:WoOperationMaterialId>
+            <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+            <ns1:YieldFactor>1</ns1:YieldFactor>
+            <ns1:AttributeCategory xsi:nil="true"/>
+            <ns1:AttributeChar1 xsi:nil="true"/>
+            <ns1:AttributeChar10 xsi:nil="true"/>
+            <ns1:AttributeChar11 xsi:nil="true"/>
+            <ns1:AttributeChar12 xsi:nil="true"/>
+            <ns1:AttributeChar13 xsi:nil="true"/>
+            <ns1:AttributeChar14 xsi:nil="true"/>
+            <ns1:AttributeChar15 xsi:nil="true"/>
+            <ns1:AttributeChar16 xsi:nil="true"/>
+            <ns1:AttributeChar17 xsi:nil="true"/>
+            <ns1:AttributeChar18 xsi:nil="true"/>
+            <ns1:AttributeChar19 xsi:nil="true"/>
+            <ns1:AttributeChar2 xsi:nil="true"/>
+            <ns1:AttributeChar20 xsi:nil="true"/>
+            <ns1:AttributeChar3 xsi:nil="true"/>
+            <ns1:AttributeChar4 xsi:nil="true"/>
+            <ns1:AttributeChar5 xsi:nil="true"/>
+            <ns1:AttributeChar6 xsi:nil="true"/>
+            <ns1:AttributeChar7 xsi:nil="true"/>
+            <ns1:AttributeChar8 xsi:nil="true"/>
+            <ns1:AttributeChar9 xsi:nil="true"/>
+            <ns1:AttributeDate1 xsi:nil="true"/>
+            <ns1:AttributeDate2 xsi:nil="true"/>
+            <ns1:AttributeDate3 xsi:nil="true"/>
+            <ns1:AttributeDate4 xsi:nil="true"/>
+            <ns1:AttributeDate5 xsi:nil="true"/>
+            <ns1:AttributeNumber1 xsi:nil="true"/>
+            <ns1:AttributeNumber10 xsi:nil="true"/>
+            <ns1:AttributeNumber2 xsi:nil="true"/>
+            <ns1:AttributeNumber3 xsi:nil="true"/>
+            <ns1:AttributeNumber4 xsi:nil="true"/>
+            <ns1:AttributeNumber5 xsi:nil="true"/>
+            <ns1:AttributeNumber6 xsi:nil="true"/>
+            <ns1:AttributeNumber7 xsi:nil="true"/>
+            <ns1:AttributeNumber8 xsi:nil="true"/>
+            <ns1:AttributeNumber9 xsi:nil="true"/>
+            <ns1:AttributeTimestamp1 xsi:nil="true"/>
+            <ns1:AttributeTimestamp2 xsi:nil="true"/>
+            <ns1:AttributeTimestamp3 xsi:nil="true"/>
+            <ns1:AttributeTimestamp4 xsi:nil="true"/>
+            <ns1:AttributeTimestamp5 xsi:nil="true"/>
+         </ns1:WorkOrderOperationMaterial>
+         <ns1:WorkOrderOperationMaterial>
+            <ns1:BasisType>1</ns1:BasisType>
+            <ns1:IncludeInPlanningFlag>true</ns1:IncludeInPlanningFlag>
+            <ns1:InventoryItemId>300000129417758</ns1:InventoryItemId>
+            <ns1:IssuedQuantity xsi:nil="true"/>
+            <ns1:ItemRevision xsi:nil="true"/>
+            <ns1:MaterialSeqNumber>10</ns1:MaterialSeqNumber>
+            <ns1:MaterialType>COMPONENT</ns1:MaterialType>
+            <ns1:ProducedQuantity xsi:nil="true"/>
+            <ns1:Quantity xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/"
+                          unitCode="zzu">1</ns1:Quantity>
+            <ns1:RequiredDate>2016-07-28T08:00:00.0Z</ns1:RequiredDate>
+            <ns1:SupplyLocatorId xsi:nil="true"/>
+            <ns1:SupplySubinventory>Stores</ns1:SupplySubinventory>
+            <ns1:SupplyType>2</ns1:SupplyType>
+            <ns1:UomCode>zzu</ns1:UomCode>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:WoOperationMaterialId>300000129421721</ns1:WoOperationMaterialId>
+            <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+            <ns1:YieldFactor>1</ns1:YieldFactor>
+            <ns1:AttributeCategory xsi:nil="true"/>
+            <ns1:AttributeChar1 xsi:nil="true"/>
+            <ns1:AttributeChar10 xsi:nil="true"/>
+            <ns1:AttributeChar11 xsi:nil="true"/>
+            <ns1:AttributeChar12 xsi:nil="true"/>
+            <ns1:AttributeChar13 xsi:nil="true"/>
+            <ns1:AttributeChar14 xsi:nil="true"/>
+            <ns1:AttributeChar15 xsi:nil="true"/>
+            <ns1:AttributeChar16 xsi:nil="true"/>
+            <ns1:AttributeChar17 xsi:nil="true"/>
+            <ns1:AttributeChar18 xsi:nil="true"/>
+            <ns1:AttributeChar19 xsi:nil="true"/>
+            <ns1:AttributeChar2 xsi:nil="true"/>
+            <ns1:AttributeChar20 xsi:nil="true"/>
+            <ns1:AttributeChar3 xsi:nil="true"/>
+            <ns1:AttributeChar4 xsi:nil="true"/>
+            <ns1:AttributeChar5 xsi:nil="true"/>
+            <ns1:AttributeChar6 xsi:nil="true"/>
+            <ns1:AttributeChar7 xsi:nil="true"/>
+            <ns1:AttributeChar8 xsi:nil="true"/>
+            <ns1:AttributeChar9 xsi:nil="true"/>
+            <ns1:AttributeDate1 xsi:nil="true"/>
+            <ns1:AttributeDate2 xsi:nil="true"/>
+            <ns1:AttributeDate3 xsi:nil="true"/>
+            <ns1:AttributeDate4 xsi:nil="true"/>
+            <ns1:AttributeDate5 xsi:nil="true"/>
+            <ns1:AttributeNumber1 xsi:nil="true"/>
+            <ns1:AttributeNumber10 xsi:nil="true"/>
+            <ns1:AttributeNumber2 xsi:nil="true"/>
+            <ns1:AttributeNumber3 xsi:nil="true"/>
+            <ns1:AttributeNumber4 xsi:nil="true"/>
+            <ns1:AttributeNumber5 xsi:nil="true"/>
+            <ns1:AttributeNumber6 xsi:nil="true"/>
+            <ns1:AttributeNumber7 xsi:nil="true"/>
+            <ns1:AttributeNumber8 xsi:nil="true"/>
+            <ns1:AttributeNumber9 xsi:nil="true"/>
+            <ns1:AttributeTimestamp1 xsi:nil="true"/>
+            <ns1:AttributeTimestamp2 xsi:nil="true"/>
+            <ns1:AttributeTimestamp3 xsi:nil="true"/>
+            <ns1:AttributeTimestamp4 xsi:nil="true"/>
+            <ns1:AttributeTimestamp5 xsi:nil="true"/>
+         </ns1:WorkOrderOperationMaterial>
+         <ns1:WorkOrderOperationResource>
+            <ns1:ActualResourceUsage xsi:nil="true"/>
+            <ns1:AssignedUnits>1</ns1:AssignedUnits>
+            <ns1:BasisType>1</ns1:BasisType>
+            <ns1:ChargeType>AUTOMATIC</ns1:ChargeType>
+            <ns1:InverseRequiredUsage>0.125</ns1:InverseRequiredUsage>
+            <ns1:PlannedCompletionDate>2016-07-28T16:00:00.0Z</ns1:PlannedCompletionDate>
+            <ns1:PlannedStartDate>2016-07-28T08:00:00.0Z</ns1:PlannedStartDate>
+            <ns1:PrincipalFlag>false</ns1:PrincipalFlag>
+            <ns1:RequiredUsage>8</ns1:RequiredUsage>
+            <ns1:ResourceActivityCode xsi:nil="true"/>
+            <ns1:ResourceId>300000129421469</ns1:ResourceId>
+            <ns1:ResourceSeqNumber>10</ns1:ResourceSeqNumber>
+            <ns1:Scheduled>YES</ns1:Scheduled>
+            <ns1:UomCode>zzt</ns1:UomCode>
+            <ns1:UsageRate>8</ns1:UsageRate>
+            <ns1:WdOperationResourceId xsi:nil="true"/>
+            <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+            <ns1:WoOperationResourceId>300000129421720</ns1:WoOperationResourceId>
+            <ns1:OrganizationId>300000047274447</ns1:OrganizationId>
+            <ns1:AttributeCategory xsi:nil="true"/>
+            <ns1:AttributeChar1 xsi:nil="true"/>
+            <ns1:AttributeChar10 xsi:nil="true"/>
+            <ns1:AttributeChar11 xsi:nil="true"/>
+            <ns1:AttributeChar12 xsi:nil="true"/>
+            <ns1:AttributeChar13 xsi:nil="true"/>
+            <ns1:AttributeChar14 xsi:nil="true"/>
+            <ns1:AttributeChar15 xsi:nil="true"/>
+            <ns1:AttributeChar16 xsi:nil="true"/>
+            <ns1:AttributeChar17 xsi:nil="true"/>
+            <ns1:AttributeChar18 xsi:nil="true"/>
+            <ns1:AttributeChar19 xsi:nil="true"/>
+            <ns1:AttributeChar2 xsi:nil="true"/>
+            <ns1:AttributeChar20 xsi:nil="true"/>
+            <ns1:AttributeChar3 xsi:nil="true"/>
+            <ns1:AttributeChar4 xsi:nil="true"/>
+            <ns1:AttributeChar5 xsi:nil="true"/>
+            <ns1:AttributeChar6 xsi:nil="true"/>
+            <ns1:AttributeChar7 xsi:nil="true"/>
+            <ns1:AttributeChar8 xsi:nil="true"/>
+            <ns1:AttributeChar9 xsi:nil="true"/>
+            <ns1:AttributeDate1 xsi:nil="true"/>
+            <ns1:AttributeDate2 xsi:nil="true"/>
+            <ns1:AttributeDate3 xsi:nil="true"/>
+            <ns1:AttributeNumber10 xsi:nil="true"/>
+            <ns1:AttributeDate4 xsi:nil="true"/>
+            <ns1:AttributeDate5 xsi:nil="true"/>
+            <ns1:AttributeNumber1 xsi:nil="true"/>
+            <ns1:AttributeNumber2 xsi:nil="true"/>
+            <ns1:AttributeNumber3 xsi:nil="true"/>
+            <ns1:AttributeNumber4 xsi:nil="true"/>
+            <ns1:AttributeNumber5 xsi:nil="true"/>
+            <ns1:AttributeNumber6 xsi:nil="true"/>
+            <ns1:AttributeNumber7 xsi:nil="true"/>
+            <ns1:AttributeNumber8 xsi:nil="true"/>
+            <ns1:AttributeNumber9 xsi:nil="true"/>
+            <ns1:AttributeTimestamp1 xsi:nil="true"/>
+            <ns1:AttributeTimestamp2 xsi:nil="true"/>
+            <ns1:AttributeTimestamp3 xsi:nil="true"/>
+            <ns1:AttributeTimestamp4 xsi:nil="true"/>
+            <ns1:AttributeTimestamp5 xsi:nil="true"/>
+         </ns1:WorkOrderOperationResource>
+      </ns1:WorkOrderOperation>
+      <ns1:WorkOrderOperation xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:ActualCompletionDate xsi:nil="true"/>
+         <ns1:ActualStartDate xsi:nil="true"/>
+         <ns1:AutoTransactFlag>false</ns1:AutoTransactFlag>
+         <ns1:CompletedQuantity xsi:nil="true"/>
+         <ns1:CountPointOperationFlag>true</ns1:CountPointOperationFlag>
+         <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+         <ns1:OperationSeqNumber>20</ns1:OperationSeqNumber>
+         <ns1:PlannedCompletionDate>2016-07-28T16:00:00.0Z</ns1:PlannedCompletionDate>
+         <ns1:PlannedStartDate>2016-07-28T16:00:00.0Z</ns1:PlannedStartDate>
+         <ns1:ReadyQuantity xsi:nil="true"/>
+         <ns1:RejectedQuantity xsi:nil="true"/>
+         <ns1:ScrappedQuantity xsi:nil="true"/>
+         <ns1:SerialTrackingFlag>false</ns1:SerialTrackingFlag>
+         <ns1:WdOperationId>300000129421542</ns1:WdOperationId>
+         <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+         <ns1:WorkCenterId>300000129421524</ns1:WorkCenterId>
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:StandardOperationId>300000129421525</ns1:StandardOperationId>
+         <ns1:Uom xsi:nil="true"/>
+         <ns1:AttributeCategory xsi:nil="true"/>
+         <ns1:AttributeChar1 xsi:nil="true"/>
+         <ns1:AttributeChar10 xsi:nil="true"/>
+         <ns1:AttributeChar11 xsi:nil="true"/>
+         <ns1:AttributeChar12 xsi:nil="true"/>
+         <ns1:AttributeChar13 xsi:nil="true"/>
+         <ns1:AttributeChar14 xsi:nil="true"/>
+         <ns1:AttributeChar15 xsi:nil="true"/>
+         <ns1:AttributeChar16 xsi:nil="true"/>
+         <ns1:AttributeChar17 xsi:nil="true"/>
+         <ns1:AttributeChar18 xsi:nil="true"/>
+         <ns1:AttributeChar19 xsi:nil="true"/>
+         <ns1:AttributeChar2 xsi:nil="true"/>
+         <ns1:AttributeChar20 xsi:nil="true"/>
+         <ns1:AttributeChar3 xsi:nil="true"/>
+         <ns1:AttributeChar4 xsi:nil="true"/>
+         <ns1:AttributeChar5 xsi:nil="true"/>
+         <ns1:AttributeChar6 xsi:nil="true"/>
+         <ns1:AttributeChar7 xsi:nil="true"/>
+         <ns1:AttributeChar8 xsi:nil="true"/>
+         <ns1:AttributeChar9 xsi:nil="true"/>
+         <ns1:AttributeDate1 xsi:nil="true"/>
+         <ns1:AttributeDate2 xsi:nil="true"/>
+         <ns1:AttributeDate3 xsi:nil="true"/>
+         <ns1:AttributeDate4 xsi:nil="true"/>
+         <ns1:AttributeDate5 xsi:nil="true"/>
+         <ns1:AttributeNumber1 xsi:nil="true"/>
+         <ns1:AttributeNumber10 xsi:nil="true"/>
+         <ns1:AttributeNumber2 xsi:nil="true"/>
+         <ns1:AttributeNumber3 xsi:nil="true"/>
+         <ns1:AttributeNumber4 xsi:nil="true"/>
+         <ns1:AttributeNumber5 xsi:nil="true"/>
+         <ns1:AttributeNumber6 xsi:nil="true"/>
+         <ns1:AttributeNumber7 xsi:nil="true"/>
+         <ns1:AttributeNumber8 xsi:nil="true"/>
+         <ns1:AttributeNumber9 xsi:nil="true"/>
+         <ns1:AttributeTimestamp1 xsi:nil="true"/>
+         <ns1:AttributeTimestamp2 xsi:nil="true"/>
+         <ns1:AttributeTimestamp3 xsi:nil="true"/>
+         <ns1:AttributeTimestamp4 xsi:nil="true"/>
+         <ns1:AttributeTimestamp5 xsi:nil="true"/>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>AR</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>D</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>DK</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>E</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>F</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>FRC</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>I</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>JA</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>KO</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>N</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>NL</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>PL</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>PTB</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>RU</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>S</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>SF</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>US</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>ZHS</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationTranslation>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:Language>ZHT</ns1:Language>
+            <ns1:SourceLang>US</ns1:SourceLang>
+            <ns1:ObjectVersionNumber>1</ns1:ObjectVersionNumber>
+            <ns1:OperationName>Calibrate and Complete</ns1:OperationName>
+            <ns1:OperationDescription>Calibrate and Complete</ns1:OperationDescription>
+         </ns1:WorkOrderOperationTranslation>
+         <ns1:WorkOrderOperationMaterial>
+            <ns1:BasisType>1</ns1:BasisType>
+            <ns1:IncludeInPlanningFlag>true</ns1:IncludeInPlanningFlag>
+            <ns1:InventoryItemId>300000129417784</ns1:InventoryItemId>
+            <ns1:IssuedQuantity xsi:nil="true"/>
+            <ns1:ItemRevision xsi:nil="true"/>
+            <ns1:MaterialSeqNumber>10</ns1:MaterialSeqNumber>
+            <ns1:MaterialType>COMPONENT</ns1:MaterialType>
+            <ns1:ProducedQuantity xsi:nil="true"/>
+            <ns1:Quantity xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/"
+                          unitCode="zzu">1</ns1:Quantity>
+            <ns1:RequiredDate>2016-07-28T16:00:00.0Z</ns1:RequiredDate>
+            <ns1:SupplyLocatorId xsi:nil="true"/>
+            <ns1:SupplySubinventory>Stores</ns1:SupplySubinventory>
+            <ns1:SupplyType>2</ns1:SupplyType>
+            <ns1:UomCode>zzu</ns1:UomCode>
+            <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+            <ns1:WoOperationMaterialId>300000129421723</ns1:WoOperationMaterialId>
+            <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+            <ns1:YieldFactor>1</ns1:YieldFactor>
+            <ns1:AttributeCategory xsi:nil="true"/>
+            <ns1:AttributeChar1 xsi:nil="true"/>
+            <ns1:AttributeChar10 xsi:nil="true"/>
+            <ns1:AttributeChar11 xsi:nil="true"/>
+            <ns1:AttributeChar12 xsi:nil="true"/>
+            <ns1:AttributeChar13 xsi:nil="true"/>
+            <ns1:AttributeChar14 xsi:nil="true"/>
+            <ns1:AttributeChar15 xsi:nil="true"/>
+            <ns1:AttributeChar16 xsi:nil="true"/>
+            <ns1:AttributeChar17 xsi:nil="true"/>
+            <ns1:AttributeChar18 xsi:nil="true"/>
+            <ns1:AttributeChar19 xsi:nil="true"/>
+            <ns1:AttributeChar2 xsi:nil="true"/>
+            <ns1:AttributeChar20 xsi:nil="true"/>
+            <ns1:AttributeChar3 xsi:nil="true"/>
+            <ns1:AttributeChar4 xsi:nil="true"/>
+            <ns1:AttributeChar5 xsi:nil="true"/>
+            <ns1:AttributeChar6 xsi:nil="true"/>
+            <ns1:AttributeChar7 xsi:nil="true"/>
+            <ns1:AttributeChar8 xsi:nil="true"/>
+            <ns1:AttributeChar9 xsi:nil="true"/>
+            <ns1:AttributeDate1 xsi:nil="true"/>
+            <ns1:AttributeDate2 xsi:nil="true"/>
+            <ns1:AttributeDate3 xsi:nil="true"/>
+            <ns1:AttributeDate4 xsi:nil="true"/>
+            <ns1:AttributeDate5 xsi:nil="true"/>
+            <ns1:AttributeNumber1 xsi:nil="true"/>
+            <ns1:AttributeNumber10 xsi:nil="true"/>
+            <ns1:AttributeNumber2 xsi:nil="true"/>
+            <ns1:AttributeNumber3 xsi:nil="true"/>
+            <ns1:AttributeNumber4 xsi:nil="true"/>
+            <ns1:AttributeNumber5 xsi:nil="true"/>
+            <ns1:AttributeNumber6 xsi:nil="true"/>
+            <ns1:AttributeNumber7 xsi:nil="true"/>
+            <ns1:AttributeNumber8 xsi:nil="true"/>
+            <ns1:AttributeNumber9 xsi:nil="true"/>
+            <ns1:AttributeTimestamp1 xsi:nil="true"/>
+            <ns1:AttributeTimestamp2 xsi:nil="true"/>
+            <ns1:AttributeTimestamp3 xsi:nil="true"/>
+            <ns1:AttributeTimestamp4 xsi:nil="true"/>
+            <ns1:AttributeTimestamp5 xsi:nil="true"/>
+         </ns1:WorkOrderOperationMaterial>
+      </ns1:WorkOrderOperation>
+      <ns1:WorkOrderOperationMaterial xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:BasisType>1</ns1:BasisType>
+         <ns1:IncludeInPlanningFlag>true</ns1:IncludeInPlanningFlag>
+         <ns1:InventoryItemId>300000129417758</ns1:InventoryItemId>
+         <ns1:IssuedQuantity xsi:nil="true"/>
+         <ns1:ItemRevision xsi:nil="true"/>
+         <ns1:MaterialSeqNumber>10</ns1:MaterialSeqNumber>
+         <ns1:MaterialType>COMPONENT</ns1:MaterialType>
+         <ns1:ProducedQuantity xsi:nil="true"/>
+         <ns1:Quantity xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/"
+                       unitCode="zzu">1</ns1:Quantity>
+         <ns1:RequiredDate>2016-07-28T08:00:00.0Z</ns1:RequiredDate>
+         <ns1:SupplyLocatorId xsi:nil="true"/>
+         <ns1:SupplySubinventory>Stores</ns1:SupplySubinventory>
+         <ns1:SupplyType>2</ns1:SupplyType>
+         <ns1:UomCode>zzu</ns1:UomCode>
+         <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+         <ns1:WoOperationMaterialId>300000129421721</ns1:WoOperationMaterialId>
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:YieldFactor>1</ns1:YieldFactor>
+         <ns1:AttributeCategory xsi:nil="true"/>
+         <ns1:AttributeChar1 xsi:nil="true"/>
+         <ns1:AttributeChar10 xsi:nil="true"/>
+         <ns1:AttributeChar11 xsi:nil="true"/>
+         <ns1:AttributeChar12 xsi:nil="true"/>
+         <ns1:AttributeChar13 xsi:nil="true"/>
+         <ns1:AttributeChar14 xsi:nil="true"/>
+         <ns1:AttributeChar15 xsi:nil="true"/>
+         <ns1:AttributeChar16 xsi:nil="true"/>
+         <ns1:AttributeChar17 xsi:nil="true"/>
+         <ns1:AttributeChar18 xsi:nil="true"/>
+         <ns1:AttributeChar19 xsi:nil="true"/>
+         <ns1:AttributeChar2 xsi:nil="true"/>
+         <ns1:AttributeChar20 xsi:nil="true"/>
+         <ns1:AttributeChar3 xsi:nil="true"/>
+         <ns1:AttributeChar4 xsi:nil="true"/>
+         <ns1:AttributeChar5 xsi:nil="true"/>
+         <ns1:AttributeChar6 xsi:nil="true"/>
+         <ns1:AttributeChar7 xsi:nil="true"/>
+         <ns1:AttributeChar8 xsi:nil="true"/>
+         <ns1:AttributeChar9 xsi:nil="true"/>
+         <ns1:AttributeDate1 xsi:nil="true"/>
+         <ns1:AttributeDate2 xsi:nil="true"/>
+         <ns1:AttributeDate3 xsi:nil="true"/>
+         <ns1:AttributeDate4 xsi:nil="true"/>
+         <ns1:AttributeDate5 xsi:nil="true"/>
+         <ns1:AttributeNumber1 xsi:nil="true"/>
+         <ns1:AttributeNumber10 xsi:nil="true"/>
+         <ns1:AttributeNumber2 xsi:nil="true"/>
+         <ns1:AttributeNumber3 xsi:nil="true"/>
+         <ns1:AttributeNumber4 xsi:nil="true"/>
+         <ns1:AttributeNumber5 xsi:nil="true"/>
+         <ns1:AttributeNumber6 xsi:nil="true"/>
+         <ns1:AttributeNumber7 xsi:nil="true"/>
+         <ns1:AttributeNumber8 xsi:nil="true"/>
+         <ns1:AttributeNumber9 xsi:nil="true"/>
+         <ns1:AttributeTimestamp1 xsi:nil="true"/>
+         <ns1:AttributeTimestamp2 xsi:nil="true"/>
+         <ns1:AttributeTimestamp3 xsi:nil="true"/>
+         <ns1:AttributeTimestamp4 xsi:nil="true"/>
+         <ns1:AttributeTimestamp5 xsi:nil="true"/>
+      </ns1:WorkOrderOperationMaterial>
+      <ns1:WorkOrderOperationMaterial xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:BasisType>1</ns1:BasisType>
+         <ns1:IncludeInPlanningFlag>true</ns1:IncludeInPlanningFlag>
+         <ns1:InventoryItemId>300000129417729</ns1:InventoryItemId>
+         <ns1:IssuedQuantity xsi:nil="true"/>
+         <ns1:ItemRevision xsi:nil="true"/>
+         <ns1:MaterialSeqNumber>20</ns1:MaterialSeqNumber>
+         <ns1:MaterialType>COMPONENT</ns1:MaterialType>
+         <ns1:ProducedQuantity xsi:nil="true"/>
+         <ns1:Quantity xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/"
+                       unitCode="zzu">1</ns1:Quantity>
+         <ns1:RequiredDate>2016-07-28T08:00:00.0Z</ns1:RequiredDate>
+         <ns1:SupplyLocatorId xsi:nil="true"/>
+         <ns1:SupplySubinventory>Stores</ns1:SupplySubinventory>
+         <ns1:SupplyType>2</ns1:SupplyType>
+         <ns1:UomCode>zzu</ns1:UomCode>
+         <ns1:WoOperationId>300000129421718</ns1:WoOperationId>
+         <ns1:WoOperationMaterialId>300000129421722</ns1:WoOperationMaterialId>
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:YieldFactor>1</ns1:YieldFactor>
+         <ns1:AttributeCategory xsi:nil="true"/>
+         <ns1:AttributeChar1 xsi:nil="true"/>
+         <ns1:AttributeChar10 xsi:nil="true"/>
+         <ns1:AttributeChar11 xsi:nil="true"/>
+         <ns1:AttributeChar12 xsi:nil="true"/>
+         <ns1:AttributeChar13 xsi:nil="true"/>
+         <ns1:AttributeChar14 xsi:nil="true"/>
+         <ns1:AttributeChar15 xsi:nil="true"/>
+         <ns1:AttributeChar16 xsi:nil="true"/>
+         <ns1:AttributeChar17 xsi:nil="true"/>
+         <ns1:AttributeChar18 xsi:nil="true"/>
+         <ns1:AttributeChar19 xsi:nil="true"/>
+         <ns1:AttributeChar2 xsi:nil="true"/>
+         <ns1:AttributeChar20 xsi:nil="true"/>
+         <ns1:AttributeChar3 xsi:nil="true"/>
+         <ns1:AttributeChar4 xsi:nil="true"/>
+         <ns1:AttributeChar5 xsi:nil="true"/>
+         <ns1:AttributeChar6 xsi:nil="true"/>
+         <ns1:AttributeChar7 xsi:nil="true"/>
+         <ns1:AttributeChar8 xsi:nil="true"/>
+         <ns1:AttributeChar9 xsi:nil="true"/>
+         <ns1:AttributeDate1 xsi:nil="true"/>
+         <ns1:AttributeDate2 xsi:nil="true"/>
+         <ns1:AttributeDate3 xsi:nil="true"/>
+         <ns1:AttributeDate4 xsi:nil="true"/>
+         <ns1:AttributeDate5 xsi:nil="true"/>
+         <ns1:AttributeNumber1 xsi:nil="true"/>
+         <ns1:AttributeNumber10 xsi:nil="true"/>
+         <ns1:AttributeNumber2 xsi:nil="true"/>
+         <ns1:AttributeNumber3 xsi:nil="true"/>
+         <ns1:AttributeNumber4 xsi:nil="true"/>
+         <ns1:AttributeNumber5 xsi:nil="true"/>
+         <ns1:AttributeNumber6 xsi:nil="true"/>
+         <ns1:AttributeNumber7 xsi:nil="true"/>
+         <ns1:AttributeNumber8 xsi:nil="true"/>
+         <ns1:AttributeNumber9 xsi:nil="true"/>
+         <ns1:AttributeTimestamp1 xsi:nil="true"/>
+         <ns1:AttributeTimestamp2 xsi:nil="true"/>
+         <ns1:AttributeTimestamp3 xsi:nil="true"/>
+         <ns1:AttributeTimestamp4 xsi:nil="true"/>
+         <ns1:AttributeTimestamp5 xsi:nil="true"/>
+      </ns1:WorkOrderOperationMaterial>
+      <ns1:WorkOrderOperationMaterial xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:BasisType>1</ns1:BasisType>
+         <ns1:IncludeInPlanningFlag>true</ns1:IncludeInPlanningFlag>
+         <ns1:InventoryItemId>300000129417784</ns1:InventoryItemId>
+         <ns1:IssuedQuantity xsi:nil="true"/>
+         <ns1:ItemRevision xsi:nil="true"/>
+         <ns1:MaterialSeqNumber>10</ns1:MaterialSeqNumber>
+         <ns1:MaterialType>COMPONENT</ns1:MaterialType>
+         <ns1:ProducedQuantity xsi:nil="true"/>
+         <ns1:Quantity xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/"
+                       unitCode="zzu">1</ns1:Quantity>
+         <ns1:RequiredDate>2016-07-28T16:00:00.0Z</ns1:RequiredDate>
+         <ns1:SupplyLocatorId xsi:nil="true"/>
+         <ns1:SupplySubinventory>Stores</ns1:SupplySubinventory>
+         <ns1:SupplyType>2</ns1:SupplyType>
+         <ns1:UomCode>zzu</ns1:UomCode>
+         <ns1:WoOperationId>300000129421719</ns1:WoOperationId>
+         <ns1:WoOperationMaterialId>300000129421723</ns1:WoOperationMaterialId>
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:YieldFactor>1</ns1:YieldFactor>
+         <ns1:AttributeCategory xsi:nil="true"/>
+         <ns1:AttributeChar1 xsi:nil="true"/>
+         <ns1:AttributeChar10 xsi:nil="true"/>
+         <ns1:AttributeChar11 xsi:nil="true"/>
+         <ns1:AttributeChar12 xsi:nil="true"/>
+         <ns1:AttributeChar13 xsi:nil="true"/>
+         <ns1:AttributeChar14 xsi:nil="true"/>
+         <ns1:AttributeChar15 xsi:nil="true"/>
+         <ns1:AttributeChar16 xsi:nil="true"/>
+         <ns1:AttributeChar17 xsi:nil="true"/>
+         <ns1:AttributeChar18 xsi:nil="true"/>
+         <ns1:AttributeChar19 xsi:nil="true"/>
+         <ns1:AttributeChar2 xsi:nil="true"/>
+         <ns1:AttributeChar20 xsi:nil="true"/>
+         <ns1:AttributeChar3 xsi:nil="true"/>
+         <ns1:AttributeChar4 xsi:nil="true"/>
+         <ns1:AttributeChar5 xsi:nil="true"/>
+         <ns1:AttributeChar6 xsi:nil="true"/>
+         <ns1:AttributeChar7 xsi:nil="true"/>
+         <ns1:AttributeChar8 xsi:nil="true"/>
+         <ns1:AttributeChar9 xsi:nil="true"/>
+         <ns1:AttributeDate1 xsi:nil="true"/>
+         <ns1:AttributeDate2 xsi:nil="true"/>
+         <ns1:AttributeDate3 xsi:nil="true"/>
+         <ns1:AttributeDate4 xsi:nil="true"/>
+         <ns1:AttributeDate5 xsi:nil="true"/>
+         <ns1:AttributeNumber1 xsi:nil="true"/>
+         <ns1:AttributeNumber10 xsi:nil="true"/>
+         <ns1:AttributeNumber2 xsi:nil="true"/>
+         <ns1:AttributeNumber3 xsi:nil="true"/>
+         <ns1:AttributeNumber4 xsi:nil="true"/>
+         <ns1:AttributeNumber5 xsi:nil="true"/>
+         <ns1:AttributeNumber6 xsi:nil="true"/>
+         <ns1:AttributeNumber7 xsi:nil="true"/>
+         <ns1:AttributeNumber8 xsi:nil="true"/>
+         <ns1:AttributeNumber9 xsi:nil="true"/>
+         <ns1:AttributeTimestamp1 xsi:nil="true"/>
+         <ns1:AttributeTimestamp2 xsi:nil="true"/>
+         <ns1:AttributeTimestamp3 xsi:nil="true"/>
+         <ns1:AttributeTimestamp4 xsi:nil="true"/>
+         <ns1:AttributeTimestamp5 xsi:nil="true"/>
+      </ns1:WorkOrderOperationMaterial>
+      <ns1:WorkOrderOperationMaterial xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/">
+         <ns1:BasisType>1</ns1:BasisType>
+         <ns1:IncludeInPlanningFlag>true</ns1:IncludeInPlanningFlag>
+         <ns1:InventoryItemId>300000129417716</ns1:InventoryItemId>
+         <ns1:IssuedQuantity xsi:nil="true"/>
+         <ns1:ItemRevision>A</ns1:ItemRevision>
+         <ns1:MaterialSeqNumber>1</ns1:MaterialSeqNumber>
+         <ns1:MaterialType>PRIMARY_PRODUCT</ns1:MaterialType>
+         <ns1:ProducedQuantity xsi:nil="true"/>
+         <ns1:Quantity xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/"
+                       unitCode="zzu">1</ns1:Quantity>
+         <ns1:RequiredDate xsi:nil="true"/>
+         <ns1:SupplyLocatorId xsi:nil="true"/>
+         <ns1:SupplySubinventory xsi:nil="true"/>
+         <ns1:SupplyType>7</ns1:SupplyType>
+         <ns1:UomCode>zzu</ns1:UomCode>
+         <ns1:WoOperationId xsi:nil="true"/>
+         <ns1:WoOperationMaterialId>300000129421724</ns1:WoOperationMaterialId>
+         <ns1:WorkOrderId>300000129421717</ns1:WorkOrderId>
+         <ns1:YieldFactor>1</ns1:YieldFactor>
+         <ns1:AttributeCategory xsi:nil="true"/>
+         <ns1:AttributeChar1 xsi:nil="true"/>
+         <ns1:AttributeChar10 xsi:nil="true"/>
+         <ns1:AttributeChar11 xsi:nil="true"/>
+         <ns1:AttributeChar12 xsi:nil="true"/>
+         <ns1:AttributeChar13 xsi:nil="true"/>
+         <ns1:AttributeChar14 xsi:nil="true"/>
+         <ns1:AttributeChar15 xsi:nil="true"/>
+         <ns1:AttributeChar16 xsi:nil="true"/>
+         <ns1:AttributeChar17 xsi:nil="true"/>
+         <ns1:AttributeChar18 xsi:nil="true"/>
+         <ns1:AttributeChar19 xsi:nil="true"/>
+         <ns1:AttributeChar2 xsi:nil="true"/>
+         <ns1:AttributeChar20 xsi:nil="true"/>
+         <ns1:AttributeChar3 xsi:nil="true"/>
+         <ns1:AttributeChar4 xsi:nil="true"/>
+         <ns1:AttributeChar5 xsi:nil="true"/>
+         <ns1:AttributeChar6 xsi:nil="true"/>
+         <ns1:AttributeChar7 xsi:nil="true"/>
+         <ns1:AttributeChar8 xsi:nil="true"/>
+         <ns1:AttributeChar9 xsi:nil="true"/>
+         <ns1:AttributeDate1 xsi:nil="true"/>
+         <ns1:AttributeDate2 xsi:nil="true"/>
+         <ns1:AttributeDate3 xsi:nil="true"/>
+         <ns1:AttributeDate4 xsi:nil="true"/>
+         <ns1:AttributeDate5 xsi:nil="true"/>
+         <ns1:AttributeNumber1 xsi:nil="true"/>
+         <ns1:AttributeNumber10 xsi:nil="true"/>
+         <ns1:AttributeNumber2 xsi:nil="true"/>
+         <ns1:AttributeNumber3 xsi:nil="true"/>
+         <ns1:AttributeNumber4 xsi:nil="true"/>
+         <ns1:AttributeNumber5 xsi:nil="true"/>
+         <ns1:AttributeNumber6 xsi:nil="true"/>
+         <ns1:AttributeNumber7 xsi:nil="true"/>
+         <ns1:AttributeNumber8 xsi:nil="true"/>
+         <ns1:AttributeNumber9 xsi:nil="true"/>
+         <ns1:AttributeTimestamp1 xsi:nil="true"/>
+         <ns1:AttributeTimestamp2 xsi:nil="true"/>
+         <ns1:AttributeTimestamp3 xsi:nil="true"/>
+         <ns1:AttributeTimestamp4 xsi:nil="true"/>
+         <ns1:AttributeTimestamp5 xsi:nil="true"/>
+      </ns1:WorkOrderOperationMaterial>
+   </ns2:result>
+</getWorkOrderResponse>

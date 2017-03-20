@@ -1,0 +1,35 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="BC4JService.xsd"/>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:complexType name="WoTravelerWoReservation">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>ReservationId</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="DemandSourceTypeName" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="DemandSourceHeaderNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="DemandSourceLineNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="DemandSourceName" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ReservationQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="ReservationUOMCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ReservationUOM" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="PrimaryQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="PrimaryUOMCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="PrimaryUOM" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="DemandQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="DemandUOMCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="DemandUOM" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CustomerNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CustomerName" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="woTravelerWoReservation" type="WoTravelerWoReservation"/>
+</xsd:schema>

@@ -1,0 +1,122 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation>
+        <xsd:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+            <name>Create Work Order Operation Resource Details</name>
+            <description>An object, representing the work order operation resource
+                details, that is used to provide values while creating a work
+                order</description>
+            <oer:category name="lbo">
+                <value>SCM-SCM : WIE-Common Work Execution : ORA_WORK_ORDER-Work
+                    Order</value>
+            </oer:category>
+            <oer:attributes>
+                <oer:attribute description="Work order operation reference" name="OperationSequenceNumber"/>
+                <oer:attribute description="The resource sequence number used to define the sequence in which resources work together to finish the operation"
+                     name="ResourceSequenceNumber"/>
+                <oer:attribute description="The resource used to execute the operation" name="ResourceCode"/>
+                <oer:attribute description="Unique identifier of the resource" name="ResourceId"/>
+                <oer:attribute description="The usage per product unit or the usage per work order, based on the basis type"
+                     name="UsageRate"/>
+                <oer:attribute description="A calculated field which shows the required usage by a resource based on the Resource Usage and Basis fields"
+                     name="RequiredUsage"/>
+                <oer:attribute description="The resource consumption. The value can be either Fixed or Variable"
+                     name="Basis"/>
+                <oer:attribute description="Used to indicate the nature of scheduling to be performed for this resource duration"
+                     name="Scheduled"/>
+                <oer:attribute description="Date when the resource is planned to start the operation it is assigned to. This is generally calculated by the Scheduling API and is also referred to as Scheduled Start date"
+                     name="ScheduledStartDate"/>
+                <oer:attribute description="Date when the resource is planned to complete the operation it is assigned to. This is generally calculated by the Scheduling API and is also referred to as Scheduled Completion date"
+                     name="ScheduledCompletionDate"/>
+                <oer:attribute description="Indicates if resource transactions are automatically generated and at what stage. Transactions can be Manual or Automatic"
+                     name="ChargeType"/>
+                <oer:attribute description="Inverse resource usage is defined in cases where the resource quantity per product is fractional. This enables a fractional quantity per product to be stored, which prevents resource usage variances with large build quantities"
+                     name="Inverse"/>
+                <oer:attribute description="Number of resource units assigned to perform the operation"
+                     name="AssignedUnits"/>
+                <oer:attribute description="When two or more resources are running in parallel (that is, simultaneous resources), they will have the same resource sequence number. In such cases, one (and only one) of the resources must be marked as a Principal Resource. Planning identifies bottlenecks if the principal resource is not available when checking for capacity"
+                     name="PrincipalFlag"/>
+                <oer:attribute description="Used to define any intraoperation or custom steps tracked at the resource level"
+                     name="Activity"/>
+                <oer:attribute description="Provides the work order operation resource interface action codes such as: Create, Update, Delete"
+                     name="ActionCode"/>
+            </oer:attributes>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="BC4JService.xsd"/>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:complexType name="OperationResourceInput">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>HeaderNumber</attribute>
+                    <attribute>OperationSequenceNumber</attribute>
+                    <attribute>ResourceSequenceNumber</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="OperationSequenceNumber" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ResourceSequenceNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ResourceCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ResourceId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="UsageRate" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="RequiredUsage" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="Basis" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="Scheduled" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ScheduledStartDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="ScheduledCompletionDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="ChargeType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="Inverse" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AssignedUnits" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="PrincipalFlag" nillable="true" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="Activity" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeCategory" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar1" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar2" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar3" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar4" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar5" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar6" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar7" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar8" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar9" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar10" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar11" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar12" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar13" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar14" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar15" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar16" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar17" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar18" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar19" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar20" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeNumber1" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber2" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber3" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber4" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber5" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber6" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber7" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber8" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber9" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber10" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeDate1" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate2" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate3" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate4" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate5" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp1" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp2" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp3" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp4" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp5" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="ActionCode" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="operationResourceInput" type="OperationResourceInput"/>
+</xsd:schema>

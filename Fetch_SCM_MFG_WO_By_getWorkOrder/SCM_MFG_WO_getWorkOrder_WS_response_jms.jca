@@ -1,0 +1,13 @@
+<adapter-config name="SCM_MFG_WO_getWorkOrder_WS_response" adapter="JMS Adapter" wsdlLocation="SCM_MFG_WO_getWorkOrder_WS_response.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/wls/jms/SCM/ModernMfg" UIJmsProvider="WLSJMS" UIConnectionName="localhost_base_111171"/>
+  <endpoint-interaction portType="Produce_Message_ptt" operation="Produce_Message">
+    <interaction-spec className="oracle.tip.adapter.jms.outbound.JmsProduceInteractionSpec">
+      <property name="TimeToLive" value="0"/>
+      <property name="PayloadType" value="TextMessage"/>
+      <property name="DeliveryMode" value="Persistent"/>
+      <property name="DestinationName" value="jms/queue/SCM_MFG_WO_getWorkOrder_WS_response"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

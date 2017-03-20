@@ -1,0 +1,120 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns:sdoXML="commonj.sdo/xml"
+     xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation>
+        <xsd:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+            <name>Work Order Operation Material Details</name>
+            <description>An object, representing the work order operation material
+                details, that is returned for the given work order</description>
+            <oer:category name="lbo">
+                <value>SCM-SCM : WIE-Common Work Execution : ORA_WORK_ORDER-Work
+                    Order</value>
+            </oer:category>
+            <oer:attributes>
+                <oer:attribute description="Quantity consumption is either FIXED or VARIABLE" name="BasisType"/>
+                <oer:attribute description="Indicates whether this material (component) requirement should be considered by planning run for planning its supply"
+                     name="IncludeInPlanningFlag"/>
+                <oer:attribute description="Item Identifier" name="InventoryItemId"/>
+                <oer:attribute description="Issued quantity" name="IssuedQuantity"/>
+                <oer:attribute description="Item revision" name="ItemRevision"/>
+                <oer:attribute description="Sequence in which material is consumed in the operation"
+                     name="MaterialSeqNumber"/>
+                <oer:attribute description="Type of components" name="MaterialType"/>
+                <oer:attribute description="Produced quantity" name="ProducedQuantity"/>
+                <oer:attribute description="Quantity" name="Quantity"/>
+                <oer:attribute description="Date when the raw materials will be required" name="RequiredDate"/>
+                <oer:attribute description="Unique identifier of the Locator" name="SupplyLocatorId"/>
+                <oer:attribute description="The default sub-inventory where material will be drawn upon backflushing"
+                     name="SupplySubinventory"/>
+                <oer:attribute description="Method of consumption of the item. The various supply types are “Assembly Pull”, “Operation Pull”, “Push”, &quot;Bulk&quot;, “Supplier”"
+                     name="SupplyType"/>
+                <oer:attribute description="Unit of measure of the Item" name="UomCode"/>
+                <oer:attribute description="Unique identifier of the Operation" name="WoOperationId"/>
+                <oer:attribute description="Unique identifier of the component" name="WoOperationMaterialId"/>
+                <oer:attribute description="Unique identifier of the work order" name="WorkOrderId"/>
+                <oer:attribute description="Factor to calculate the aggregate required quantity. The value of yield is 0 &lt; yield &lt;= 1. However, yield value greater than 1 is allowed with a warning message."
+                     name="YieldFactor"/>
+                <oer:attribute description="Work Order Product Serial Details" name="WorkOrderProductSerial"/>
+            </oer:attributes>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="BC4JService.xsd"/>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:import namespace="commonj.sdo/xml" schemaLocation="sdoXML.xsd"/>
+    <xsd:include schemaLocation="WorkOrderProductSerial.xsd"/>
+    <xsd:complexType name="WorkOrderOperationMaterial">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>WoOperationMaterialId</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="BasisType" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="IncludeInPlanningFlag" type="xsd:boolean" sdoXML:dataType="sdoJava:BooleanObject"/>
+            <xsd:element minOccurs="0" name="InventoryItemId" type="xsd:long" sdoXML:dataType="sdoJava:LongObject"/>
+            <xsd:element minOccurs="0" name="IssuedQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="ItemRevision" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="MaterialSeqNumber" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="MaterialType" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ProducedQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="Quantity" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="RequiredDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="SupplyLocatorId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="SupplySubinventory" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SupplyType" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="UomCode" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WoOperationId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="WoOperationMaterialId" type="xsd:long" sdoXML:dataType="sdoJava:LongObject"/>
+            <xsd:element minOccurs="0" name="WorkOrderId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="YieldFactor" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeCategory" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar1" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar10" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar11" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar12" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar13" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar14" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar15" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar16" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar17" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar18" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar19" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar2" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar20" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar3" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar4" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar5" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar6" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar7" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar8" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar9" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeDate1" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate2" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate3" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate4" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate5" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeNumber1" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber10" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber2" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber3" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber4" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber5" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber6" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber7" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber8" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber9" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp1" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp2" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp3" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp4" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp5" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="WorkOrderProductSerial" type="WorkOrderProductSerial"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="workOrderOperationMaterial" type="WorkOrderOperationMaterial"/>
+</xsd:schema>

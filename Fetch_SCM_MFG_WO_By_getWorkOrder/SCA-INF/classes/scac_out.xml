@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Faults>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>97</line>
+      <col/>
+      <file>FETCH_WORK_ORDER_DETAILS.bpel</file>
+      <name>FETCH_WORK_ORDER_DETAILS.bpel</name>
+      <fix>Add a predicate to select an element from the sequence.</fix>
+      <msg>The XPath segment "child::ns4:WieWorkOrdersV" selects a sequence of elements - a predicate MAY be needed to correctly select an element.</msg>
+   </Fault>
+</Faults>

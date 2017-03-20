@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+     name="WorkOrderService"
+     targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:errors="http://xmlns.oracle.com/adf/svc/errors/"
+     xmlns:orafault="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+     xmlns:tns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+     xmlns:types="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/types/"
+    >
+    <wsdl:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+        <name>Work Order Services</name>
+        <description>An object, representing a set of work order service details, that is
+            returned for a given work order</description>
+        <docCategories>
+            <category>None</category>
+        </docCategories>
+        <oer:lifecycle>Active</oer:lifecycle>
+        <oer:compatibility>Supported - Backward Compatibility Assured</oer:compatibility>
+        <oer:category name="lbo">
+            <value>SCM-SCM : WIE-Common Work Execution : ORA_WORK_ORDER-Work Order</value>
+        </oer:category>
+        <oer:operation name="getWorkOrder">
+            <description>Service to get details of a work order</description>
+        </oer:operation>
+        <oer:operation name="createWorkOrder">
+            <description>Service to create Work Orders</description>
+        </oer:operation>
+        <oer:operation name="updateWorkOrder">
+            <description>Service to update work order</description>
+        </oer:operation>
+        <oer:operation name="importWorkOrders">
+            <description>Service to import work order</description>
+        </oer:operation>
+        <oer:operation name="getWorkOrderTraveler">
+            <description>Service to get Work Order Traveler information</description>
+        </oer:operation>
+        <oer:operation name="getWorkOrderTravelerAttachment">
+            <description>Service to get Work Order Traveler Attachment information</description>
+        </oer:operation>
+    </wsdl:documentation>
+    <plnk:partnerLinkType name="WorkOrderService">
+        <plnk:role name="WorkOrderServiceProvider">
+            <plnk:portType name="tns:WorkOrderService"/>
+        </plnk:role>
+        <plnk:role name="WorkOrderServiceRequestor">
+            <plnk:portType name="tns:WorkOrderServiceResponse"/>
+        </plnk:role>
+    </plnk:partnerLinkType>
+    <wsp:Policy xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+         wsu:Id="wsaddr_policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+    </wsp:Policy>
+    <wsdl:import namespace="http://xmlns.oracle.com/adf/svc/errors/" location="ServiceException.wsdl"/>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0" schemaLocation="xsd/oracle_webservices_async_fault_11_0.xsd"/>
+            <import namespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/types/"
+                 schemaLocation="xsd/WorkOrderService.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="WorkOrderService_getWorkOrder">
+        <wsdl:part name="parameters" element="types:getWorkOrder"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderResponse">
+        <wsdl:part name="parameters" element="types:getWorkOrderResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderAsync">
+        <wsdl:part name="parameters" element="types:getWorkOrderAsync"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_createWorkOrder">
+        <wsdl:part name="parameters" element="types:createWorkOrder"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_createWorkOrderResponse">
+        <wsdl:part name="parameters" element="types:createWorkOrderResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_createWorkOrderAsync">
+        <wsdl:part name="parameters" element="types:createWorkOrderAsync"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_updateWorkOrder">
+        <wsdl:part name="parameters" element="types:updateWorkOrder"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_updateWorkOrderResponse">
+        <wsdl:part name="parameters" element="types:updateWorkOrderResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_updateWorkOrderAsync">
+        <wsdl:part name="parameters" element="types:updateWorkOrderAsync"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_importWorkOrders">
+        <wsdl:part name="parameters" element="types:importWorkOrders"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_importWorkOrdersResponse">
+        <wsdl:part name="parameters" element="types:importWorkOrdersResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_importWorkOrdersAsync">
+        <wsdl:part name="parameters" element="types:importWorkOrdersAsync"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderTraveler">
+        <wsdl:part name="parameters" element="types:getWorkOrderTraveler"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderTravelerResponse">
+        <wsdl:part name="parameters" element="types:getWorkOrderTravelerResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderTravelerAsync">
+        <wsdl:part name="parameters" element="types:getWorkOrderTravelerAsync"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderTravelerAttachment">
+        <wsdl:part name="parameters" element="types:getWorkOrderTravelerAttachment"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderTravelerAttachmentResponse">
+        <wsdl:part name="parameters" element="types:getWorkOrderTravelerAttachmentResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderTravelerAttachmentAsync">
+        <wsdl:part name="parameters" element="types:getWorkOrderTravelerAttachmentAsync"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_onFault">
+        <wsdl:part name="parameters" element="orafault:Fault"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderAsyncResponse">
+        <wsdl:part name="parameters" element="types:getWorkOrderAsyncResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_createWorkOrderAsyncResponse">
+        <wsdl:part name="parameters" element="types:createWorkOrderAsyncResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_updateWorkOrderAsyncResponse">
+        <wsdl:part name="parameters" element="types:updateWorkOrderAsyncResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_importWorkOrdersAsyncResponse">
+        <wsdl:part name="parameters" element="types:importWorkOrdersAsyncResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderTravelerAsyncResponse">
+        <wsdl:part name="parameters" element="types:getWorkOrderTravelerAsyncResponse"/>
+    </wsdl:message>
+    <wsdl:message name="WorkOrderService_getWorkOrderTravelerAttachmentAsyncResponse">
+        <wsdl:part name="parameters" element="types:getWorkOrderTravelerAttachmentAsyncResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="WorkOrderService">
+        <wsdl:documentation>
+            <ViewInstance xmlns="http://xmlns.oracle.com/adf/svc/metadata/" Name="WorkOrderVO" SDOName="tns:WorkOrder"/>
+        </wsdl:documentation>
+        <wsdl:operation name="getWorkOrder">
+            <wsdl:input message="tns:WorkOrderService_getWorkOrder"/>
+            <wsdl:output message="tns:WorkOrderService_getWorkOrderResponse"/>
+            <wsdl:fault name="ServiceException" message="errors:ServiceException"/>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderAsync">
+            <wsdl:input message="tns:WorkOrderService_getWorkOrderAsync" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderAsync"/>
+        </wsdl:operation>
+        <wsdl:operation name="createWorkOrder">
+            <wsdl:input message="tns:WorkOrderService_createWorkOrder"/>
+            <wsdl:output message="tns:WorkOrderService_createWorkOrderResponse"/>
+            <wsdl:fault name="ServiceException" message="errors:ServiceException"/>
+        </wsdl:operation>
+        <wsdl:operation name="createWorkOrderAsync">
+            <wsdl:input message="tns:WorkOrderService_createWorkOrderAsync" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/createWorkOrderAsync"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateWorkOrder">
+            <wsdl:input message="tns:WorkOrderService_updateWorkOrder"/>
+            <wsdl:output message="tns:WorkOrderService_updateWorkOrderResponse"/>
+            <wsdl:fault name="ServiceException" message="errors:ServiceException"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateWorkOrderAsync">
+            <wsdl:input message="tns:WorkOrderService_updateWorkOrderAsync" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/updateWorkOrderAsync"/>
+        </wsdl:operation>
+        <wsdl:operation name="importWorkOrders">
+            <wsdl:input message="tns:WorkOrderService_importWorkOrders"/>
+            <wsdl:output message="tns:WorkOrderService_importWorkOrdersResponse"/>
+            <wsdl:fault name="ServiceException" message="errors:ServiceException"/>
+        </wsdl:operation>
+        <wsdl:operation name="importWorkOrdersAsync">
+            <wsdl:input message="tns:WorkOrderService_importWorkOrdersAsync" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/importWorkOrdersAsync"/>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTraveler">
+            <wsdl:input message="tns:WorkOrderService_getWorkOrderTraveler"/>
+            <wsdl:output message="tns:WorkOrderService_getWorkOrderTravelerResponse"/>
+            <wsdl:fault name="ServiceException" message="errors:ServiceException"/>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAsync">
+            <wsdl:input message="tns:WorkOrderService_getWorkOrderTravelerAsync" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTravelerAsync"/>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAttachment">
+            <wsdl:input message="tns:WorkOrderService_getWorkOrderTravelerAttachment"/>
+            <wsdl:output message="tns:WorkOrderService_getWorkOrderTravelerAttachmentResponse"/>
+            <wsdl:fault name="ServiceException" message="errors:ServiceException"/>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAttachmentAsync">
+            <wsdl:input message="tns:WorkOrderService_getWorkOrderTravelerAttachmentAsync" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTravelerAttachmentAsync"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:portType name="WorkOrderServiceResponse">
+        <wsdl:operation name="onFault">
+            <wsdl:input message="tns:WorkOrderService_onFault" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0/Fault"/>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderAsyncResponse">
+            <wsdl:input message="tns:WorkOrderService_getWorkOrderAsyncResponse" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderAsyncResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="createWorkOrderAsyncResponse">
+            <wsdl:input message="tns:WorkOrderService_createWorkOrderAsyncResponse" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/createWorkOrderAsyncResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="updateWorkOrderAsyncResponse">
+            <wsdl:input message="tns:WorkOrderService_updateWorkOrderAsyncResponse" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/updateWorkOrderAsyncResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="importWorkOrdersAsyncResponse">
+            <wsdl:input message="tns:WorkOrderService_importWorkOrdersAsyncResponse" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/importWorkOrdersAsyncResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAsyncResponse">
+            <wsdl:input message="tns:WorkOrderService_getWorkOrderTravelerAsyncResponse" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTravelerAsyncResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAttachmentAsyncResponse">
+            <wsdl:input message="tns:WorkOrderService_getWorkOrderTravelerAttachmentAsyncResponse"
+                 xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl" ns1:Action="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTravelerAttachmentAsyncResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="WorkOrderServiceResponseBinding" type="tns:WorkOrderServiceResponse">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="onFault">
+            <soap:operation soapAction="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0/Fault"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderAsyncResponse">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderAsyncResponse"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="createWorkOrderAsyncResponse">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/createWorkOrderAsyncResponse"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="updateWorkOrderAsyncResponse">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/updateWorkOrderAsyncResponse"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="importWorkOrdersAsyncResponse">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/importWorkOrdersAsyncResponse"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAsyncResponse">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTravelerAsyncResponse"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAttachmentAsyncResponse">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTravelerAttachmentAsyncResponse"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="WorkOrderServiceSoapHttp" type="tns:WorkOrderService">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsp:PolicyReference xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" URI="#wsaddr_policy"
+             wsdl:required="false"/>
+        <wsdl:operation name="getWorkOrder">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrder"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="ServiceException">
+                <soap:fault name="ServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderAsync">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderAsync"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="createWorkOrder">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/createWorkOrder"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="ServiceException">
+                <soap:fault name="ServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="createWorkOrderAsync">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/createWorkOrderAsync"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="updateWorkOrder">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/updateWorkOrder"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="ServiceException">
+                <soap:fault name="ServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="updateWorkOrderAsync">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/updateWorkOrderAsync"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="importWorkOrders">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/importWorkOrders"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="ServiceException">
+                <soap:fault name="ServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="importWorkOrdersAsync">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/importWorkOrdersAsync"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTraveler">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTraveler"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="ServiceException">
+                <soap:fault name="ServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAsync">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTravelerAsync"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAttachment">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTravelerAttachment"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="ServiceException">
+                <soap:fault name="ServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getWorkOrderTravelerAttachmentAsync">
+            <soap:operation soapAction="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/getWorkOrderTravelerAttachmentAsync"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="WorkOrderService">
+        <wsdl:port name="WorkOrderServiceSoapHttpPort" binding="tns:WorkOrderServiceSoapHttp">
+            <soap:address location="http://slc10gek.us.oracle.com:7011/wieWorkOrders/WorkOrderService"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

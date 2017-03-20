@@ -1,0 +1,212 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation>
+        <xsd:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+            <name>Update Work Order Details</name>
+            <description>An object, representing a set of work order details, that is
+                used to provide values while updating the work order</description>
+            <oer:category name="lbo">
+                <value>SCM-SCM : WIE-Common Work Execution : ORA_WORK_ORDER-Work
+                    Order</value>
+            </oer:category>
+            <oer:attributes>
+                <oer:attribute description="Allows linking between work order interface header and details whenever the work order is passed without providing the work order name"
+                     name="HeaderNumber"/>
+                <oer:attribute description="Unique identifier of the work order to which the record detail belongs to"
+                     name="WorkOrderNumber"/>
+                <oer:attribute description="Unique identifier of the work order to which the record detail belongs to"
+                     name="WorkOrderId"/>
+                <oer:attribute description="Description of the Work Order" name="WorkOrderDescription"/>
+                <oer:attribute description="Unique identifier of the Plant (or the manufacturing organization)"
+                     name="OrganizationCode"/>
+                <oer:attribute description="Plant (Manufacturing Organization) where the work order is created"
+                     name="OrganizationId"/>
+                <oer:attribute description="Status of the Work Order" name="WorkOrderStatus"/>
+                <oer:attribute description="Unique identifir of the status of the Work Order" name="WorkOrderStatusId"/>
+                <oer:attribute description="Indicator to allow or prevent Planning from suggesting rescheduling and re-planning recommendations with respect to the Work Order"
+                     name="FirmFlag"/>
+                <oer:attribute description="Scheduled start date of the Work Order" name="StartDate"/>
+                <oer:attribute description="Scheduled completion date of the Work Order" name="CompletionDate"/>
+                <oer:attribute description="Based on the Work Method, this attribute further classifies the Work Order to indicate whether it is meant for either Standard or Non Standard Production"
+                     name="WorkOrderType"/>
+                <oer:attribute description="This represents the specific nature of work being performed such as Standard Production, Prototyping, or Repair. Costing derives work order accounts based on this attribute"
+                     name="WorkOrderSubtype"/>
+                <oer:attribute description="The work method that will be used to execute the work order. In R11 the value is always ‘Discrete Manufacturing’"
+                     name="WorkMethod"/>
+                <oer:attribute description="Unique identifier of the Work Method" name="WorkMethodId"/>
+                <oer:attribute description="Represents the work order execution priority. This is user entered"
+                     name="WorkOrderPriority"/>
+                <oer:attribute description="Primary product that needs to be manufactured" name="ItemNumber"/>
+                <oer:attribute description="Unique identifier of the Item" name="ItemId"/>
+                <oer:attribute description="Unique identifier of the Work Definition" name="WorkDefinitionId"/>
+                <oer:attribute description="Work Definition of the Product" name="WorkDefinition"/>
+                <oer:attribute description="Work definition date (earlier known as As of Date) which will be used for explosion of work definition into the work order"
+                     name="WorkDefinitionDate"/>
+                <oer:attribute description="Quantity of the work order that is planned for and started with"
+                     name="Quantity"/>
+                <oer:attribute description="The quantity that will be the nettable supply quantity considered by the planning system from the work order"
+                     name="NettableSupplyQuantityOverride"/>
+                <oer:attribute description="Product quantity that would be measured (Primary UOM)"
+                     name="Uom"/>
+                <oer:attribute description="Supply types look up (Default: Based on work definition). This determines how each of the operation items would be supplied to the work order"
+                     name="SupplyType"/>
+                <oer:attribute description="Subinventory where the work order product would be completed into inventory"
+                     name="CompletionSubinventory"/>
+                <oer:attribute description="Locator where the work order product would be completed into inventory"
+                     name="CompletionLocator"/>
+                <oer:attribute description="Unique identifier of the completion locator" name="CompletionLocatorId"/>
+                <oer:attribute description="The tolerance type for over completions. Possible values are Percent or Quantity"
+                     name="OverCompletionType"/>
+                <oer:attribute description="The percent or quantity that is allowed over the scheduled completion work order quantity"
+                     name="OverCompletionValue"/>
+                <oer:attribute description="User entered text to capture the reason for cancelling the work order"
+                     name="CancelReason"/>
+                <oer:attribute description="Actual start date and time of the work order" name="ActualStartDate"/>
+                <oer:attribute description="Any header level references of the source system’s object"
+                     name="SourceHeaderReference"/>
+                <oer:attribute description="Any header level reference id of the source system’s object"
+                     name="SourceHeaderReferenceId"/>
+                <oer:attribute description="Any line level references of the source system’s object"
+                     name="SourceLineReference"/>
+                <oer:attribute description="Any line level reference id of the source system’s object"
+                     name="SourceLineReferenceId"/>
+                <oer:attribute description="Indicator that this work order is created as a result of the back to back flow"
+                     name="BackToBackFlag"/>
+                <oer:attribute description="Description of the Ship to organization in the purchase prder"
+                     name="SoldToLegalEntityName"/>
+                <oer:attribute description="Purchase order reference that is created as a result of a contract manufacturing flow"
+                     name="PurchaseOrder"/>
+                <oer:attribute description="Unique identifier of the purchase order" name="PurchaseOrderId"/>
+                <oer:attribute description="The reference to the contract manufacturers purchase order line ID"
+                     name="PurchaseOrderLine"/>
+                <oer:attribute description="Unique identifier of the purchase order line" name="PurchaseOrderLineId"/>
+                <oer:attribute description="The reference to the contract manufacturers purchase order schedule line reference"
+                     name="PurchaseOrderSchedule"/>
+                <oer:attribute description="Unique identifier of the purchase order schedule" name="PurchaseOrderScheduleId"/>
+                <oer:attribute description="Identifier of the application that tracks the work order"
+                     name="OrchestrationCode"/>
+                <oer:attribute description="The identifier of the application that created the work order and subscribes to the business events of the work order"
+                     name="InterfaceSourceCode"/>
+                <oer:attribute description="Identifies the supplier who executes the work order in the contract manufacturing scenarios"
+                     name="ScoSupplierId"/>
+                <oer:attribute description="If the Explosion indicator is set to Yes during work order import, then explode the work order requirements based on the work definition using the Explosion API"
+                     name="AllowExplosionFlag"/>
+                <oer:attribute description="Indicates what scheduling  method the work order import process needs to apply. The value can be No Scheduling (scheduling is not triggered during import) or Default Scheduler  (scheduling is triggered during import)"
+                     name="SchedulingMethod"/>
+                <oer:attribute description="work order operation details" name="WoOperation"/>
+                <oer:attribute description="work order product serial details" name="WoProductSerial"/>
+            </oer:attributes>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="BC4JService.xsd"/>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:include schemaLocation="WoOperation.xsd"/>
+    <xsd:include schemaLocation="WoProductSerial.xsd"/>
+    <xsd:complexType name="UpdateWorkOrder">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>HeaderNumber</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="HeaderNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkOrderNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkOrderId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="WorkOrderDescription" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="OrganizationCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="OrganizationId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="WorkOrderStatus" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkOrderStatusId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="FirmFlag" nillable="true" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="StartDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="CompletionDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="WorkOrderType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkOrderSubtype" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkMethod" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkMethodId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="WorkOrderPriority" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ItemNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ItemId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="WorkDefinitionId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="WorkDefinition" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="WorkDefinitionDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="Quantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="NettableSupplyQuantityOverride" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="Uom" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SupplyType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CompletionSubinventory" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CompletionLocator" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="CompletionLocatorId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="OverCompletionType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="OverCompletionValue" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="CancelReason" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ActualStartDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="SourceHeaderReference" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SourceHeaderReferenceId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="SourceLineReference" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SourceLineReferenceId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="BackToBackFlag" nillable="true" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="SoldToLegalEntityName" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="PurchaseOrder" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="PurchaseOrderId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="PurchaseOrderLine" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="PurchaseOrderLineId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="PurchaseOrderSchedule" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="PurchaseOrderScheduleId" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="OrchestrationCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="InterfaceSourceCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="ScoSupplierId" nillable="true" type="xsd:long"/>
+            <xsd:element minOccurs="0" name="AllowExplosionFlag" nillable="true" type="xsd:boolean"/>
+            <xsd:element minOccurs="0" name="SchedulingMethod" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeCategory" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar1" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar2" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar3" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar4" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar5" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar6" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar7" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar8" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar9" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar10" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar11" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar12" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar13" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar14" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar15" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar16" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar17" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar18" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar19" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeChar20" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="AttributeNumber1" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber2" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber3" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber4" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber5" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber6" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber7" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber8" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber9" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeNumber10" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="AttributeDate1" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate2" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate3" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate4" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeDate5" nillable="true" type="ns0:date-Date"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp1" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp2" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp3" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp4" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="AttributeTimestamp5" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="WoOperation" type="WoOperation"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="WoProductSerial" type="WoProductSerial"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="updateWorkOrder" type="UpdateWorkOrder"/>
+</xsd:schema>

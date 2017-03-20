@@ -1,0 +1,12 @@
+<adapter-config name="SCM_MFG_WO_FETCH_BY_getWorkOrder_WS" adapter="JMS Adapter" wsdlLocation="SCM_MFG_WO_FETCH_BY_getWorkOrder_WS.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/wls/jms/SCM/ModernMfg" UIJmsProvider="WLSJMS" UIConnectionName="localhost_base_111171"/>
+  <endpoint-activation portType="Consume_Message_ptt" operation="Consume_Message">
+    <activation-spec className="oracle.tip.adapter.jms.inbound.JmsConsumeActivationSpec">
+      <property name="PayloadType" value="TextMessage"/>
+      <property name="UseMessageListener" value="false"/>
+      <property name="DestinationName" value="jms/queue/SCM_MFG_WO_FETCH_BY_getWorkOrder_WS"/>
+    </activation-spec>
+  </endpoint-activation>
+
+</adapter-config>

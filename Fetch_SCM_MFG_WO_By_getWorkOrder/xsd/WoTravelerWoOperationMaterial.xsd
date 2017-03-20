@@ -1,0 +1,41 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     sdoJava:package="oracle.apps.scm.commonWorkExecution.workOrders.workOrdersService"
+     xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/scm/commonWorkExecution/workOrders/workOrdersService/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="BC4JService.xsd"/>
+    <xsd:import namespace="commonj.sdo/java" schemaLocation="sdoJava.xsd"/>
+    <xsd:complexType name="WoTravelerWoOperationMaterial">
+        <xsd:annotation>
+            <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+                <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+                    <attribute>WoOperationMaterialId</attribute>
+                </key>
+            </xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="SequenceNumber" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ItemNumber" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="RequiredDate" nillable="true" type="ns0:dateTime-Timestamp"/>
+            <xsd:element minOccurs="0" name="BasisType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="MaterialType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="RequiredQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="OpenQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="OnHandQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="IssuedQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="ProducedQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="QuantityPerProduct" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="InverseQuantity" nillable="true" type="ns0:MeasureType"/>
+            <xsd:element minOccurs="0" name="UOMCode" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="UOM" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="YieldFactor" nillable="true" type="xsd:decimal"/>
+            <xsd:element minOccurs="0" name="ItemRevision" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SupplyLocator" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SupplyType" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="SupplySubInventory" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="Description" nillable="true" type="xsd:string"/>
+            <xsd:element minOccurs="0" name="Comments" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="woTravelerWoOperationMaterial" type="WoTravelerWoOperationMaterial"/>
+</xsd:schema>
