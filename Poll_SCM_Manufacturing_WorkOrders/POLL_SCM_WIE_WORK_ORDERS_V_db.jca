@@ -1,0 +1,23 @@
+<adapter-config name="POLL_SCM_WIE_WORK_ORDERS_V" adapter="Database Adapter" wsdlLocation="POLL_SCM_WIE_WORK_ORDERS_V.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory location="eis/DB/SCM/ModernManufacturing" UIConnectionName="SCM-ucf1-fap0877-gse-DB-fusion_runtime_welcome1" adapterRef=""/>
+  <endpoint-activation portType="POLL_SCM_WIE_WORK_ORDERS_V_ptt" operation="receive">
+    <activation-spec className="oracle.tip.adapter.db.DBActivationSpec">
+      <property name="DescriptorName" value="POLL_SCM_WIE_WORK_ORDERS_V.WieWorkOrdersV"/>
+      <property name="QueryName" value="POLL_SCM_WIE_WORK_ORDERS_VSelect"/>
+      <property name="MappingsMetaDataURL" value="POLL_SCM_WIE_WORK_ORDERS_V-or-mappings.xml"/>
+      <property name="PollingStrategy" value="SequencingPollingStrategy"/>
+      <property name="SequencingTable" value="SOA_WO_POLL_SEQUENCING_TABLE_1"/>
+      <property name="SequencingColumn" value="LAST_UPDATE_DATE"/>
+      <property name="SequencingTableKeyColumn" value="POLL_TBL_NAME"/>
+      <property name="SequencingTableValueColumn" value="LAST_UPDATE_TIMESTMP"/>
+      <property name="SequencingTableKey" value="WIE_WORK_ORDERS_V"/>
+      <property name="PollingInterval" value="5"/>
+      <property name="MaxRaiseSize" value="100"/>
+      <property name="MaxTransactionSize" value="unlimited"/>
+      <property name="NumberOfThreads" value="1"/>
+      <property name="ReturnSingleResultSet" value="false"/>
+    </activation-spec>
+  </endpoint-activation>
+
+</adapter-config>

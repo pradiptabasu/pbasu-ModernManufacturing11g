@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<componentType xmlns="http://xmlns.oracle.com/sca/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ui="http://xmlns.oracle.com/soa/designer/" xml:id="id_1">
+   <service name="BusinessEventNotificationService" ui:wsdlLocation="BusinessEventNotificationServiceWrapper.wsdl" xml:id="id_12">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotification#wsdl.interface(BusinessEventNotification)" xml:id="id_13"/>
+   </service>
+   <reference name="BusinessEventNotificationMediator.BusinessEventNotificationMediator" ui:wsdlLocation="BusinessEventNotificationMediatorWrapper.wsdl" xml:id="id_8">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator#wsdl.interface(execute_ptt)" xml:id="id_9"/>
+   </reference>
+   <reference name="ProcessEventService" ui:wsdlLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl" xml:id="id_10">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/common/events/service/#wsdl.interface(ProcessEventService)" callbackInterface="http://xmlns.oracle.com/apps/scm/doo/common/events/service/#wsdl.interface(ProcessEventServiceResponse)" xml:id="id_11"/>
+   </reference>
+   <reference name="OCResponseSvc.ocresponsesvcclient" ui:wsdlLocation="OCResponseSvc.wsdl" xml:id="id_29">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc#wsdl.interface(OCResponseSvc)" callbackInterface="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc#wsdl.interface(OCResponseSvcCallback)" xml:id="id_30"/>
+   </reference>
+   <reference name="OCResponseService" ui:wsdlLocation="oramds:/apps/oracle/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc.wsdl" xml:id="id_31">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc#wsdl.interface(OCResponseSvc)" callbackInterface="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc#wsdl.interface(OCResponseSvcCallback)" xml:id="id_32"/>
+   </reference>
+   <reference name="OrderAttributeStubService" ui:wsdlLocation="oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute.wsdl" xml:id="id_39">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute#wsdl.interface(OrderAttribute)" xml:id="id_40"/>
+   </reference>
+   <reference name="FlineStubService" ui:wsdlLocation="oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEventServiceWrapper.wsdl" xml:id="id_41">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEvent#wsdl.interface(FulfillLineEvent)" xml:id="id_42"/>
+   </reference>
+   <reference name="SplitStubService" ui:wsdlLocation="oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent.wsdl" xml:id="id_47">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent#wsdl.interface(SplitEvent)" xml:id="id_48"/>
+   </reference>
+   <reference name="JeopardyHoldStubService" ui:wsdlLocation="oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent.wsdl" xml:id="id_49">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent#wsdl.interface(JeopardyEvent)" xml:id="id_50"/>
+   </reference>
+   <reference name="BusinessEventsConnectorService" ui:wsdlLocation="BusinessEventsConnectorWrapper.wsdl" xml:id="id_51">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector#wsdl.interface(BusinessEventsConnectorPayload)" xml:id="id_52"/>
+   </reference>
+   <reference name="BigMachineService" ui:wsdlLocation="oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/commerceWrapper.wsdl" xml:id="id_17">
+      <interface.wsdl interface="http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo#wsdl.interface(CommerceServicePortType)" xml:id="id_18"/>
+   </reference>
+</componentType>

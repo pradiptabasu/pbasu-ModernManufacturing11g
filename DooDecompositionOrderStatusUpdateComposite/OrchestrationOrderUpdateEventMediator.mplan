@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Mediator name="OrchestrationOrderUpdateEventMediator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="id_1" xmlns="http://xmlns.oracle.com/sca/1.0/mediator" xmlns:ns0="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" xmlns:oraext="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.ExtFunc">
+   <eventHandler xmlns:sub1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseEventDefinition" event="sub1:OCResponseEvent" deliveryPolicy="AllOrNothing" priority="4" xml:id="id_2">
+      <switch xml:id="id_3">
+         <case executionType="direct" name="BusinessEventNotification.BusinessEventNotificationService.processEventNotificationRequest_2" xml:id="id_4">
+            <action xml:id="id_5">
+               <assign xml:id="id_12">
+                  <copy target="$out.payload/ns0:OCResponse/ns0:OCResponseType" expression="$in.payload/ns0:OCResponse/ns0:OCResponseType" xmlns:ns0="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" xml:id="id_15"/>
+               </assign>
+               <invoke reference="BusinessEventNotification.BusinessEventNotificationService" operation="processEventNotificationRequest" xml:id="id_11"/>
+            </action>
+         </case>
+      </switch>
+   </eventHandler>
+</Mediator>

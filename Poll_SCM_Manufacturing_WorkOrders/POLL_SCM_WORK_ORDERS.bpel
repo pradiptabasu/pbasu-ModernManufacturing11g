@@ -1,0 +1,172 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Oracle JDeveloper BPEL Designer 
+  
+  Created: Thu Aug 11 10:59:27 IST 2016
+  Author:  prabasu
+  Type: BPEL 2.0 Process
+  Purpose: One Way BPEL Process
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<process name="POLL_SCM_WORK_ORDERS"
+               targetNamespace="http://xmlns.oracle.com/ModernManufacturing_v1_111171/Poll_SCM_Manufacturing_WorkOrders/POLL_SCM_WORK_ORDERS"
+               xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+               xmlns:client="http://xmlns.oracle.com/ModernManufacturing_v1_111171/Poll_SCM_Manufacturing_WorkOrders/POLL_SCM_WORK_ORDERS"
+               xmlns:ora="http://schemas.oracle.com/xpath/extension"
+               xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:ns1="http://xmlns.oracle.com/pcbpel/adapter/db/ModernManufacturing_v1_111171/Poll_SCM_Manufacturing_WorkOrders/POLL_SCM_WIE_WORK_ORDERS_V"
+         xmlns:ns2="http://xmlns.oracle.com/pcbpel/adapter/jms/ModernManufacturing_v1_111171/Poll_SCM_Manufacturing_WorkOrders/SCM_MFG_WO_FETCH_BY_Query_DB"
+         xmlns:ns3="http://xmlns.oracle.com/pcbpel/adapter/jms/ModernManufacturing_v1_111171/Poll_SCM_Manufacturing_WorkOrders/SCM_MFG_WO_FETCH_BY_getWorkOrder_WS"
+         xmlns:bpelx="http://schemas.oracle.com/bpel/extension"
+         xmlns:xp20="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.Xpath20"
+         xmlns:aia="http://www.oracle.com/XSL/Transform/java/oracle.apps.aia.core.xpath.AIAFunctions"
+         xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/"
+         xmlns:oraext="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.ExtFunc"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:dvm="http://www.oracle.com/XSL/Transform/java/oracle.tip.dvm.LookupValue"
+         xmlns:ns4="http://xmlns.oracle.com/pcbpel/adapter/db/top/POLL_SCM_WIE_WORK_ORDERS_V"
+         xmlns:hwf="http://xmlns.oracle.com/bpel/workflow/xpath"
+         xmlns:ids="http://xmlns.oracle.com/bpel/services/IdentityService/xpath"
+         xmlns:bpm="http://xmlns.oracle.com/bpmn20/extensions"
+         xmlns:xdk="http://schemas.oracle.com/bpel/extension/xpath/function/xdk"
+         xmlns:xref="http://www.oracle.com/XSL/Transform/java/oracle.tip.xref.xpath.XRefXPathFunctions"
+         xmlns:ldap="http://schemas.oracle.com/xpath/extension/ldap"
+         xmlns:ns5="http://www.example.org"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      PARTNERLINKS                                                      
+      List of services participating in this BPEL process               
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <import namespace="http://www.example.org"
+          location="xsd/temporaryVariables.xsd"
+          importType="http://www.w3.org/2001/XMLSchema"/>
+  <partnerLinks>
+    <!-- 
+      The 'client' role represents the requester of this service. It is 
+      used for callback. The location and correlation information associated
+      with the client role are automatically set using WS-Addressing.
+    -->
+    <partnerLink name="POLL_SCM_WIE_WORK_ORDERS_V"
+                 partnerLinkType="ns1:POLL_SCM_WIE_WORK_ORDERS_V_plt"
+                 myRole="POLL_SCM_WIE_WORK_ORDERS_V_role"/>
+    <partnerLink name="SCM_MFG_WO_FETCH_BY_Query_DB"
+                 partnerLinkType="ns2:Produce_Message_plt"
+                 partnerRole="Produce_Message_role"/>
+    <partnerLink name="SCM_MFG_WO_FETCH_BY_getWorkOrder_WS"
+                 partnerLinkType="ns3:Produce_Message_plt"
+                 partnerRole="Produce_Message_role"/>
+  </partnerLinks>
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      VARIABLES                                                        
+      List of messages and XML documents used within this BPEL process 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <variables>
+    <!-- Reference to the message passed as input during initiation -->
+    <variable name="receive_WO_InputVariable"
+              messageType="ns1:WieWorkOrdersVCollection_msg"/>
+    <variable name="WO_Corrected_InputVariable"
+              messageType="ns1:WieWorkOrdersVCollection_msg"/>
+    <variable name="getWorkOrder_queue_InputVariable"
+              messageType="ns3:Produce_Message_msg"/>
+    <variable name="sql_query_queue_InputVariable"
+              messageType="ns2:Produce_Message_msg"/>
+    <variable name="tempVars" element="ns5:tempVariables"/>
+    <variable name="workOrderNumber" type="xsd:string"/>
+  </variables>
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ORCHESTRATION LOGIC                                               
+     Set of activities coordinating the flow of messages across the    
+     services integrated within this business process                  
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <sequence name="main">
+
+    <!-- Receive input from requestor. (Note: This maps to operation defined in POLL_SCM_WORK_ORDERS.wsdl) -->
+    <receive name="receiveInput" createInstance="yes"
+             partnerLink="POLL_SCM_WIE_WORK_ORDERS_V"
+             portType="ns1:POLL_SCM_WIE_WORK_ORDERS_V_ptt" operation="receive"
+             variable="receive_WO_InputVariable"/>
+    <assign name="Xform_WorkOrderCollection_to_Suppressed_WorkOrderCollection">
+      <bpelx:annotation>
+        <bpelx:pattern patternName="bpelx:transformation"/>
+      </bpelx:annotation>
+      <copy>
+        <from>ora:doXSLTransformForDoc("xsl/Xform_WorkOrderCollection_to_Suppressed_WorkOrderCollection.xsl", $receive_WO_InputVariable.WieWorkOrdersVCollection)</from>
+        <to variable="WO_Corrected_InputVariable"
+            part="WieWorkOrdersVCollection"/>
+      </copy>
+    </assign>
+    <forEach parallel="yes" counterName="WOCounter"
+             name="ForEachWorkOrder">
+      <startCounterValue>1</startCounterValue>
+      <finalCounterValue>ora:countNodes('WO_Corrected_InputVariable','WieWorkOrdersVCollection','ns4:WieWorkOrdersV')</finalCounterValue>
+      <scope name="Scope1">
+        <sequence name="Sequence1">
+          <assign name="assign_CurrentCounterValue_to_tempVars">
+            <copy>
+              <from>$WOCounter</from>
+              <to>$tempVars/ns5:loopCounter</to>
+            </copy>
+          </assign>
+          <assign name="Xform_WorkOrderCollection_to_WorkOrder_ws_queue">
+            <bpelx:annotation>
+              <bpelx:pattern patternName="bpelx:transformation"/>
+            </bpelx:annotation>
+            <copy>
+              <from>ora:doXSLTransformForDoc("xsl/Xform_WorkOrderCollection_to_WorkOrder_ws_queue.xsl", $WO_Corrected_InputVariable.WieWorkOrdersVCollection, "tempVars", $tempVars)</from>
+              <to variable="getWorkOrder_queue_InputVariable" part="body"/>
+            </copy>
+          </assign>
+          <assign name="getWorkOrderNumber">
+            <copy>
+              <from>$getWorkOrder_queue_InputVariable.body/ns4:WieWorkOrdersV/ns4:workOrderNumber</from>
+              <to>$workOrderNumber</to>
+            </copy>
+          </assign>
+          <invoke name="push_message_getWorkOrder_queue"
+                  partnerLink="SCM_MFG_WO_FETCH_BY_getWorkOrder_WS"
+                  portType="ns3:Produce_Message_ptt"
+                  operation="Produce_Message"
+                  inputVariable="getWorkOrder_queue_InputVariable"
+                  bpelx:invokeAsDetail="no">
+            <bpelx:toProperties>
+              <bpelx:toProperty name="jca.jms.JMSCorrelationID"
+                                variable="workOrderNumber"/>
+            </bpelx:toProperties>
+            <bpelx:conversationId>$workOrderNumber</bpelx:conversationId>
+          </invoke>
+          <assign name="Xform_WorkOrderCollection_to_WorkOrder_sql_queue">
+            <bpelx:annotation>
+              <bpelx:pattern patternName="bpelx:transformation"/>
+            </bpelx:annotation>
+            <copy>
+              <from>ora:doXSLTransformForDoc("xsl/Xform_WorkOrderCollection_to_WorkOrder_sql_queue.xsl", $WO_Corrected_InputVariable.WieWorkOrdersVCollection, "tempVars", $tempVars)</from>
+              <to variable="sql_query_queue_InputVariable" part="body"/>
+            </copy>
+          </assign>
+          <invoke name="push_message_sql_query_queue"
+                  partnerLink="SCM_MFG_WO_FETCH_BY_Query_DB"
+                  portType="ns2:Produce_Message_ptt"
+                  operation="Produce_Message"
+                  inputVariable="sql_query_queue_InputVariable"
+                  bpelx:invokeAsDetail="no">
+            <bpelx:toProperties>
+              <bpelx:toProperty name="jca.jms.JMSCorrelationID"
+                                variable="workOrderNumber"/>
+            </bpelx:toProperties>
+            <bpelx:conversationId>$workOrderNumber</bpelx:conversationId>
+          </invoke>
+        </sequence>
+      </scope>
+    </forEach>
+  </sequence>
+</process>

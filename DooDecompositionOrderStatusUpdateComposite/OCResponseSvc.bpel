@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Oracle JDeveloper BPEL Designer 
+  
+  Created: Wed Jun 05 11:15:24 IST 2013
+  Author:  sgummell
+  Type: BPEL 1.1 Process
+  Purpose: Asynchronous BPEL Process
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<process name="OCResponseSvc" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc" xmlns="http://schemas.xmlsoap.org/ws/2003/03/business-process/" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc" xmlns:ora="http://schemas.oracle.com/xpath/extension" xmlns:bpelx="http://schemas.oracle.com/bpel/extension" xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/" xml:id="id_1"
+         xmlns:bpel2="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"
+         xmlns:ui="http://xmlns.oracle.com/soa/designer/"
+         xmlns:xp20="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.Xpath20"
+         xmlns:oraext="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.ExtFunc"
+         xmlns:dvm="http://www.oracle.com/XSL/Transform/java/oracle.tip.dvm.LookupValue"
+         xmlns:hwf="http://xmlns.oracle.com/bpel/workflow/xpath"
+         xmlns:ids="http://xmlns.oracle.com/bpel/services/IdentityService/xpath"
+         xmlns:bpm="http://xmlns.oracle.com/bpmn20/extensions"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns:xdk="http://schemas.oracle.com/bpel/extension/xpath/function/xdk"
+         xmlns:xref="http://www.oracle.com/XSL/Transform/java/oracle.tip.xref.xpath.XRefXPathFunctions"
+         xmlns:tm="http://xmlns.oracle.com/topologyManager/client/xpath/extension"
+         xmlns:ldap="http://schemas.oracle.com/xpath/extension/ldap">
+
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        PARTNERLINKS                                                      
+        List of services participating in this BPEL process               
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    --> 
+    <partnerLinks xml:id="id_2">
+        <!-- 
+      The 'client' role represents the requester of this service. It is 
+      used for callback. The location and correlation information associated
+      with the client role are automatically set using WS-Addressing.
+    -->
+        <partnerLink name="ocresponsesvcclient" partnerLinkType="client:OCResponseSvc" myRole="OCResponseSvcProvider" partnerRole="OCResponseSvcRequester" xml:id="id_3"/>
+    </partnerLinks>
+
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        VARIABLES                                                        
+        List of messages and XML documents used within this BPEL process 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    -->
+    <variables xml:id="id_4">
+        <!-- Reference to the message passed as input during initiation -->
+        <variable name="inputVariable" messageType="client:OCResponseSvcRequestMessage" xml:id="id_5"/>
+
+        <!-- Reference to the message that will be sent back to the requester during callback -->
+        <variable name="outputVariable" messageType="client:OCResponseSvcResponseMessage" xml:id="id_6"/>
+        <variable name="LOG_FINEST_VAR" type="xsd:string" xml:id="id_63"/>
+        <variable name="LOG_FINER_VAR" type="xsd:string" xml:id="id_64"/>
+        <variable name="LOG_FINE_VAR" type="xsd:string" xml:id="id_65"/>
+        <variable name="LOG_CONFIG_VAR" type="xsd:string" xml:id="id_66"/>
+        <variable name="LOG_APP_SHORT_NAME" type="xsd:string" xml:id="id_67"/>
+        <variable name="LOG_MESSAGE_VAR" type="xsd:string" xml:id="id_68"/>
+        <variable name="LOG_INCIDENT_VAR" type="xsd:string" xml:id="id_69"/>
+        <variable name="LOG_MODULE_ID" type="xsd:string" xml:id="id_70"/>
+        <variable name="LOG_TOKEN_MAP" type="xsd:string" xml:id="id_71"/>
+        <variable name="LOG_FAULT_MAP" type="xsd:string" xml:id="id_72"/>
+        <variable name="COMPOSITE_TITLE_VAR" type="xsd:string" xml:id="id_73"/>
+    </variables>
+    <faultHandlers xml:id="id_61">
+        <catchAll xml:id="id_62"/>
+    </faultHandlers>
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       ORCHESTRATION LOGIC                                               
+       Set of activities coordinating the flow of messages across the    
+       services integrated within this business process                  
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    -->
+    <sequence name="main" xml:id="id_7">
+        <!-- Receive input from requestor. (Note: This maps to operation defined in OCResponseSvc.wsdl) -->
+        <receive name="receiveInput" partnerLink="ocresponsesvcclient" portType="client:OCResponseSvc" operation="process" variable="inputVariable" createInstance="yes" xml:id="id_8"/>
+        <assign name="AssignSetUpValuesForLogging" xml:id="id_44">
+            <copy xml:id="id_45">
+                <from expression="concat('oracle.apps.scm.dos.orchestration.processExecution.', ora:getCompositeName(), '.', ora:getComponentName())"
+                      xml:id="id_46"/>
+                <to variable="LOG_MODULE_ID" xml:id="id_47"/>
+            </copy>
+            <copy xml:id="id_48">
+                <from expression="ora:setCompositeInstanceTitle(string(bpws:getVariableData('inputVariable','payload','/ns1:OCResponse/ns1:OCResponseType/ns1:SourceOrder')))"
+                      xml:id="id_49"/>
+                <to variable="COMPOSITE_TITLE_VAR" xml:id="id_50"/>
+            </copy>
+            <copy xml:id="id_51">
+                <from expression="'DOS'" xml:id="id_52"/>
+                <to variable="LOG_APP_SHORT_NAME" xml:id="id_53"/>
+            </copy>
+            <copy xml:id="id_54">
+                <from expression="concat ( ora:getComponentName(), ' begins')"
+                      xml:id="id_55"/>
+                <to variable="LOG_FINEST_VAR" xml:id="id_56"/>
+            </copy>
+        </assign>
+        <scope name="Scope1" xml:id="id_34" ui:customizable="true">
+            <faultHandlers xml:id="id_59">
+                <catchAll xml:id="id_60"/>
+            </faultHandlers>
+            <sequence name="Sequence1" xml:id="id_36">
+                <empty name="EmptyActivity" xml:id="id_35"/>
+                <assign name="AssignActivity" xml:id="id_37">
+                    <copy xml:id="id_41">
+                        <from variable="inputVariable" part="payload"
+                              query="/ns1:OCResponse/ns1:OCResponseType"
+                              xml:id="id_42"/>
+                        <to variable="outputVariable" part="payload"
+                            query="/ns1:OCResponse/ns1:OCResponseType"
+                            xml:id="id_43"/>
+                    </copy>
+                </assign>
+            </sequence>
+        </scope>
+        <!-- 
+          Asynchronous callback to the requester. (Note: the callback location and correlation id is transparently handled using WS-addressing.)
+        -->
+        <invoke name="callbackClient" partnerLink="ocresponsesvcclient" portType="client:OCResponseSvcCallback" operation="processResponse" inputVariable="outputVariable" xml:id="id_9"/>
+    </sequence>
+</process>

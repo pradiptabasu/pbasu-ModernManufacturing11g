@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="OCResponseSvc" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+   <wsdl:documentation>
+      <name>OCResponseSvc</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema">
+         <import namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" schemaLocation="xsd/OCResponse.xsd"/>
+      </schema>
+   </wsdl:types>
+   <wsdl:message name="OCResponseSvcRequestMessage">
+      <wsdl:part name="payload" element="ns1:OCResponse"/>
+   </wsdl:message>
+   <wsdl:message name="OCResponseSvcResponseMessage">
+      <wsdl:part name="payload" element="ns1:OCResponse"/>
+   </wsdl:message>
+   <wsdl:portType name="OCResponseSvc">
+      <wsdl:operation name="process">
+         <wsdl:input message="client:OCResponseSvcRequestMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <wsdl:portType name="OCResponseSvcCallback">
+      <wsdl:operation name="processResponse">
+         <wsdl:input message="client:OCResponseSvcResponseMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <plnk:partnerLinkType name="OCResponseSvc">
+      <plnk:role name="OCResponseSvcProvider">
+         <plnk:portType name="client:OCResponseSvc"/>
+      </plnk:role>
+      <plnk:role name="OCResponseSvcRequester">
+         <plnk:portType name="client:OCResponseSvcCallback"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+</wsdl:definitions>

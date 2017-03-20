@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://schemas.oracle.com/events/edl" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/AggregatedBusinessEvent">
+   <schema-import location="xsd/AggregatedBusinessEvent.xsd" namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"/>
+   <event-definition name="AggregatedBusinessEvent">
+      <content xmlns:ns0="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" element="ns0:BusinessEventInfoType"/>
+   </event-definition>
+</definitions>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tempVariables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org file:/D:/WorkSpace/ModernManufacturing_v1_111171/Poll_SCM_Manufacturing_WorkOrders/xsd/temporaryVariables.xsd" xmlns="http://www.example.org">
+   <loopCounter>1</loopCounter>
+</tempVariables>

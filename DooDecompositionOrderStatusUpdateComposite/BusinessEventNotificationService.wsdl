@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="BusinessEventNotificationService" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotification" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotification" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:svcex="http://xmlns.oracle.com/adf/svc/errors/">
+   <wsdl:documentation>
+      <name>Business Event Notification Service</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema">
+         <import namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" schemaLocation="xsd/AggregatedBusinessEvent.xsd"/>
+         <import namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" schemaLocation="xsd/OCResponse.xsd"/>
+      </schema>
+   </wsdl:types>
+   <wsdl:message name="BusinessEventNotificationRequestMessage">
+      <wsdl:part name="payload" element="ns1:OCResponse"/>
+   </wsdl:message>
+   <wsdl:message name="BusinessEventNotificationCallbackMessage">
+      <wsdl:part name="payload" element="ns1:OCBusinessEventResponse"/>
+   </wsdl:message>
+   <wsdl:portType name="BusinessEventNotification">
+      <wsdl:operation name="processEventNotificationRequest">
+         <wsdl:input message="client:BusinessEventNotificationRequestMessage"/>
+      </wsdl:operation>
+      <wsdl:operation name="processEventNotificationResponse">
+         <wsdl:input message="client:BusinessEventNotificationCallbackMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+</wsdl:definitions>

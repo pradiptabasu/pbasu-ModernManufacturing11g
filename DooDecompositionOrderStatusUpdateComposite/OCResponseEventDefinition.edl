@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://schemas.oracle.com/events/edl" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseEventDefinition">
+   <schema-import location="xsd/OCResponse.xsd" namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"/>
+   <event-definition name="OCResponseEvent">
+      <content xmlns:ns0="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" element="ns0:OCResponse"/>
+   </event-definition>
+</definitions>

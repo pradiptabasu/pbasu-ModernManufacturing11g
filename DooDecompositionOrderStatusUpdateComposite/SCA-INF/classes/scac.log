@@ -1,0 +1,561 @@
+17 Aug, 2016 2:47:23 AM oracle.mds
+NOTIFICATION: PManager instance is created without multitenancy support as JVM flag "oracle.multitenant.enabled" is not set to enable multitenancy support.
+17 Aug, 2016 2:47:24 AM oracle.security.jps.internal.config.xml.XmlConfigurationFactory initDefaultConfiguration
+SEVERE: java.io.FileNotFoundException: .\config\jps-config.xml (The system cannot find the path specified)
+17 Aug, 2016 2:47:24 AM oracle.mds
+NOTIFICATION: Auditing is disabled for component MDS.
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager loadAllXSD
+WARNING: Schema load failed due to: Error loading schema from file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl [Cause=Error in getting XML input stream: oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd: oracle.mds.exception.MDSException: MDS-00054: The file to be loaded oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd does not exist.]
+oracle.fabric.common.wsdl.XSDException: Error loading schema from file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl [Cause=Error in getting XML input stream: oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd: oracle.mds.exception.MDSException: MDS-00054: The file to be loaded oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd does not exist.]
+	at oracle.fabric.common.wsdl.SchemaBuilder.loadEmbeddedSchemas(SchemaBuilder.java:584)
+	at oracle.fabric.common.wsdl.SchemaBuilder.loadSchemasFromWSDL(SchemaBuilder.java:456)
+	at oracle.fabric.common.wsdl.SchemaBuilder.loadAllSchemas(SchemaBuilder.java:247)
+	at oracle.fabric.common.wsdl.SchemaManager.loadAllXSD(SchemaManager.java:313)
+	at oracle.fabric.common.wsdl.SchemaManager.buildXDKSchema(SchemaManager.java:562)
+	at oracle.fabric.common.wsdl.SchemaManager.lookupSchema(SchemaManager.java:413)
+	at oracle.fabric.common.wsdl.SchemaManager.lookupXSDElementDeclaration(SchemaManager.java:738)
+	at oracle.soa.scac.WSDLValidator.validateMessageParts(WSDLValidator.java:112)
+	at oracle.soa.scac.WSDLValidator.validateMessages(WSDLValidator.java:88)
+	at oracle.soa.scac.WSDLValidator.validate(WSDLValidator.java:44)
+	at oracle.soa.scac.WSDLValidator.validate(WSDLValidator.java:55)
+	at oracle.soa.scac.ValidateComposite.loadWSDLs(ValidateComposite.java:912)
+	at oracle.soa.scac.ValidateComposite.doValidation0(ValidateComposite.java:505)
+	at oracle.soa.scac.ValidateComposite.doValidation(ValidateComposite.java:493)
+	at oracle.soa.scac.ValidateComposite.run0(ValidateComposite.java:214)
+	at oracle.soa.scac.ValidateComposite.run(ValidateComposite.java:195)
+	at oracle.soa.scac.ValidateComposite.main(ValidateComposite.java:187)
+Caused by: oracle.fabric.common.FabricException: Error in getting XML input stream: oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd: oracle.mds.exception.MDSException: MDS-00054: The file to be loaded oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd does not exist.
+	at oracle.fabric.common.metadata.MetadataManagerImpl.getInputStreamFromAbsoluteURL(MetadataManagerImpl.java:288)
+	at oracle.integration.platform.common.MDSMetadataManagerImpl.getInputStreamFromAbsoluteURL(MDSMetadataManagerImpl.java:624)
+	at oracle.fabric.common.metadata.MetadataManagerImpl.getDocumentAsInputStream(MetadataManagerImpl.java:164)
+	at oracle.integration.platform.common.MDSMetadataManagerImpl.getDocumentAsInputStream(MDSMetadataManagerImpl.java:486)
+	at oracle.fabric.common.wsdl.SchemaBuilder.parseXMLSrc(SchemaBuilder.java:1092)
+	at oracle.fabric.common.wsdl.SchemaBuilder.parseXSDSrc(SchemaBuilder.java:1046)
+	at oracle.fabric.common.wsdl.SchemaBuilder.processSchemaImportsAndInclude(SchemaBuilder.java:856)
+	at oracle.fabric.common.wsdl.SchemaBuilder.loadEmbeddedSchemas(SchemaBuilder.java:580)
+	... 16 more
+Caused by: java.io.IOException: oracle.mds.exception.MDSException: MDS-00054: The file to be loaded oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd does not exist.
+	at oracle.mds.internal.net.AbstractOraMDSURLConnection.getPDocStreamWithRetry(AbstractOraMDSURLConnection.java:634)
+	at oracle.mds.internal.net.AbstractOraMDSURLConnection.getInputStream(AbstractOraMDSURLConnection.java:232)
+	at oracle.mds.internal.net.OraMDSURLConnection.getInputStream(OraMDSURLConnection.java:85)
+	at java.net.URL.openStream(URL.java:1010)
+	at oracle.fabric.common.metadata.MetadataManagerImpl.getInputStreamFromAbsoluteURL(MetadataManagerImpl.java:284)
+	... 23 more
+Caused by: oracle.mds.exception.MDSException: MDS-00054: The file to be loaded oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd does not exist.
+	... 28 more
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/adf/svc/errors/
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/common/events/service/
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/adf/svc/errors/
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/adf/svc/errors/
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/adf/svc/errors/
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/common/events/service/
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/common/events/service/
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.WSDLManager loadWSDL
+WARNING: WSDL localizedWSDLException at location: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/businesseventsconnetor_client_ep?WSDL due to: Error in getting XML input stream: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/businesseventsconnetor_client_ep?WSDL: Variable "ScmSoaAppProtocolToken" not defined in mdm-url-resolver.xml.
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.WSDLManager loadWSDL
+WARNING: WSDL localizedWSDLException at location: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/fulfilllineevent_client_ep?WSDL due to: Error in getting XML input stream: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/fulfilllineevent_client_ep?WSDL: Variable "ScmSoaAppProtocolToken" not defined in mdm-url-resolver.xml.
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.WSDLManager loadWSDL
+WARNING: WSDL localizedWSDLException at location: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/splitevent_client_ep?WSDL due to: Error in getting XML input stream: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/splitevent_client_ep?WSDL: Variable "ScmSoaAppProtocolToken" not defined in mdm-url-resolver.xml.
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.WSDLManager loadWSDL
+WARNING: WSDL localizedWSDLException at location: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/orderattribute_client_ep?WSDL due to: Error in getting XML input stream: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/orderattribute_client_ep?WSDL: Variable "ScmSoaAppProtocolToken" not defined in mdm-url-resolver.xml.
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.WSDLManager loadWSDL
+WARNING: WSDL localizedWSDLException at location: ${OrderOrchestrationAppProtocolToken}://${OrderOrchestrationAppHostToken}:${OrderOrchestrationAppPortToken}/dooCommonEventService/ProcessEventService?WSDL due to: Error in getting XML input stream: ${OrderOrchestrationAppProtocolToken}://${OrderOrchestrationAppHostToken}:${OrderOrchestrationAppPortToken}/dooCommonEventService/ProcessEventService?WSDL: Variable "OrderOrchestrationAppProtocolToken" not defined in mdm-url-resolver.xml.
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.WSDLManager loadWSDL
+WARNING: WSDL localizedWSDLException at location: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/jeopardyevent_client_ep?WSDL due to: Error in getting XML input stream: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/jeopardyevent_client_ep?WSDL: Variable "ScmSoaAppProtocolToken" not defined in mdm-url-resolver.xml.
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.WSDLManager loadWSDL
+WARNING: WSDL localizedWSDLException at location: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/BigMachineService_ep?WSDL due to: Error in getting XML input stream: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/BigMachineService_ep?WSDL: Variable "ScmSoaAppProtocolToken" not defined in mdm-url-resolver.xml.
+17 Aug, 2016 2:47:27 AM oracle.fabric.common.wsdl.WSDLManager loadWSDL
+WARNING: WSDL localizedWSDLException at location: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooDecompositionOrderStatusUpdateComposite/ocresponsesvcclient?WSDL due to: Error in getting XML input stream: ${ScmSoaAppProtocolToken}://${ScmSoaAppHostToken}:${ScmSoaAppPortToken}/soa-infra/services/default/DooDecompositionOrderStatusUpdateComposite/ocresponsesvcclient?WSDL: Variable "ScmSoaAppProtocolToken" not defined in mdm-url-resolver.xml.
+17 Aug, 2016 2:47:28 AM com.collaxa.cube.CubeLogger info
+INFO: validating "BusinessEventNotification.bpel" ...
+17 Aug, 2016 2:47:28 AM oracle.integration.platform.blocks.FabricConfigManager <clinit>
+WARNING: JRF is unable to determine the current application server platform.
+17 Aug, 2016 2:47:28 AM oracle.integration.platform.blocks.WLSPlatformConfigurationProvider <clinit>
+WARNING: JRF is unable to determine the current application server platform.
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/adf/svc/errors/
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/common/events/service/
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/common/events/service/
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/common/events/service/
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/common/events/service/
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/common/events/service/
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: /oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO
+17 Aug, 2016 2:47:29 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:30 AM com.collaxa.cube.CubeLogger info
+INFO: validating "OCResponseSvc.bpel" ...
+17 Aug, 2016 2:47:30 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:30 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:30 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:30 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:30 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+17 Aug, 2016 2:47:30 AM oracle.fabric.common.wsdl.SchemaManager buildXDKSchema
+WARNING: Cannot resolve entity model for: http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite
+java.lang.RuntimeException: Could not initialize variable.
+An error occurs while initializing BPEL variable inputVariable; the schema processor cannot find the element {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse in the following schemas: oracle.fabric.common.wsdl.SchemaManager@217dc8.
+The XSD element on which the variable was based was not properly defined in XSD or the WSDL.
+Ensure that the element named in the error message is valid in the XSD or the WSDL.
+
+	at com.collaxa.cube.lang.compiler.util.CXBPELVariableInitializer.preInitializeMessageVariable(CXBPELVariableInitializer.java:298)
+	at com.collaxa.cube.lang.compiler.util.CXBPELVariableInitializer.initializeVariables(CXBPELVariableInitializer.java:150)
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.generateInitRootScope(CubeProcessGenerator.java:673)
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.code(CubeProcessGenerator.java:465)
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.generate(CubeProcessGenerator.java:164)
+	at com.collaxa.cube.lang.compiler.BPEL1Processor.transform(BPEL1Processor.java:257)
+	at com.collaxa.cube.lang.compiler.BPEL1Processor.process(BPEL1Processor.java:161)
+	at com.collaxa.cube.lang.compiler.CubeParserHelper.compile(CubeParserHelper.java:47)
+	at oracle.fabric.bpel.bpelc.BPELComponentValidator.validate(BPELComponentValidator.java:40)
+	at oracle.soa.scac.ValidateComposite.validateComponentTypeServicesReferences(ValidateComposite.java:1066)
+	at oracle.soa.scac.ValidateComposite.doValidation0(ValidateComposite.java:514)
+	at oracle.soa.scac.ValidateComposite.doValidation(ValidateComposite.java:493)
+	at oracle.soa.scac.ValidateComposite.run0(ValidateComposite.java:214)
+	at oracle.soa.scac.ValidateComposite.run(ValidateComposite.java:195)
+	at oracle.soa.scac.ValidateComposite.main(ValidateComposite.java:187)
+Caused by: ORABPEL-09705
+
+Could not initialize variable.
+An error occurs while initializing BPEL variable inputVariable; the schema processor cannot find the element {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse in the following schemas: oracle.fabric.common.wsdl.SchemaManager@217dc8.
+The XSD element on which the variable was based was not properly defined in XSD or the WSDL.
+Ensure that the element named in the error message is valid in the XSD or the WSDL.
+
+	at com.collaxa.cube.xml.xsd.SchemaToXML.generateXMLElement(SchemaToXML.java:433)
+	at com.collaxa.cube.xml.xsd.SchemaToXML.generateXML(SchemaToXML.java:360)
+	at com.collaxa.cube.lang.compiler.BPELComponentCompilationModel.generateXML(BPELComponentCompilationModel.java:207)
+	at com.collaxa.cube.lang.compiler.util.CXBPELVariableInitializer.preInitializeMessageVariable(CXBPELVariableInitializer.java:296)
+	... 14 more
+Instantiation exception for implementation type "implementation.bpel", validating component "OCResponseSvc". Exception is "Could not initialize variable.
+An error occurs while initializing BPEL variable inputVariable; the schema processor cannot find the element {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse in the following schemas: oracle.fabric.common.wsdl.SchemaManager@217dc8.
+The XSD element on which the variable was based was not properly defined in XSD or the WSDL.
+Ensure that the element named in the error message is valid in the XSD or the WSDL.
+"
+ORABPEL-00000
+
+Exception not handled by the Collaxa Cube system.
+an unhandled exception has been thrown in the Collaxa Cube systemr; exception reported is: "java.lang.RuntimeException: Could not initialize variable.
+An error occurs while initializing BPEL variable inputVariable; the schema processor cannot find the element {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse in the following schemas: oracle.fabric.common.wsdl.SchemaManager@217dc8.
+The XSD element on which the variable was based was not properly defined in XSD or the WSDL.
+Ensure that the element named in the error message is valid in the XSD or the WSDL.
+
+	at com.collaxa.cube.lang.compiler.util.CXBPELVariableInitializer.preInitializeMessageVariable(CXBPELVariableInitializer.java:298)
+	at com.collaxa.cube.lang.compiler.util.CXBPELVariableInitializer.initializeVariables(CXBPELVariableInitializer.java:150)
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.generateInitRootScope(CubeProcessGenerator.java:673)
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.code(CubeProcessGenerator.java:465)
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.generate(CubeProcessGenerator.java:164)
+	at com.collaxa.cube.lang.compiler.BPEL1Processor.transform(BPEL1Processor.java:257)
+	at com.collaxa.cube.lang.compiler.BPEL1Processor.process(BPEL1Processor.java:161)
+	at com.collaxa.cube.lang.compiler.CubeParserHelper.compile(CubeParserHelper.java:47)
+	at oracle.fabric.bpel.bpelc.BPELComponentValidator.validate(BPELComponentValidator.java:40)
+	at oracle.soa.scac.ValidateComposite.validateComponentTypeServicesReferences(ValidateComposite.java:1066)
+	at oracle.soa.scac.ValidateComposite.doValidation0(ValidateComposite.java:514)
+	at oracle.soa.scac.ValidateComposite.doValidation(ValidateComposite.java:493)
+	at oracle.soa.scac.ValidateComposite.run0(ValidateComposite.java:214)
+	at oracle.soa.scac.ValidateComposite.run(ValidateComposite.java:195)
+	at oracle.soa.scac.ValidateComposite.main(ValidateComposite.java:187)
+Caused by: ORABPEL-09705
+
+Could not initialize variable.
+An error occurs while initializing BPEL variable inputVariable; the schema processor cannot find the element {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse in the following schemas: oracle.fabric.common.wsdl.SchemaManager@217dc8.
+The XSD element on which the variable was based was not properly defined in XSD or the WSDL.
+Ensure that the element named in the error message is valid in the XSD or the WSDL.
+
+	at com.collaxa.cube.xml.xsd.SchemaToXML.generateXMLElement(SchemaToXML.java:433)
+	at com.collaxa.cube.xml.xsd.SchemaToXML.generateXML(SchemaToXML.java:360)
+	at com.collaxa.cube.lang.compiler.BPELComponentCompilationModel.generateXML(BPELComponentCompilationModel.java:207)
+	at com.collaxa.cube.lang.compiler.util.CXBPELVariableInitializer.preInitializeMessageVariable(CXBPELVariableInitializer.java:296)
+	... 14 more
+".
+An internal exception has not been properly handled by the server.
+Set the logging level for all loggers to debug, and resubmit your request again.  The server log should contain a more detailed exception report.
+Exception: java.lang.RuntimeException: Could not initialize variable.
+An error occurs while initializing BPEL variable inputVariable; the schema processor cannot find the element {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse in the following schemas: oracle.fabric.common.wsdl.SchemaManager@217dc8.
+The XSD element on which the variable was based was not properly defined in XSD or the WSDL.
+Ensure that the element named in the error message is valid in the XSD or the WSDL.
+
+Handled As: com.collaxa.cube.CubeException
+
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.code(CubeProcessGenerator.java:498)
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.generate(CubeProcessGenerator.java:164)
+	at com.collaxa.cube.lang.compiler.BPEL1Processor.transform(BPEL1Processor.java:257)
+	at com.collaxa.cube.lang.compiler.BPEL1Processor.process(BPEL1Processor.java:161)
+	at com.collaxa.cube.lang.compiler.CubeParserHelper.compile(CubeParserHelper.java:47)
+	at oracle.fabric.bpel.bpelc.BPELComponentValidator.validate(BPELComponentValidator.java:40)
+	at oracle.soa.scac.ValidateComposite.validateComponentTypeServicesReferences(ValidateComposite.java:1066)
+	at oracle.soa.scac.ValidateComposite.doValidation0(ValidateComposite.java:514)
+	at oracle.soa.scac.ValidateComposite.doValidation(ValidateComposite.java:493)
+	at oracle.soa.scac.ValidateComposite.run0(ValidateComposite.java:214)
+	at oracle.soa.scac.ValidateComposite.run(ValidateComposite.java:195)
+	at oracle.soa.scac.ValidateComposite.main(ValidateComposite.java:187)
+Caused by: java.lang.RuntimeException: Could not initialize variable.
+An error occurs while initializing BPEL variable inputVariable; the schema processor cannot find the element {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse in the following schemas: oracle.fabric.common.wsdl.SchemaManager@217dc8.
+The XSD element on which the variable was based was not properly defined in XSD or the WSDL.
+Ensure that the element named in the error message is valid in the XSD or the WSDL.
+
+	at com.collaxa.cube.lang.compiler.util.CXBPELVariableInitializer.preInitializeMessageVariable(CXBPELVariableInitializer.java:298)
+	at com.collaxa.cube.lang.compiler.util.CXBPELVariableInitializer.initializeVariables(CXBPELVariableInitializer.java:150)
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.generateInitRootScope(CubeProcessGenerator.java:673)
+	at com.collaxa.cube.lang.compiler.template.CubeProcessGenerator.code(CubeProcessGenerator.java:465)
+	... 11 more
+Caused by: ORABPEL-09705
+
+Could not initialize variable.
+An error occurs while initializing BPEL variable inputVariable; the schema processor cannot find the element {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse in the following schemas: oracle.fabric.common.wsdl.SchemaManager@217dc8.
+The XSD element on which the variable was based was not properly defined in XSD or the WSDL.
+Ensure that the element named in the error message is valid in the XSD or the WSDL.
+
+	at com.collaxa.cube.xml.xsd.SchemaToXML.generateXMLElement(SchemaToXML.java:433)
+	at com.collaxa.cube.xml.xsd.SchemaToXML.generateXML(SchemaToXML.java:360)
+	at com.collaxa.cube.lang.compiler.BPELComponentCompilationModel.generateXML(BPELComponentCompilationModel.java:207)
+	at com.collaxa.cube.lang.compiler.util.CXBPELVariableInitializer.preInitializeMessageVariable(CXBPELVariableInitializer.java:296)
+	... 14 more

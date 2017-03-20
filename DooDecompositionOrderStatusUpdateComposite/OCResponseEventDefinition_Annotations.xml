@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faan:documentation xmlns:faan="http://www.oracle.com/oer/faannotations">
+   <faan:oer-event>
+      <faan:internal-name>{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseEventDefinition}OCResponseEvent</faan:internal-name>
+      <faan:display-name>Orchestration Order Change Compensation Status</faan:display-name>
+      <faan:description>Provides the ability toe listen to change order compensation completion event</faan:description>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>Business Event</faan:file-type>
+            <faan:file-name>OCResponseEventDefinition.edl</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>XML Schema Definition</faan:file-type>
+            <faan:file-name>OCResponse.xsd</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Assured</faan:compatibility>
+      <faan:payload-type>{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse</faan:payload-type>
+   </faan:oer-event>
+</faan:documentation>

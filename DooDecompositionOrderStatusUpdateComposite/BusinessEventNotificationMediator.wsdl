@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="BusinessEventNotificationMediator" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator" xmlns:inp="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" xmlns:inp2="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO" xmlns:tns="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator" xmlns:inp1="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+   <wsdl:documentation>
+      <name>Business Event Notification Mediator</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <wsdl:types>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+         <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/EventHeaderTR.xsd"/>
+         <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" schemaLocation="xsd/AggregatedBusinessEvent.xsd"/>
+         <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/OrderStatusUpdateHeaderTR.xsd"/>
+         <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/SplitEventFulfillLineTR.xsd"/>
+         <xsd:import namespace="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO" schemaLocation="oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd"/>
+      </xsd:schema>
+   </wsdl:types>
+   <wsdl:message name="requestMessage">
+      <wsdl:part name="request" element="inp:MediatorInput"/>
+   </wsdl:message>
+   <wsdl:message name="jeopardyrequestMessage">
+      <wsdl:part name="request" element="inp:JeopardyInput"/>
+   </wsdl:message>
+   <wsdl:message name="orderStatusUpdaterequestMessage">
+      <wsdl:part name="request" element="inp:OrderStatusUpdateInput"/>
+   </wsdl:message>
+   <wsdl:message name="splitrequestMessage">
+      <wsdl:part name="request" element="inp:SplitInput"/>
+   </wsdl:message>
+   <wsdl:message name="flineClosedrequestMessage">
+      <wsdl:part name="request" element="inp2:DOOFulfillLineClosedInfo"/>
+   </wsdl:message>
+   <wsdl:message name="flineStatusUpdaterequestMessage">
+      <wsdl:part name="request" element="inp2:OrderOrchestrationStatusUpdateInfo"/>
+   </wsdl:message>
+   <wsdl:portType name="execute_ptt">
+      <wsdl:operation name="holdEvent">
+         <wsdl:input message="tns:requestMessage"/>
+      </wsdl:operation>
+      <wsdl:operation name="orderUpdateEvent">
+         <wsdl:input message="tns:requestMessage"/>
+      </wsdl:operation>
+      <wsdl:operation name="jeopardyEvent">
+         <wsdl:input message="tns:jeopardyrequestMessage"/>
+      </wsdl:operation>
+      <wsdl:operation name="orderStatusUpdateEvent">
+         <wsdl:input message="tns:orderStatusUpdaterequestMessage"/>
+      </wsdl:operation>
+      <wsdl:operation name="splitEvent">
+         <wsdl:input message="tns:splitrequestMessage"/>
+      </wsdl:operation>
+      <wsdl:operation name="flineClosedEvent">
+         <wsdl:input message="tns:flineClosedrequestMessage"/>
+      </wsdl:operation>
+      <wsdl:operation name="flineStatusUpdateEvent">
+         <wsdl:input message="tns:flineStatusUpdaterequestMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+</wsdl:definitions>

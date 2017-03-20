@@ -1,0 +1,1847 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Faults>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>122</line>
+      <col>34</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>123</line>
+      <col>34</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>126</line>
+      <col>34</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>127</line>
+      <col>34</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>130</line>
+      <col>34</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>131</line>
+      <col>34</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>134</line>
+      <col>34</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>135</line>
+      <col>34</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>138</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>139</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>142</line>
+      <col>34</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>143</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>146</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>147</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>150</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>151</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>154</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>155</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>158</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>159</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>162</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>163</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>166</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>167</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>170</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line>171</line>
+      <col>35</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>schema -  (Error) Attribute 'http://www.w3.org/XML/1998/namespace:id' not expected.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Error in getting XML input stream: oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd: oracle.mds.exception.MDSException: MDS-00054: The file to be loaded oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd does not exist.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "getTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}getTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "addToTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}addToTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "createTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}createTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "fault" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}fault</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "addToTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}addToTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "importFileAttachmentsResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}importFileAttachmentsResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "removeFromTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}removeFromTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "createTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}createTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "updateTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}updateTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "updateTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}updateTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "removeFromTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}removeFromTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "exportFileAttachmentsResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}exportFileAttachmentsResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "importFileAttachments" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}importFileAttachments</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "exportFileAttachments" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}exportFileAttachments</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "getTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}getTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "getTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}getTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "addToTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}addToTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "createTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}createTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "fault" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}fault</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "addToTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}addToTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "importFileAttachmentsResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}importFileAttachmentsResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "removeFromTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}removeFromTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "createTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}createTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "updateTransaction" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}updateTransaction</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "updateTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}updateTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "removeFromTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}removeFromTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "exportFileAttachmentsResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}exportFileAttachmentsResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "importFileAttachments" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}importFileAttachments</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "exportFileAttachments" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}exportFileAttachments</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</file>
+      <name>oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl</name>
+      <fix/>
+      <msg>Message part "getTransactionResponse" is undefined [element = {http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}getTransactionResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getBMConnectorInfoResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayloadForOrderUpdateEventAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForBusinessEventAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForOrderStatusBusinessEvent</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForOrderStatusBusinessEventAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForOrderStatusBusinessEventAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getEventConnectorInfoAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}checkErrorsAndNotifyAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForBusinessEvent</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForSplitBusinessEvent</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}checkErrorsAndNotifyAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}deleteEventNotificationErrorsAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}interceptorServiceToPublishBusinessEvent</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getEventConnectorInfoResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayloadForOrderUpdateEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForBusinessEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0}Fault</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForSplitBusinessEventAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayloadForOrderUpdateEventAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getEventConnectorInfo</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getEventNotificationLogAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayloadForTaskLayerOrderUpdateEvent</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getBMConnectorInfo</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayloadForTaskLayerOrderUpdateEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForBusinessEventAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForJeopardyBusinessEventAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getEventConnectorInfoAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getPayloadForInvoiceAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}interceptorServiceToPublishBusinessEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}logEventNotificationErrorAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}checkErrorsAndNotifyResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayloadForOrderUpdateEvent</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}checkErrorsAndNotify</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getPayloadForInvoiceAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForJeopardyBusinessEvent</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getEventNotificationLogResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForJeopardyBusinessEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getEventNotificationLog</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getBMConnectorInfoAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForSplitBusinessEventAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}deleteEventNotificationErrorsResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getEventNotificationLogAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}interceptorServiceToPublishBusinessEventAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}deleteEventNotificationErrors</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}deleteEventNotificationErrorsAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}logEventNotificationErrorAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getBMConnectorInfoAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getPayloadForInvoice</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}logEventNotificationError</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForJeopardyBusinessEventAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForSplitBusinessEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayloadForTaskLayerOrderUpdateEventAsyncResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}logEventNotificationErrorResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayloadForTaskLayerOrderUpdateEventAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}getPayloadForInvoiceResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}interceptorServiceToPublishBusinessEventAsync</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ProcessEventService.wsdl</name>
+      <fix/>
+      <msg>Message part "parameters" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/types/}preparePayLoadForOrderStatusBusinessEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ServiceException.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ServiceException.wsdl</name>
+      <fix/>
+      <msg>Message part "ServiceErrorMessage" is undefined [element = {http://xmlns.oracle.com/adf/svc/errors/}ServiceErrorMessage</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/}eventHeaderTR</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCBusinessEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCBusinessEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCBusinessEventResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationService.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEventServiceWrapper.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEventServiceWrapper.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/processOrder/service/}fulfillLine</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}DOOFulfillLineClosedInfo</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}MediatorInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}SplitInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OrderStatusUpdateInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}JeopardyInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}OrderOrchestrationStatusUpdateInfo</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}DOOFulfillLineClosedInfo</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}MediatorInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}SplitInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OrderStatusUpdateInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}JeopardyInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}OrderOrchestrationStatusUpdateInfo</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>classpath:/META-INF/wsdl/ServiceException.wsdl</file>
+      <name>classpath:/META-INF/wsdl/ServiceException.wsdl</name>
+      <fix/>
+      <msg>Message part "ServiceErrorMessage" is undefined [element = {http://xmlns.oracle.com/adf/svc/errors/}ServiceErrorMessage</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}DOOFulfillLineClosedInfo</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}MediatorInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}SplitInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OrderStatusUpdateInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}JeopardyInput</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}OrderOrchestrationStatusUpdateInfo</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>classpath:/META-INF/wsdl/ServiceException.wsdl</file>
+      <name>classpath:/META-INF/wsdl/ServiceException.wsdl</name>
+      <fix/>
+      <msg>Message part "ServiceErrorMessage" is undefined [element = {http://xmlns.oracle.com/adf/svc/errors/}ServiceErrorMessage</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/common/events/service/ServiceException.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/common/events/service/ServiceException.wsdl</name>
+      <fix/>
+      <msg>Message part "ServiceErrorMessage" is undefined [element = {http://xmlns.oracle.com/adf/svc/errors/}ServiceErrorMessage</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/}orderStatusUpdateHeaderTR</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc.wsdl</file>
+      <name>/E:/JDev11117WrkSpc/ModernManufacturing_v1_111171/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/common/events/service/}splitEventFulfillLineTR</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}results</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}results</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector.wsdl</file>
+      <name>oramds:/apps/oracle/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}results</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='BusinessEventsConnectorService']</loc>
+      <line>105</line>
+      <col>238</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "BusinessEventsConnectorService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector}BusinessEventsConnectorPayload_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='BusinessEventsConnectorService']</loc>
+      <line>105</line>
+      <col>238</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "BusinessEventsConnectorService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector}BusinessEventsConnectorPayload_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='FlineStubService']</loc>
+      <line>93</line>
+      <col>224</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "FlineStubService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEvent}DummyExternalSystem_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='FlineStubService']</loc>
+      <line>93</line>
+      <col>224</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "FlineStubService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEvent}DummyExternalSystem_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='SplitStubService']</loc>
+      <line>101</line>
+      <col>204</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "SplitStubService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent}SplitEvent_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='SplitStubService']</loc>
+      <line>101</line>
+      <col>204</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "SplitStubService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent}SplitEvent_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='OrderAttributeStubService']</loc>
+      <line>89</line>
+      <col>217</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "OrderAttributeStubService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute}OrderAttribute_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='OrderAttributeStubService']</loc>
+      <line>89</line>
+      <col>217</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "OrderAttributeStubService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute}OrderAttribute_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='ProcessEventService']</loc>
+      <line>78</line>
+      <col>155</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "ProcessEventService":"{http://xmlns.oracle.com/apps/scm/doo/common/events/service/}ProcessEventServiceSoapHttpPort" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='JeopardyHoldStubService']</loc>
+      <line>97</line>
+      <col>214</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "JeopardyHoldStubService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent}JeopardyEvent_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='JeopardyHoldStubService']</loc>
+      <line>97</line>
+      <col>214</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "JeopardyHoldStubService":"{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent}JeopardyEvent_pt" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='BigMachineService']</loc>
+      <line>113</line>
+      <col>210</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "BigMachineService":"{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}CommerceServicePort" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='OCResponseService']</loc>
+      <line>85</line>
+      <col>183</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "OCResponseService":"{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc}OCResponseSvc" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:reference[@name='OCResponseService']</loc>
+      <line>85</line>
+      <col>183</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Failed to Find Binding "OCResponseService":"{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc}OCResponseSvc" in WSDL Manager</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>104</line>
+      <col/>
+      <file>BusinessEventNotification.bpel</file>
+      <name>BusinessEventNotification.bpel</name>
+      <fix>Make sure the XML element "{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}BusinessEventInfoType" is defined in one of WSDLs that are referenced by the deployment descriptor</fix>
+      <msg>XML element "{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}BusinessEventInfoType" of variable "inputVariable0" is not defined</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>129</line>
+      <col/>
+      <file>BusinessEventNotification.bpel</file>
+      <name>BusinessEventNotification.bpel</name>
+      <fix>Make sure the XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}DOOFulfillLineClosedInfo" is defined in one of WSDLs that are referenced by the deployment descriptor</fix>
+      <msg>XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}DOOFulfillLineClosedInfo" of variable "flineClosedEvent_InputVariable" is not defined</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>132</line>
+      <col/>
+      <file>BusinessEventNotification.bpel</file>
+      <name>BusinessEventNotification.bpel</name>
+      <fix>Make sure the XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}OrderOrchestrationStatusUpdateInfo" is defined in one of WSDLs that are referenced by the deployment descriptor</fix>
+      <msg>XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}OrderOrchestrationStatusUpdateInfo" of variable "fulfillLineStatusUpdate_inputVariable" is not defined</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>182</line>
+      <col/>
+      <file>BusinessEventNotification.bpel</file>
+      <name>BusinessEventNotification.bpel</name>
+      <fix>Make sure the XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}OrderOrchestrationStatusUpdateInfo" is defined in one of WSDLs that are referenced by the deployment descriptor</fix>
+      <msg>XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}OrderOrchestrationStatusUpdateInfo" of variable "event_Input" is not defined</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>207</line>
+      <col/>
+      <file>BusinessEventNotification.bpel</file>
+      <name>BusinessEventNotification.bpel</name>
+      <fix>Make sure the XML element "{http://schemas.xmlsoap.org/ws/2003/03/addressing}EndpointReference" is defined in one of WSDLs that are referenced by the deployment descriptor</fix>
+      <msg>XML element "{http://schemas.xmlsoap.org/ws/2003/03/addressing}EndpointReference" of variable "webServiceAddress" is not defined</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>1018</line>
+      <col/>
+      <file>BusinessEventNotification.bpel</file>
+      <name>BusinessEventNotification.bpel</name>
+      <fix>Make sure the XML element "{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}BusinessEventInfoType" is defined in one of WSDLs that are referenced by the deployment descriptor</fix>
+      <msg>XML element "{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}BusinessEventInfoType" of variable "inputVariable0" is not defined</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>3149</line>
+      <col/>
+      <file>BusinessEventNotification.bpel</file>
+      <name>BusinessEventNotification.bpel</name>
+      <fix>Make sure the XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}DOOFulfillLineClosedInfo" is defined in one of WSDLs that are referenced by the deployment descriptor</fix>
+      <msg>XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}DOOFulfillLineClosedInfo" of variable "flineClosedEvent_InputVariable" is not defined</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line>3585</line>
+      <col/>
+      <file>BusinessEventNotification.bpel</file>
+      <name>BusinessEventNotification.bpel</name>
+      <fix>Make sure the XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}OrderOrchestrationStatusUpdateInfo" is defined in one of WSDLs that are referenced by the deployment descriptor</fix>
+      <msg>XML element "{/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO}OrderOrchestrationStatusUpdateInfo" of variable "event_Input" is not defined</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>OrderStatusUpdate.mplan</file>
+      <name>OrderStatusUpdate.mplan</name>
+      <fix/>
+      <msg>Operation\Event "sub1:OrderOrchestrationStatusUpdate" does not contain case. No operation\event will be executed\processed respectively.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>BusinessEventNotificationMediator.mplan</file>
+      <name>BusinessEventNotificationMediator.mplan</name>
+      <fix/>
+      <msg>Operation\Event "holdEvent" does not contain case. No operation\event will be executed\processed respectively.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>BusinessEventNotificationMediator.mplan</file>
+      <name>BusinessEventNotificationMediator.mplan</name>
+      <fix/>
+      <msg>Operation\Event "jeopardyEvent" does not contain case. No operation\event will be executed\processed respectively.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>BusinessEventNotificationMediator.mplan</file>
+      <name>BusinessEventNotificationMediator.mplan</name>
+      <fix/>
+      <msg>Operation\Event "orderUpdateEvent" does not contain case. No operation\event will be executed\processed respectively.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>BusinessEventNotificationMediator.mplan</file>
+      <name>BusinessEventNotificationMediator.mplan</name>
+      <fix/>
+      <msg>Operation\Event "orderStatusUpdateEvent" does not contain case. No operation\event will be executed\processed respectively.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>BusinessEventNotificationMediator.mplan</file>
+      <name>BusinessEventNotificationMediator.mplan</name>
+      <fix/>
+      <msg>Operation\Event "splitEvent" does not contain case. No operation\event will be executed\processed respectively.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>BusinessEventNotificationMediator.mplan</file>
+      <name>BusinessEventNotificationMediator.mplan</name>
+      <fix/>
+      <msg>Operation\Event "flineClosedEvent" does not contain case. No operation\event will be executed\processed respectively.</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>BusinessEventNotificationMediator.mplan</file>
+      <name>BusinessEventNotificationMediator.mplan</name>
+      <fix/>
+      <msg>Operation\Event "flineStatusUpdateEvent" does not contain case. No operation\event will be executed\processed respectively.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/ns:composite/ns:component[@name='OCResponseSvc']</loc>
+      <line>70</line>
+      <col>66</col>
+      <file>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</file>
+      <name>E:\JDev11117WrkSpc\ModernManufacturing_v1_111171\DooDecompositionOrderStatusUpdateComposite\composite.xml</name>
+      <fix/>
+      <msg>Instantiation exception for implementation type "implementation.bpel", validating component "OCResponseSvc". Exception is "Could not initialize variable.
+An error occurs while initializing BPEL variable inputVariable; the schema processor cannot find the element {http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite}OCResponse in the following schemas: oracle.fabric.common.wsdl.SchemaManager@217dc8.
+The XSD element on which the variable was based was not properly defined in XSD or the WSDL.
+Ensure that the element named in the error message is valid in the XSD or the WSDL.
+"</msg>
+   </Fault>
+</Faults>

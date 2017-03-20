@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Mediator name="OrderStatusUpdate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.oracle.com/sca/1.0/mediator" xml:id="id_1">
+   <eventHandler xmlns:sub1="/oracle/apps/scm/doo/processOrder/model/entity/events/edl/FulfillLineEO" event="sub1:OrderOrchestrationStatusUpdate" deliveryPolicy="AllOrNothing" priority="4" xml:id="id_2"/>
+</Mediator>

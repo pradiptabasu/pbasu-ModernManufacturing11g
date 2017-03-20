@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<componentType xmlns="http://xmlns.oracle.com/sca/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ui="http://xmlns.oracle.com/soa/designer/" xml:id="id_1">
+   <service name="ocresponsesvcclient" ui:wsdlLocation="OCResponseSvc.wsdl" xml:id="id_4">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc#wsdl.interface(OCResponseSvc)" callbackInterface="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseSvc#wsdl.interface(OCResponseSvcCallback)" xml:id="id_5"/>
+   </service>
+</componentType>

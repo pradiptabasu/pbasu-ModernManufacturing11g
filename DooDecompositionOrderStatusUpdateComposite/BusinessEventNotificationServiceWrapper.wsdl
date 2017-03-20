@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="BusinessEventNotificationService" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotification" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotification" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <wsdl:documentation>
+      <name>Business Event Notification Service</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <plnk:partnerLinkType name="BusinessEventNotificationService">
+      <plnk:role name="BusinessEventNotification">
+         <plnk:portType name="client:BusinessEventNotification"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+   <wsdl:import namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotification" location="BusinessEventNotificationService.wsdl"/>
+</wsdl:definitions>

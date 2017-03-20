@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="BusinessEventNotificationMediator" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator" xmlns:ns2="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO" xmlns:ns1="http://xmlns.oracle.com/adf/svc/errors/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:ns3="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" xmlns:ns4="http://schemas.xmlsoap.org/ws/2003/03/addressing" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator" xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <wsdl:documentation>
+      <name>Business Event Notification Mediator</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <plnk:partnerLinkType name="BusinessEventNotificationMediator.BusinessEventNotificationMediator">
+      <plnk:role name="execute_ptt">
+         <plnk:portType name="tns:execute_ptt"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+   <wsdl:import namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator" location="BusinessEventNotificationMediator.wsdl"/>
+   <wsdl:import namespace="http://xmlns.oracle.com/adf/svc/errors/" location="classpath:/META-INF/wsdl/ServiceException.wsdl"/>
+   <wsdl:types>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO" xmlns:ns1="http://xmlns.oracle.com/adf/svc/errors/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/" xmlns:tns="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns3="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite">
+         <xsd:import namespace="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO" schemaLocation="oramds:/apps/oracle/apps/scm/doo/processOrder/model/entity/events/FulfillLineEO.xsd"/>
+      </xsd:schema>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO" xmlns:ns1="http://xmlns.oracle.com/adf/svc/errors/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:ns4="http://schemas.xmlsoap.org/ws/2003/03/addressing" xmlns:ns3="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/BusinessEventNotificationMediator" xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/">
+         <xsd:import namespace="http://schemas.xmlsoap.org/ws/2003/03/addressing" schemaLocation="oramds:/apps/org/xmlsoap/schemas/ws/2003/03/addressing/ws-addressing.xsd"/>
+      </xsd:schema>
+   </wsdl:types>
+</wsdl:definitions>

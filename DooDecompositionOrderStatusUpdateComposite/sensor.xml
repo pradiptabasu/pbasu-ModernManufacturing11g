@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sensors xmlns="http://xmlns.oracle.com/bpel/sensor">
+   <sensor sensorName="SourceOrderNumber" kind="event" target="undefined" filter="" xmlns:ns0="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO">
+      <eventConfig event="{/oracle/apps/scm/doo/processOrder/model/entity/events/edl/FulfillLineEO}OrderOrchestrationStatusUpdate" actionType="Subscribe" expression="$in/ns0:OrderOrchestrationStatusUpdateInfo/ns0:SourceOrderNumber" component="OrderStatusUpdate" outputDataType="StringValuePair" outputNamespace="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO"/>
+   </sensor>
+   <sensor sensorName="SourceOrderNumber" kind="event" target="undefined" filter="" xmlns:ns0="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite">
+      <eventConfig event="{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseEventDefinition}OCResponseEvent" actionType="Subscribe" expression="$in/ns0:OCResponse/ns0:OCResponseType/ns0:SourceOrder" component="OrderStatusUpdate" outputDataType="string" outputNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"/>
+   </sensor>
+   <sensor sensorName="SourceOrderNumber" kind="event" target="undefined" filter="" xmlns:ns0="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite">
+      <eventConfig event="{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/AggregatedBusinessEvent}AggregatedBusinessEvent" actionType="Subscribe" expression="string($in/ns0:BusinessEventInfoType/ns0:SourceOrderNumber)" component="BusinessEventNotification" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+   </sensor>
+   <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:ns0="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite">
+      <serviceConfig service="ocresponsesvcclient" expression="$in.payload/ns0:OCResponse/ns0:OCResponseType/ns0:SourceOrder" operation="process" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+   </sensor>
+   <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite">
+      <serviceConfig service="BusinessEventNotificationService" expression="string($in.payload/ns1:OCResponse/ns1:OCResponseType/ns1:SourceOrder)" operation="processEventNotificationRequest" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+   </sensor>
+   <sensor sensorName="SourceOrderNumber" kind="event" target="undefined" filter="" xmlns:ns0="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite">
+      <eventConfig event="{http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/OCResponseEventDefinition}OCResponseEvent" actionType="Subscribe" expression="string($in/ns0:OCResponse/ns0:OCResponseType/ns0:SourceOrder)" component="OrchestrationOrderUpdateEventMediator" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+   </sensor>
+   <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite">
+      <serviceConfig service="BusinessEventNotificationService" expression="string($in.payload/ns1:OCBusinessEventResponse/ns1:result)" operation="processEventNotificationResponse" outputDataType="" outputNamespace=""/>
+   </sensor>
+   <sensor sensorName="SourceOrderNumber" kind="event" target="undefined" filter="" xmlns:ns0="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO">
+      <eventConfig event="{/oracle/apps/scm/doo/processOrder/model/entity/events/edl/FulfillLineEO}DOOFulfillLineClosed" actionType="Subscribe" expression="$in/ns0:DOOFulfillLineClosedInfo/ns0:SourceOrderNumber/ns0:newValue/@value" component="BusinessEventNotification" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+   </sensor>
+   <sensor sensorName="SourceOrderNumber" kind="event" target="undefined" filter="" xmlns:ns0="/oracle/apps/scm/doo/processOrder/model/entity/events/schema/FulfillLineEO">
+      <eventConfig event="{/oracle/apps/scm/doo/processOrder/model/entity/events/edl/FulfillLineEO}OrderOrchestrationStatusUpdate" actionType="Subscribe" expression="$in/ns0:OrderOrchestrationStatusUpdateInfo/ns0:SourceOrderNumber/ns0:newValue/@value" component="BusinessEventNotification" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+   </sensor>
+</sensors>

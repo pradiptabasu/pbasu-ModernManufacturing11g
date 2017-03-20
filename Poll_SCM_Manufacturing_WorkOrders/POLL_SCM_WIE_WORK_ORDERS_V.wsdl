@@ -1,0 +1,21 @@
+<?binding.jca POLL_SCM_WIE_WORK_ORDERS_V_db.jca?>
+<wsdl:definitions name="POLL_SCM_WIE_WORK_ORDERS_V" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/ModernManufacturing_v1_111171/Poll_SCM_Manufacturing_WorkOrders/POLL_SCM_WIE_WORK_ORDERS_V" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/db/ModernManufacturing_v1_111171/Poll_SCM_Manufacturing_WorkOrders/POLL_SCM_WIE_WORK_ORDERS_V" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:top="http://xmlns.oracle.com/pcbpel/adapter/db/top/POLL_SCM_WIE_WORK_ORDERS_V">
+    <plt:partnerLinkType name="POLL_SCM_WIE_WORK_ORDERS_V_plt">
+        <plt:role name="POLL_SCM_WIE_WORK_ORDERS_V_role">
+            <plt:portType name="tns:POLL_SCM_WIE_WORK_ORDERS_V_ptt"/>
+        </plt:role>
+    </plt:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/POLL_SCM_WIE_WORK_ORDERS_V" schemaLocation="xsd/POLL_SCM_WIE_WORK_ORDERS_V_table.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="WieWorkOrdersVCollection_msg">
+        <wsdl:part name="WieWorkOrdersVCollection" element="top:WieWorkOrdersVCollection"/>
+    </wsdl:message>
+    <wsdl:portType name="POLL_SCM_WIE_WORK_ORDERS_V_ptt">
+        <wsdl:operation name="receive">
+            <wsdl:input message="tns:WieWorkOrdersVCollection_msg"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" xmlns:inp1="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" elementFormDefault="qualified">
+   <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/EventHeaderTR.xsd"/>
+   <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/OrderUpdateHeaderTR.xsd"/>
+   <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/OrderStatusUpdateHeaderTR.xsd"/>
+   <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/SplitEventFulfillLineTR.xsd"/>
+   <xsd:element name="BusinessEventInfoType">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="TransactionEventId" type="xsd:long"/>
+            <xsd:element name="AggregatedEventId" type="xsd:long"/>
+            <xsd:element name="EventPointCode" type="xsd:string"/>
+            <xsd:element name="SourceOrderNumber" type="xsd:string"/>
+            <xsd:element name="TransactionEventIds" minOccurs="0" nillable="true">
+               <xsd:complexType>
+                  <xsd:sequence>
+                     <xsd:element name="TransactionEventId" type="xsd:integer" minOccurs="0" nillable="true"/>
+                  </xsd:sequence>
+               </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="OriginalNotifyDate" type="xsd:dateTime" minOccurs="0" nillable="true"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="MediatorInput">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="EventHeader" type="inp1:EventHeaderTR" maxOccurs="unbounded"/>
+            <xsd:element name="OrderUpdateHeader" type="inp1:OrderUpdateHeaderTR" maxOccurs="unbounded"/>
+            <xsd:element name="OriginalNotifyDate" type="xsd:dateTime" minOccurs="0" nillable="true"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="JeopardyInput">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="EventLines" type="inp1:EventLineTR" maxOccurs="unbounded"/>
+            <xsd:element name="OriginalNotifyDate" type="xsd:dateTime" minOccurs="0" nillable="true"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="OrderStatusUpdateInput">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="EventHeader" type="inp1:OrderStatusUpdateHeaderTR" maxOccurs="unbounded"/>
+            <xsd:element name="OriginalNotifyDate" type="xsd:dateTime" minOccurs="0" nillable="true"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="SplitInput">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="EventLines" type="inp1:SplitEventFulfillLineTR" maxOccurs="unbounded"/>
+            <xsd:element name="OriginalNotifyDate" type="xsd:dateTime" minOccurs="0" nillable="true"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+</xsd:schema>
