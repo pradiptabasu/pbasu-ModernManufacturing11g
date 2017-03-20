@@ -1,0 +1,31 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<wsdl:definitions
+     name="Doo_Modern_MFG_OrderStatusUpdate"
+     targetNamespace="http://xmlns.oracle.com/ModernManufacturing_v1_111171/ModernManufacturing_OrderUpdateEventProcess/Doo_Modern_MFG_OrderStatusUpdate"
+     xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"
+     xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
+     xmlns:client="http://xmlns.oracle.com/ModernManufacturing_v1_111171/ModernManufacturing_OrderUpdateEventProcess/Doo_Modern_MFG_OrderStatusUpdate"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+    <plnk:partnerLinkType name="Doo_Modern_MFG_OrderStatusUpdate">
+        <plnk:role name="Doo_Modern_MFG_OrderStatusUpdateProvider" portType="client:Doo_Modern_MFG_OrderStatusUpdate"/>
+    </plnk:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/ModernManufacturing_v1_111171/ModernManufacturing_OrderUpdateEventProcess/Doo_Modern_MFG_OrderStatusUpdate"
+                 schemaLocation="xsd/Doo_Modern_MFG_OrderStatusUpdate.xsd"/>
+        </schema>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"
+                 schemaLocation="xsd/AggregatedBusinessEvent.xsd"/>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="Doo_Modern_MFG_OrderStatusUpdateRequestMessage">
+        <wsdl:part name="payload" element="client:process"/>
+    </wsdl:message>
+    <wsdl:portType name="Doo_Modern_MFG_OrderStatusUpdate">
+        <wsdl:operation name="process">
+            <wsdl:input message="client:Doo_Modern_MFG_OrderStatusUpdateRequestMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+     name="BusinessEventsConnector"
+     targetNamespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector"
+     xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"
+     xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"
+     xmlns:client="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+    <wsdl:documentation>
+        <name>BusinessEvents Connector Service</name>
+        <docCategories>
+            <category>None</category>
+        </docCategories>
+    </wsdl:documentation>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema">
+            <import namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"
+                 schemaLocation="BusinessEventsConnectorPayload.xsd"/>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="BusinessEventsConnectorPayloadRequestMessage">
+        <wsdl:part name="payload" element="ns1:results"/>
+    </wsdl:message>
+    <wsdl:portType name="BusinessEventsConnectorPayload">
+        <wsdl:operation name="pushPayload">
+            <wsdl:input message="client:BusinessEventsConnectorPayloadRequestMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite" elementFormDefault="qualified">
+   <xsd:element name="OCResponse">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="OCResponseType">
+               <xsd:complexType>
+                  <xsd:sequence>
+                     <xsd:element name="SourceOrder" type="xsd:string"/>
+                     <xsd:element name="SourceOrderSystem" type="xsd:string"/>
+                     <xsd:element name="SourceLineIds">
+                        <xsd:complexType>
+                           <xsd:sequence>
+                              <xsd:element name="SourceLineId" type="xsd:integer"/>
+                              <xsd:element name="Flines">
+                                 <xsd:complexType>
+                                    <xsd:sequence>
+                                       <xsd:element name="FlineId" type="xsd:integer"/>
+                                    </xsd:sequence>
+                                 </xsd:complexType>
+                              </xsd:element>
+                           </xsd:sequence>
+                        </xsd:complexType>
+                     </xsd:element>
+                     <xsd:element name="CompensationStatus" type="xsd:string"/>
+                     <xsd:element name="CompensationMessage" type="xsd:string"/>
+                     <xsd:element name="TransactionEventIds" minOccurs="0" nillable="true">
+                        <xsd:complexType>
+                           <xsd:sequence>
+                              <xsd:element name="TransactionEventId" type="xsd:integer" minOccurs="0" nillable="true"/>
+                           </xsd:sequence>
+                        </xsd:complexType>
+                     </xsd:element>
+                     <xsd:element name="BusinessEventCode" type="xsd:string" minOccurs="0" nillable="true"/>
+                  </xsd:sequence>
+               </xsd:complexType>
+            </xsd:element>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+   <xsd:element name="OCBusinessEventResponse">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="result" type="xsd:string" minOccurs="0" nillable="true"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+</xsd:schema>

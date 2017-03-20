@@ -1,0 +1,72 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Oracle JDeveloper BPEL Designer 
+  
+  Created: Tue Aug 16 13:42:19 IST 2016
+  Author:  prabasu
+  Type: BPEL 2.0 Process
+  Purpose: One Way BPEL Process
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<process name="Doo_Modern_MFG_OrderStatusUpdate"
+               targetNamespace="http://xmlns.oracle.com/ModernManufacturing_v1_111171/ModernManufacturing_OrderUpdateEventProcess/Doo_Modern_MFG_OrderStatusUpdate"
+               xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+               xmlns:client="http://xmlns.oracle.com/ModernManufacturing_v1_111171/ModernManufacturing_OrderUpdateEventProcess/Doo_Modern_MFG_OrderStatusUpdate"
+               xmlns:ora="http://schemas.oracle.com/xpath/extension"
+               xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:bpelx="http://schemas.oracle.com/bpel/extension"
+         xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"
+         xmlns:ns2="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite/AggregatedBusinessEvent">
+  <import namespace="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite"
+          location="xsd/AggregatedBusinessEvent.xsd"
+          importType="http://www.w3.org/2001/XMLSchema"/>
+  <import namespace="http://xmlns.oracle.com/ModernManufacturing_v1_111171/ModernManufacturing_OrderUpdateEventProcess/Doo_Modern_MFG_OrderStatusUpdate" location="Doo_Modern_MFG_OrderStatusUpdate.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      PARTNERLINKS                                                      
+      List of services participating in this BPEL process               
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  --> 
+  <partnerLinks>
+    <!-- 
+      The 'client' role represents the requester of this service. It is 
+      used for callback. The location and correlation information associated
+      with the client role are automatically set using WS-Addressing.
+    -->
+    <partnerLink name="doo_modern_mfg_orderstatusupdate_client" partnerLinkType="client:Doo_Modern_MFG_OrderStatusUpdate" myRole="Doo_Modern_MFG_OrderStatusUpdateProvider"/>
+  </partnerLinks>
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      VARIABLES                                                        
+      List of messages and XML documents used within this BPEL process 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <variables>
+    <!-- Reference to the message passed as input during initiation -->
+    <variable name="inputVariable" messageType="client:Doo_Modern_MFG_OrderStatusUpdateRequestMessage"/>
+
+  </variables>
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ORCHESTRATION LOGIC                                               
+     Set of activities coordinating the flow of messages across the    
+     services integrated within this business process                  
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <sequence name="main">
+
+    <!-- Receive input from requestor. (Note: This maps to operation defined in Doo_Modern_MFG_OrderStatusUpdate.wsdl) -->
+    <pick name="Pick1">
+      <onMessage variable="inputVariable"
+                 partnerLink="doo_modern_mfg_orderstatusupdate_client"
+                 portType="client:Doo_Modern_MFG_OrderStatusUpdate"
+                 operation="process">
+      </onMessage>
+      <onMessage bpelx:eventName="ns2:AggregatedBusinessEvent"></onMessage>
+    </pick>
+
+  </sequence>
+</process>
