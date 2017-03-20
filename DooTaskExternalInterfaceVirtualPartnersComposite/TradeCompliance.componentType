@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<componentType xmlns="http://xmlns.oracle.com/sca/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ui="http://xmlns.oracle.com/soa/designer/">
+   <service name="tradecompliance_client" ui:wsdlLocation="gtmWrapper.wsdl">
+      <interface.wsdl interface="http://xmlns.oracle.com/apps/otm/IntGtmXmlService#wsdl.interface(IntGtmXml)"/>
+   </service>
+</componentType>

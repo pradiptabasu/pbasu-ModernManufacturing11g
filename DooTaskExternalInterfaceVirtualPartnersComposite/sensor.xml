@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sensors xmlns="http://xmlns.oracle.com/bpel/sensor">
+    <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:step="http://xmlns.oracle.com/apps/scm/doo/orchestration/processExecution/DooOrchProcessExecutionStepManagerComposite" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/orchestration/processExecution">
+        <serviceConfig service="TaskLayerService" expression="string($in.in/step:TLSMediatorRequest/ns1:OrchProcessRequest/ns1:SourceOrderNumber)" operation="executeTask" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+    </sensor>
+    <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:step="http://xmlns.oracle.com/apps/scm/doo/orchestration/processExecution/DooOrchProcessExecutionStepManagerComposite" xmlns:ns0="http://xmlns.oracle.com/apps/scm/doo/taskLayer">
+        <serviceConfig service="TaskLayerService" expression="string($in.return/step:TLSMediatorResponse/ns0:TaskLayerResponse/ns0:holdInstanceId)" operation="executeTaskResponse" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+    </sensor>
+    <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/processOrder/service/">
+        <serviceConfig service="fulfilllineevent_client_ep" expression="$in.payload/ns1:fulfillLine/ns1:SourceOrderNumber" operation="process" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+    </sensor>
+    <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/common/events/service/">
+        <serviceConfig service="jeopardyevent_client_ep" expression="$in.payload/ns1:eventHeaderTR/ns1:SourceOrderNumber" operation="process" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+    </sensor>
+    <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/common/events/service/">
+        <serviceConfig service="splitevent_client_ep" expression="$in.payload/ns1:splitEventFulfillLineTR/ns1:SourceOrderNumber" operation="process" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+    </sensor>
+    <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/common/events/service/">
+        <serviceConfig service="orderattribute_client_ep" expression="$in.payload/ns1:orderStatusUpdateHeaderTR/ns1:SourceOrderNumber" operation="process" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+    </sensor>
+    <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/decomposition/DooDecompositionOrderStatusUpdateComposite">
+        <serviceConfig service="businesseventsconnetor_client_ep" expression="$in.payload/ns1:results/ns1:EventHeader/ns1:SourceOrderNumber" operation="pushPayload" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+    </sensor>
+    <sensor sensorName="SourceOrderNumber" kind="service" target="undefined" filter="" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/processOrder/service/">
+        <serviceConfig service="fulfillmentrequest_client_ep" expression="$in.payload/ns1:headerTL/ns1:SourceOrderNumber" operation="processFulfillmentRequest" outputDataType="string" outputNamespace="http://www.w3.org/2001/XMLSchema"/>
+    </sensor>
+</sensors>

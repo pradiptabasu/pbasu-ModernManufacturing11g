@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="FulfillmentRequest" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulfillmentRequest" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulfillmentRequest" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/processOrder/service/" xmlns:ns2="http://xmlns.oracle.com/apps/scm/doo/taskLayer/model/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype">
+   <wsdl:documentation>
+      <name>External Interface Virtual Partners Composite - Fulfillment Request</name>
+      <docCategories>
+         <category>Other</category>
+      </docCategories>
+   </wsdl:documentation>
+   <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema">
+         <import namespace="http://xmlns.oracle.com/apps/scm/doo/processOrder/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/processOrder/service/HeaderTL.xsd"/>
+         <import namespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/model/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/taskLayer/model/HeaderTR.xsd"/>
+      </schema>
+   </wsdl:types>
+   <wsdl:message name="FulfillmentRequestRequestMessage">
+      <wsdl:part name="payload" element="ns1:headerTL"/>
+   </wsdl:message>
+   <wsdl:message name="FulfillmentRequestResponseMessage">
+      <wsdl:part name="payload" element="ns2:headerTR"/>
+   </wsdl:message>
+   <wsdl:portType name="FulfillmentRequest">
+      <wsdl:operation name="processFulfillmentRequest">
+         <wsdl:input message="client:FulfillmentRequestRequestMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <wsdl:portType name="FulfillmentRequestCallback">
+      <wsdl:operation name="processFulfillmentRequestResponse">
+         <wsdl:input message="client:FulfillmentRequestResponseMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <plnk:partnerLinkType name="FulfillmentRequest">
+      <plnk:role name="FulfillmentRequestProvider" portType="client:FulfillmentRequest"/>
+      <plnk:role name="FulfillmentRequestRequester" portType="client:FulfillmentRequestCallback"/>
+   </plnk:partnerLinkType>
+</wsdl:definitions>

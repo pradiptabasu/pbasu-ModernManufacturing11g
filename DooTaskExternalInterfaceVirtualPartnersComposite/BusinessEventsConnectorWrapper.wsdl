@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="BusinessEventsConnector" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <wsdl:documentation>
+      <name>BusinessEvents Connector Service</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <plnk:partnerLinkType name="BusinessEventsConnetor">
+      <plnk:role name="BusinessEventsConnectorPayload">
+         <plnk:portType name="client:BusinessEventsConnectorPayload"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+   <wsdl:import namespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector" location="BusinessEventsConnector.wsdl"/>
+</wsdl:definitions>

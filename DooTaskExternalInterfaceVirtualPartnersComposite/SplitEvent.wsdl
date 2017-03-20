@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="SplitEvent" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+   <wsdl:documentation>
+      <name>SplitEvent Service</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema">
+         <import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/SplitEventFulfillLineTR.xsd"/>
+      </schema>
+   </wsdl:types>
+   <wsdl:message name="SplitEventRequestMessage">
+      <wsdl:part name="payload" element="ns1:splitEventFulfillLineTR"/>
+   </wsdl:message>
+   <wsdl:portType name="SplitEvent">
+      <wsdl:operation name="process">
+         <wsdl:input message="client:SplitEventRequestMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <plnk:partnerLinkType name="SplitEvent">
+      <plnk:role name="SplitEventProvider">
+         <plnk:portType name="client:SplitEvent"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+</wsdl:definitions>

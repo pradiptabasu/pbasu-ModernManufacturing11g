@@ -1,0 +1,113 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Oracle JDeveloper BPEL Designer 
+  
+  Created: Fri Apr 22 16:19:36 PDT 2011
+  Author:  anpani
+  Type: BPEL 1.1 Process
+  Purpose: Asynchronous BPEL Process
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<process name="ReceiptAdvice"
+         targetNamespace="http://xmlns.oracle.com/OrderOrchestrationSoa/DooTaskExternalInterfaceVirtualPartnersComposite/ReceiptAdvice"
+         xmlns="http://schemas.xmlsoap.org/ws/2003/03/business-process/"
+         xmlns:client="http://xmlns.oracle.com/OrderOrchestrationSoa/DooTaskExternalInterfaceVirtualPartnersComposite/ReceiptAdvice"
+         xmlns:ora="http://schemas.oracle.com/xpath/extension"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns:bpelx="http://schemas.oracle.com/bpel/extension"
+         xmlns:ns1="http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1"
+         xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/"
+         xmlns:ns4="http://schemas.xmlsoap.org/ws/2003/03/addressing"
+         xmlns:bpel2="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:ns3="http://xmlns.oracle.com/EnterpriseObjects/Core/Common/V2"
+         xmlns:ns5="urn:oasis:names:tc:xacml:2.0:context:schema:cd:04"
+         xmlns:ns2="http://xmlns.oracle.com/EnterpriseObjects/Core/EBO/ReceiptAdvice/V1">
+
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        PARTNERLINKS                                                      
+        List of services participating in this BPEL process               
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    --> 
+    <partnerLinks>
+        <!-- 
+      The 'client' role represents the requester of this service. It is 
+      used for callback. The location and correlation information associated
+      with the client role are automatically set using WS-Addressing.
+    -->
+        <partnerLink name="receiptadvice_client" partnerLinkType="ns1:ReceiptAdvice" myRole="ReceiptAdviceEBS" partnerRole="ReceiptAdviceEBSResponse"/>
+    </partnerLinks>
+
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        VARIABLES                                                        
+        List of messages and XML documents used within this BPEL process 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    -->
+    <variables>
+        <!-- Reference to the message passed as input during initiation -->
+        <variable name="inputVariable" messageType="ns1:CreateReceiptAdviceReqMsg"/>
+
+        <!-- Reference to the message that will be sent back to the requester during callback -->
+        <variable name="outputVariable" messageType="ns1:CreateReceiptAdviceRespMsg"/>
+        <variable name="LOG_FINEST_VAR" type="xsd:string"/>
+            <variable name="LOG_FINER_VAR" type="xsd:string"/>
+            <variable name="LOG_FINE_VAR" type="xsd:string"/>
+            <variable name="LOG_CONFIG_VAR" type="xsd:string"/>
+            <variable name="LOG_APP_SHORT_NAME" type="xsd:string"/>
+            <variable name="LOG_MESSAGE_VAR" type="xsd:string"/>
+            <variable name="LOG_INCIDENT_VAR" type="xsd:string"/>
+            <variable name="LOG_MODULE_ID" type="xsd:string"/>
+            <variable name="LOG_TOKEN_MAP" type="xsd:string"/>
+            <variable name="LOG_FAULT_MAP" type="xsd:string"/>
+        </variables>
+        <faultHandlers>
+            <catchAll>
+                <sequence>
+                    <assign name="setFaultMap">
+                        <copy>
+                            <from expression="concat('At ReceiptAdvice bpel ScopeMain catchAll FAULT_NAME=', ora:getFaultName(), '::FAULT_TEXT=',ora:getFaultAsString())"/>
+                            <to variable="LOG_FAULT_MAP"/>
+                        </copy>
+                    </assign>
+                    <terminate name="TerminateProcess"/>
+                </sequence>
+            </catchAll>
+        </faultHandlers>
+
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       ORCHESTRATION LOGIC                                               
+       Set of activities coordinating the flow of messages across the    
+       services integrated within this business process                  
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    -->
+    <sequence name="main">
+        <!-- Receive input from requestor. (Note: This maps to operation defined in ReceiptAdvice.wsdl) -->
+        <receive name="receiveInput" partnerLink="receiptadvice_client" portType="ns1:ReceiptAdviceEBS" operation="CreateReceiptAdvice" variable="inputVariable" createInstance="yes"/>
+
+        <!-- 
+          Asynchronous callback to the requester. (Note: the callback location and correlation id is transparently handled using WS-addressing.)
+        -->
+         <assign name="AssignSetUpValuesForLogging">
+            <copy>
+                <from expression="concat('oracle.apps.scm.doo.tasklayer.externalInterfaceLayer.', ora:getCompositeName(), '.', ora:getComponentName())"/>
+                <to variable="LOG_MODULE_ID"/>
+            </copy>
+            <copy>
+                <from expression="concat('EBM Header  Id =' ,bpws:getVariableData('inputVariable','CreateReceiptAdviceEBM','/ns2:CreateReceiptAdviceEBM/ns3:EBMHeader/ns3:EBMID') )"/>
+                <to variable="LOG_TOKEN_MAP"/>
+            </copy>
+            <copy>
+                <from expression="'DOO'"/>
+                <to variable="LOG_APP_SHORT_NAME"/>
+            </copy>
+            <copy>
+                <from expression="concat ( ora:getComponentName(), ' begins')"/>
+                <to variable="LOG_FINEST_VAR"/>
+            </copy>
+        </assign>
+        <invoke name="callbackClient" partnerLink="receiptadvice_client" portType="ns1:ReceiptAdviceEBSResponse" operation="CreateReceiptAdviceResponse" inputVariable="outputVariable"/>
+    </sequence>
+</process>

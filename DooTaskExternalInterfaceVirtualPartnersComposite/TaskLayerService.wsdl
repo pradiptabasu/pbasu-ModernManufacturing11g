@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions targetNamespace="http://xmlns.oracle.com/apps/scm/doo/orchInfra/TaskLayerService" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:tns="http://xmlns.oracle.com/apps/scm/doo/orchInfra/TaskLayerService" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:step="http://xmlns.oracle.com/apps/scm/doo/orchestration/processExecution/DooOrchProcessExecutionStepManagerComposite" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+   <documentation>
+      <name>External Interface Virtual Partners Composite - Task Layer Service</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </documentation>
+   <plnk:partnerLinkType name="TaskLayerService">
+      <plnk:role name="TaskLayerServiceResponsePort">
+         <plnk:portType name="tns:TaskLayerServiceResponsePort"/>
+      </plnk:role>
+      <plnk:role name="TaskLayerServicePort">
+         <plnk:portType name="tns:TaskLayerServicePort"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+   <types>
+      <xsd:schema>
+         <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/orchestration/processExecution/DooOrchProcessExecutionStepManagerComposite" schemaLocation="oramds:/apps/oracle/apps/scm/doo/orchestration/processExecution/DooOrchProcessExecutionStepManagerComposite/xsd/TLSMediator.xsd"/>
+      </xsd:schema>
+   </types>
+   <message name="TaskLayerResponseMessage">
+      <part name="return" element="step:TLSMediatorResponse"/>
+   </message>
+   <message name="TaskLayerRequestMessage">
+      <part name="in" element="step:TLSMediatorRequest"/>
+   </message>
+   <portType name="TaskLayerServiceResponsePort">
+      <operation name="executeTaskResponse">
+         <input message="tns:TaskLayerResponseMessage"/>
+      </operation>
+   </portType>
+   <portType name="TaskLayerServicePort">
+      <operation name="executeTask">
+         <input message="tns:TaskLayerRequestMessage"/>
+      </operation>
+   </portType>
+</definitions>

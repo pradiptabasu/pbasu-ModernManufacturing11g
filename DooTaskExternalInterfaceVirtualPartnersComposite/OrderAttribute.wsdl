@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="OrderAttribute" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+   <wsdl:documentation>
+      <name>OrderAttribute Event Service</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema">
+         <import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/OrderStatusUpdateHeaderTR.xsd"/>
+      </schema>
+   </wsdl:types>
+   <wsdl:message name="OrderAttributeRequestMessage">
+      <wsdl:part name="payload" element="ns1:orderStatusUpdateHeaderTR"/>
+   </wsdl:message>
+   <wsdl:portType name="OrderAttribute">
+      <wsdl:operation name="process">
+         <wsdl:input message="client:OrderAttributeRequestMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <plnk:partnerLinkType name="OrderAttribute">
+      <plnk:role name="OrderAttributeProvider">
+         <plnk:portType name="client:OrderAttribute"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+</wsdl:definitions>

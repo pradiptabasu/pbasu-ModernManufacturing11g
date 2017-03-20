@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<componentType xmlns="http://xmlns.oracle.com/sca/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ui="http://xmlns.oracle.com/soa/designer/">
+   <service name="task_client" ui:wsdlLocation="TaskEBSV1Wrapper.wsdl">
+      <interface.wsdl interface="http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1#wsdl.interface(TaskEBS)" callbackInterface="http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1#wsdl.interface(TaskEBSResponse)"/>
+   </service>
+</componentType>

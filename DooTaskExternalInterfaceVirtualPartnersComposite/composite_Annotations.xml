@@ -1,0 +1,1276 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faan:documentation xmlns:faan="http://www.oracle.com/oer/faannotations">
+   <faan:oer-composite>
+      <faan:internal-name>DooTaskExternalInterfaceVirtualPartnersComposite</faan:internal-name>
+      <faan:display-name>Request Orchestration Task Dynamic Partner Links</faan:display-name>
+      <faan:description>Shows the WSDLs that customers can use to communicate with external fulfillment applications.</faan:description>
+      <faan:registration-status>Registered</faan:registration-status>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA">
+         <faan:value>ScmTop-SCM</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer : DooTaskExternalInterface-External Interface Layer</faan:value>
+      </faan:categorization>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+   </faan:oer-composite>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}task_client_ep</faan:internal-name>
+      <faan:display-name>Request Activity Orchestration Task Dynamic Partner Link Service</faan:display-name>
+      <faan:description>This service exposes WSDLs that can be used to communicate with external activity management applications.</faan:description>
+      <faan:registration-status>Registered</faan:registration-status>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>Task.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA">
+         <faan:value>ScmTop-SCM</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer : DooTaskExternalInterface-External Interface Layer</faan:value>
+      </faan:categorization>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>Task</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS_SCM/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/task_client_ep?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>CreateTask</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the activity task layer to create an activity.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}CreateTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the CreateTask operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CreateTaskList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}CreateTaskListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteTask</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the activity task layer to delete an activity.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}DeleteTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the DeleteTask operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteTaskList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}DeleteTaskListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateTask</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the activity task layer to update an activity.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}UpdateTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the UpdateTask operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateTaskList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}UpdateTaskListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryTask</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is used by the activity task layer to query an activity.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}QueryTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the QueryTask operation.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}QueryTaskRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is used as the response payload to the QueryTask operation.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@708a224d</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryTaskList</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}QueryTaskListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}QueryTaskListRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@48fb5b8a</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>SyncTaskList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}SyncTaskListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>HoldTask</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the activity task layer to hold an activity.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}HoldTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the HoldTask operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ReleaseTask</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the activity task layer to release an activity.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}ReleaseTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ReleaseTask operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ProcessTaskNotification</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the activity management application to send updates to the activity task layer.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Task/V1}ProcessTaskNotificationReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ProcessTaskNotification operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}fulfillmentorder_client_ep</faan:internal-name>
+      <faan:display-name>Request Fulfillment Order Orchestration Task Dynamic Partner Link Service</faan:display-name>
+      <faan:description>This service exposes WSDLs that can be used to communicate with external fulfillment applications.</faan:description>
+      <faan:registration-status>Registered</faan:registration-status>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>FulfillmentOrder.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA">
+         <faan:value>ScmTop-SCM</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer : DooTaskExternalInterface-External Interface Layer</faan:value>
+      </faan:categorization>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>FulfillmentOrder</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS_SCM/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/fulfillmentorder_client_ep?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>CreateFulfillmentOrder</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the fulfillment order task layer to create a fulfillment order in the downstream application that orchestrates the fulfillment order.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}CreateFulfillmentOrderReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the CreateFulfillmentOrder operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CreateFulfillmentOrderList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}CreateFulfillmentOrderListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ProcessFulfillmentOrderBillingAccountList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ProcessFulfillmentOrderBillingAccountListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ProcessFulfillmentOrderBilling</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ProcessFulfillmentOrderBillingReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ProcessFulfillmentOrderUpdate</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ProcessFulfillmentOrderUpdateReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ProcessFulfillmentOrder</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ProcessFulfillmentOrderReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryFulfillmentOrder</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}QueryFulfillmentOrderReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}QueryFulfillmentOrderRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@255c8e8c</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryFulfillmentOrderList</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}QueryFulfillmentOrderListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}QueryFulfillmentOrderListRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@5f929c7d</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryTargetFulfillmentProvider</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}QueryTargetFulfillmentProviderReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}QueryTargetFulfillmentProviderRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@12600390</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateFulfillmentOrder</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the fulfillment order task layer to update a fulfillment order in the downstream application that orchestrates the fulfillment order.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}UpdateFulfillmentOrderReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the UpdateFulfillmentOrder operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateFulfillmentOrderList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}UpdateFulfillmentOrderListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteFulfillmentOrder</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}DeleteFulfillmentOrderReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteFulfillmentOrderList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}DeleteFulfillmentOrderListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>SyncFulfillmentOrderList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}SyncFulfillmentOrderListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>HoldFulfillmentOrderExecution</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}HoldFulfillmentOrderExecutionReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>HoldFulfillmentOrderLineExecutionList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}HoldFulfillmentOrderLineExecutionListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ReleaseFulfillmentOrderExecutionHold</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ReleaseFulfillmentOrderExecutionHoldReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ReleaseFulfillmentOrderLineExecutionHoldList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ReleaseFulfillmentOrderLineExecutionHoldListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryFulfillmentOrderFulfillmentTask</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}QueryFulfillmentOrderFulfillmentTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}QueryFulfillmentOrderFulfillmentTaskRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@5d89ec5c</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>HoldFulfillmentOrderScheduleExecutionList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the fulfillment order task layer to hold a fulfillment order line in the downstream application that orchestrates the fulfillment order.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}HoldFulfillmentOrderScheduleExecutionListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the HoldFulfillmentOrderScheduleExecutionList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ReleaseFulfillmentOrderScheduleExecutionHoldList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the fulfillment order task layer to release a fulfillment order schedule in the downstream application that orchestrates the fulfillment order.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ReleaseFulfillmentOrderScheduleExecutionHoldListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ReleaseFulfillmentOrderScheduleExecutionHoldList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ProcessFulfillmentOrderNotification</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the fulfillment order task layer to receive updates of the fulfillment order from the downstream application that orchestrates the fulfillment order.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ProcessFulfillmentOrderNotificationReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ProcessFulfillmentOrderNotification operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CancelFulfillmentOrder</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the fulfillment order task layer to cancel a fulfillment order in the downstream application that orchestrates the fulfillment order.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}CancelFulfillmentOrderReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the CancelFulfillmentOrder operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ExecuteFulfillmentOrderFulfillmentTask</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the template order task layer to execute a fulfillment function in the downstream application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ExecuteFulfillmentOrderFulfillmentTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ExecuteFulfillmentOrderFulfillment operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ExecuteUpdatedFulfillmentOrderFulfillmentTask</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the template order task layer to execute an update of the fulfillment function in the downstream application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ExecuteUpdatedFulfillmentOrderFulfillmentTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ExecuteUpdatedFulfillmentOrderFulfillmentTask operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>HoldFulfillmentOrderFulfillmentTask</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}HoldFulfillmentOrderFulfillmentTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ReleaseFulfillmentOrderFulfillmentTaskHold</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ReleaseFulfillmentOrderFulfillmentTaskHoldReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>HoldFulfillmentOrderLineFulfillmentTaskList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}HoldFulfillmentOrderLineFulfillmentTaskListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>HoldFulfillmentOrderScheduleFulfillmentTaskList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the template order task layer to hold a fulfillment function in the downstream application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}HoldFulfillmentOrderScheduleFulfillmentTaskListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the HoldFulfillmentOrderScheduleFulfillmentTaskList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ReleaseFulfillmentOrderLineFulfillmentTaskHoldList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ReleaseFulfillmentOrderLineFulfillmentTaskHoldListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ReleaseFulfillmentOrderScheduleFulfillmentTaskHoldList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the template order task layer to release a hold on a fulfillment function in a downstream application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ReleaseFulfillmentOrderScheduleFulfillmentTaskHoldListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ReleaseFulfillmentOrderScheduleFulfillmentTaskHoldList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CancelFulfillmentOrderFulfillmentTask</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the template order task layer to cancel a fulfillment function in a downstream application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}CancelFulfillmentOrderFulfillmentTaskReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the CancelFulfillmentOrderFulfillmentTask operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ProcessFulfillmentOrderFulfillmentTaskNotification</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the template order task layer to receive updates of the fulfillment order from a downstream application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1}ProcessFulfillmentOrderFulfillmentTaskNotificationReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ProcessFulfillmentOrderFulfillmentTaskNotification operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}invoice_client_ep</faan:internal-name>
+      <faan:display-name>Request Invoice Orchestration Task Dynamic Partner Link Service</faan:display-name>
+      <faan:description>This service exposes WSDLs that can be used to communicate with external invoicing applications.</faan:description>
+      <faan:registration-status>Registered</faan:registration-status>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>Invoice.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA">
+         <faan:value>ScmTop-SCM</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer : DooTaskExternalInterface-External Interface Layer</faan:value>
+      </faan:categorization>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>Invoice</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS_SCM/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/invoice_client_ep?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>CreateInvoice</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used for creating an invoice in a downstream external invoicing or billing application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}CreateInvoiceReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the create invoice operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CreateInvoiceList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}CreateInvoiceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteInvoice</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}DeleteInvoiceReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteInvoiceList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}DeleteInvoiceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryInvoice</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}QueryInvoiceReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}QueryInvoiceRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@562c1623</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryInvoiceList</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}QueryInvoiceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}QueryInvoiceListRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@68618007</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>SyncInvoiceList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}SyncInvoiceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateInvoice</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}UpdateInvoiceReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateInvoiceList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}UpdateInvoiceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ProcessInvoiceNotification</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used to receive status update events from the invoicing application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/Invoice/V2}ProcessInvoiceNotificationReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ProcessInvoiceNotification operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}inventoryreservation_client_ep</faan:internal-name>
+      <faan:display-name>Request Reservation Orchestration Task Dynamic Partner Link Service</faan:display-name>
+      <faan:description>This service exposes WSDLs that can be used to communicate with external reservation applications.</faan:description>
+      <faan:registration-status>Registered</faan:registration-status>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>InventoryReservation.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA">
+         <faan:value>ScmTop-SCM</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer : DooTaskExternalInterface-External Interface Layer</faan:value>
+      </faan:categorization>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>InventoryReservation</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS_SCM/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/inventoryreservation_client_ep?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>CreateInventoryReservation</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}CreateInventoryReservationReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CreateInventoryReservationList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the inventory reservation task layer to create an inventory reservation.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}CreateInventoryReservationListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the CreateInvetoryReservationList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteInventoryReservation</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}DeleteInventoryReservationReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteInventoryReservationList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the inventory reservation task layer to delete or cancel an inventory reservation.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}DeleteInventoryReservationListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the DeleteInvetoryReservationList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryInventoryReservation</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}QueryInventoryReservationReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}QueryInventoryReservationRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@195ee47a</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryInventoryReservationList</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}QueryInventoryReservationListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}QueryInventoryReservationListRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@24ea1299</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateInventoryReservation</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported by DOO</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}UpdateInventoryReservationReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateInventoryReservationList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the inventory reservation task layer to update an inventory reservation.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/InventoryReservation/V1}UpdateInventoryReservationListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the UpdateInvetoryReservationList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}shipmentrequest_client_ep</faan:internal-name>
+      <faan:display-name>Request Shipment Request Orchestration Task Dynamic Partner Link Service</faan:display-name>
+      <faan:description>This service exposes WSDLs that can be used to communicate with external shipping applications.</faan:description>
+      <faan:registration-status>Registered</faan:registration-status>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>ShipmentRequest.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA">
+         <faan:value>ScmTop-SCM</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer</faan:value>
+         <faan:value>ScmTop-SCM : DooTop-DOO : DooTaskLayer-Task Layer : DooTaskExternalInterface-External Interface Layer</faan:value>
+      </faan:categorization>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>ShipmentRequest</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS_SCM/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/shipmentrequest_client_ep?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>CreateShipmentRequest</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used to create a shipment request.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}CreateShipmentRequestReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload for the createShipmentRequest.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CreateShipmentRequestList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}CreateShipmentRequestListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteShipmentRequest</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}DeleteShipmentRequestReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteShipmentRequestList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}DeleteShipmentRequestListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryShipmentRequest</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}QueryShipmentRequestReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}QueryShipmentRequestRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@70aec78a</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryShipmentRequestList</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}QueryShipmentRequestListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}QueryShipmentRequestListRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@62ae6ed1</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>SyncShipmentRequestList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}SyncShipmentRequestListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateShipmentRequest</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used to update a shipment request.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}UpdateShipmentRequestReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the UpdateShipmetRequest.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateShipmentRequestList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}UpdateShipmentRequestListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CancelShipmentRequest</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}CancelShipmentRequestReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CancelShipmentRequestOrder</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not currently supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}CancelShipmentRequestOrderReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CancelShipmentRequestOrderLineList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used to cancel one or more shipment request order lines.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}CancelShipmentRequestOrderLineListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the CancelShipmentRequestOrderLineList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>HoldShipmentRequestOrderLineList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used to release the shipment request order line from hold.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}HoldShipmentRequestOrderLineListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the HoldShipmentRequestOrderLineList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ReleaseShipmentRequestOrderLineList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used to release the shipment request order line from hold.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}ReleaseShipmentRequestOrderLineListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ReleaseShipmentRequestOrderLineList operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>ProcessShipmentRequestNotification</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used to communicate events about the shipment request object.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ShipmentRequest/V1}ProcessShipmentRequestNotificationReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the ProcessShipmentRequestNotification operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}receiptadvice_client_ep</faan:internal-name>
+      <faan:display-name>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}receiptadvice_client_ep</faan:display-name>
+      <faan:description>This service exposes the WSDL that has to be used to communicate with external receiving applications.</faan:description>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>ReceiptAdvice.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>ReceiptAdvice</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS: ORDERORCHESTRATIONSOA/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/receiptadvice_client?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>CreateReceiptAdvice</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the receiving task layer to create a receipt advice in the receiving application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}CreateReceiptAdviceReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the CreateReceiptAdvice operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CreateReceiptAdviceList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}CreateReceiptAdviceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryReceiptAdvice</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}QueryReceiptAdviceReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}QueryReceiptAdviceRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@508b9d45</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>QueryReceiptAdviceList</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}QueryReceiptAdviceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}QueryReceiptAdviceListRespMsg</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@7e024652</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateReceiptAdvice</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the receiving task layer to update a receipt advice in the receiving application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}UpdateReceiptAdviceReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the UpdateReceiptAdvice operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>UpdateReceiptAdviceList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}UpdateReceiptAdviceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteReceiptAdvice</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}DeleteReceiptAdviceReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>DeleteReceiptAdviceList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}DeleteReceiptAdviceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>SyncReceiptAdviceList</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is not supported.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}SyncReceiptAdviceListReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>CancelReceiptAdvice</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:description>This operation is used by the receiving task layer to cancel a receipt advice in the receiving application.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/EnterpriseServices/Core/ReceiptAdvice/V1}CancelReceiptAdviceReqMsg</faan:intput-payload-type>
+         <faan:input-payload-description>This message is used as the request payload to the CancelReceiptAdvice operation.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/apps/scm/doo/orchInfra/TaskLayerService}TaskLayerService</faan:internal-name>
+      <faan:display-name>{http://xmlns.oracle.com/apps/scm/doo/orchInfra/TaskLayerService}TaskLayerService</faan:display-name>
+      <faan:description/>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>TaskLayerServiceImpl.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>TaskLayerServiceImpl</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS: ORDERORCHESTRATIONSOA/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/tasklayerserviceimpl_client?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>executeTask</faan:method-name>
+         <faan:service-type>Asynchronous</faan:service-type>
+         <faan:callback-method-name>executeTaskResponse</faan:callback-method-name>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/apps/scm/doo/orchInfra/TaskLayerService}TaskLayerRequestMessage</faan:intput-payload-type>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEvent}fulfilllineevent_client_ep</faan:internal-name>
+      <faan:display-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEvent}fulfilllineevent_client_ep</faan:display-name>
+      <faan:description>This service exposes the WSDL that has to be used to communicate with external receiving applications.</faan:description>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>FulfillLineEvent.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>FulfillLineEvent</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS: ORDERORCHESTRATIONSOA/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/fulfilllineevent_client?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>process</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEvent}FulfillLineEventRequestMessage</faan:intput-payload-type>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent}jeopardyevent_client_ep</faan:internal-name>
+      <faan:display-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent}jeopardyevent_client_ep</faan:display-name>
+      <faan:description>This service exposes the WSDL that has to be used to communicate with external receiving applications.</faan:description>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>JeopardyEvent.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>JeopardyEvent</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS: ORDERORCHESTRATIONSOA/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/jeopardyevent_client?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>process</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent}JeopardyEventRequestMessage</faan:intput-payload-type>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent}splitevent_client_ep</faan:internal-name>
+      <faan:display-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent}splitevent_client_ep</faan:display-name>
+      <faan:description>This service exposes the WSDL that has to be used to communicate with external receiving applications.</faan:description>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>SplitEvent.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>SplitEvent</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS: ORDERORCHESTRATIONSOA/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/splitevent_client?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>process</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/SplitEvent}SplitEventRequestMessage</faan:intput-payload-type>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute}orderattribute_client_ep</faan:internal-name>
+      <faan:display-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute}orderattribute_client_ep</faan:display-name>
+      <faan:description>This service exposes the WSDL that has to be used to communicate with external receiving applications.</faan:description>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>OrderAttribute.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>OrderAttribute</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS: ORDERORCHESTRATIONSOA/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/orderattribute_client?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>process</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute}OrderAttributeRequestMessage</faan:intput-payload-type>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector}businesseventsconnetor_client_ep</faan:internal-name>
+      <faan:display-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector}businesseventsconnetor_client_ep</faan:display-name>
+      <faan:description/>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>BusinessEventsConnetor.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>BusinessEventsConnetor</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS: ORDERORCHESTRATIONSOA/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/businesseventsconnetor_client?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>pushPayload</faan:method-name>
+         <faan:service-type>One Way</faan:service-type>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/BusinessEventsConnector}BusinessEventsConnectorPayloadRequestMessage</faan:intput-payload-type>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulfillmentRequest}fulfillmentrequest_client_ep</faan:internal-name>
+      <faan:display-name>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulfillmentRequest}fulfillmentrequest_client_ep</faan:display-name>
+      <faan:description>This service exposes the WSDL that has to be used to communicate with external receiving applications.</faan:description>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>FulfillmentRequest.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>FulfillmentRequest</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS: ORDERORCHESTRATIONSOA/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/fulfillmentrequest_client?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>processFulfillmentRequest</faan:method-name>
+         <faan:service-type>Asynchronous</faan:service-type>
+         <faan:callback-method-name>processFulfillmentRequestResponse</faan:callback-method-name>
+         <faan:description>This operation is used for creating an external response..</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulfillmentRequest}FulfillmentRequestRequestMessage</faan:intput-payload-type>
+         <faan:input-payload-description>Input payload for processing.</faan:input-payload-description>
+         <faan:faults/>
+      </faan:operations>
+   </faan:oer-composite-service>
+   <faan:oer-composite-service>
+      <faan:internal-name>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}BigMachineService_ep</faan:internal-name>
+      <faan:display-name>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}BigMachineService_ep</faan:display-name>
+      <faan:description>This service exposes the WSDL that has to be used to communicate with BigMachine Service.</faan:description>
+      <faan:file-list>
+         <faan:file>
+            <faan:file-type>BPEL</faan:file-type>
+            <faan:file-name>BigMachineProcess.bpel</faan:file-name>
+         </faan:file>
+         <faan:file>
+            <faan:file-type>Composite XML</faan:file-type>
+            <faan:file-name>composite.xml</faan:file-name>
+         </faan:file>
+      </faan:file-list>
+      <faan:categorization name="FusionApps-LBA"/>
+      <faan:categorization name="FusionApps-LBO"/>
+      <faan:categorization name="OracleCoExistenceScenario"/>
+      <faan:lifecycle>Active</faan:lifecycle>
+      <faan:compatibility>Supported - Backward Compatibility Not Assured</faan:compatibility>
+      <faan:component-type>BPEL</faan:component-type>
+      <faan:composite-component-name>BigMachineProcess</faan:composite-component-name>
+      <faan:service-endpoint-url>rep://FUSIONAPPS: ORDERORCHESTRATIONSOA/soa-infra/services/default/DooTaskExternalInterfaceVirtualPartnersComposite/BigMachineService?WSDL</faan:service-endpoint-url>
+      <faan:sar-location>APPL_TOP/scm/deploy/sca_DooTaskExternalInterfaceVirtualPartnersComposite_rev1.0.jar</faan:sar-location>
+      <faan:operations>
+         <faan:method-name>getTransaction</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not used.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}getTransactionRequest</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}getTransactionResponse</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@1d8deca5</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>addToTransaction</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not used.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}addToTransactionRequest</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}addToTransactionResponse</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@50ab53cb</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>updateTransaction</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is used for Update Status for an Order.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}updateTransactionRequest</faan:intput-payload-type>
+         <faan:input-payload-description>This message is  used as the updateTransaction operation input.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}updateTransactionResponse</faan:output-payload-type>
+         <faan:output-payload-description>This message is  used as the updateTransaction operation output.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@200a5dcd</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>removeFromTransaction</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not used.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}removeFromTransactionRequest</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}removeFromTransactionResponse</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@8944e2a</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>createTransaction</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not used.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}createTransactionRequest</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}createTransactionResponse</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@4097abcc</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>exportFileAttachments</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not used.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}exportFileAttachmentsRequest</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}exportFileAttachmentsResponse</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@258fff35</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+      <faan:operations>
+         <faan:method-name>importFileAttachments</faan:method-name>
+         <faan:service-type>Synchronous</faan:service-type>
+         <faan:description>This operation is not used.</faan:description>
+         <faan:intput-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}importFileAttachmentsRequest</faan:intput-payload-type>
+         <faan:input-payload-description>This message is not currently used as the associated operation is not supported.</faan:input-payload-description>
+         <faan:output-payload-type>{http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo}importFileAttachmentsResponse</faan:output-payload-type>
+         <faan:output-payload-description>This message is not currently used as the associated operation is not supported.</faan:output-payload-description>
+         <faan:faults>
+            <faan:fault-qname>oracle.j2ee.ws.wsdl.FaultImpl@10bc03d7</faan:fault-qname>
+         </faan:faults>
+      </faan:operations>
+   </faan:oer-composite-service>
+</faan:documentation>

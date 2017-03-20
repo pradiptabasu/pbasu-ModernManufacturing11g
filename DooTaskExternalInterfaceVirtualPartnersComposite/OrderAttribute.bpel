@@ -1,0 +1,120 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Oracle JDeveloper BPEL Designer 
+  
+  Created: Tue Feb 04 05:06:20 PST 2014
+  Author:  sucagarw
+  Type: BPEL 1.1 Process
+  Purpose: One Way BPEL Process
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<process name="OrderAttribute"
+               targetNamespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute"
+               xmlns="http://schemas.xmlsoap.org/ws/2003/03/business-process/"
+               xmlns:client="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/OrderAttribute"
+               xmlns:ora="http://schemas.oracle.com/xpath/extension"
+               xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/"
+         xmlns:bpelx="http://schemas.oracle.com/bpel/extension"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+         xmlns:xp20="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.Xpath20"
+         xmlns:bpel2="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:oraext="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.ExtFunc"
+         xmlns:dvm="http://www.oracle.com/XSL/Transform/java/oracle.tip.dvm.LookupValue"
+         xmlns:hwf="http://xmlns.oracle.com/bpel/workflow/xpath"
+         xmlns:ids="http://xmlns.oracle.com/bpel/services/IdentityService/xpath"
+         xmlns:bpm="http://xmlns.oracle.com/bpmn20/extensions"
+         xmlns:xdk="http://schemas.oracle.com/bpel/extension/xpath/function/xdk"
+         xmlns:xref="http://www.oracle.com/XSL/Transform/java/oracle.tip.xref.xpath.XRefXPathFunctions"
+         xmlns:tm="http://xmlns.oracle.com/topologyManager/client/xpath/extension"
+         xmlns:ldap="http://schemas.oracle.com/xpath/extension/ldap"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/common/events/service/">
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      PARTNERLINKS                                                      
+      List of services participating in this BPEL process               
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  --> 
+  <partnerLinks>
+    <!-- 
+      The 'client' role represents the requester of this service. It is 
+      used for callback. The location and correlation information associated
+      with the client role are automatically set using WS-Addressing.
+    -->
+    <partnerLink name="orderattribute_client" partnerLinkType="client:OrderAttribute" myRole="OrderAttributeProvider"/>
+  </partnerLinks>
+
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      VARIABLES                                                        
+      List of messages and XML documents used within this BPEL process 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <variables>
+    <!-- Reference to the message passed as input during initiation -->
+    <variable name="inputVariable" messageType="client:OrderAttributeRequestMessage"/>
+  
+    <variable name="LOG_MESSAGE_VAR" type="xsd:string"/>
+    <variable name="LOG_FINEST_VAR" type="xsd:string"/>
+    <variable name="LOG_FINER_VAR" type="xsd:string"/>
+    <variable name="LOG_FINE_VAR" type="xsd:string"/>
+    <variable name="LOG_CONFIG_VAR" type="xsd:string"/>
+    <variable name="LOG_APP_SHORT_NAME" type="xsd:string"/>
+    <variable name="LOG_MODULE_ID" type="xsd:string"/>
+    <variable name="LOG_SOURCE_ID" type="xsd:string"/>
+    <variable name="LOG_TOKEN_MAP" type="xsd:string"/>
+    <variable name="LOG_FAULT_MAP" type="xsd:string"/>
+    <variable name="LOG_INCIDENT_VAR" type="xsd:string"/>
+    <variable name="COMPOSITE_TITLE_VAR" type="xsd:string"/>
+  </variables>
+  <faultHandlers>
+    <catchAll>
+      <assign name="AssignFaultMap">
+        <copy>
+          <from expression="'FND::FND_CMN_SYS_ERR'"/>
+          <to variable="LOG_INCIDENT_VAR"/>
+        </copy>
+        <copy>
+          <from expression="concat('FAULT_NAME=',ora :getFaultName,'::FAULT_TEXT=',ora :getFaultAsString())"/>
+          <to variable="LOG_FAULT_MAP"/>
+        </copy>
+      </assign>
+    </catchAll>
+  </faultHandlers>
+  <!-- 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ORCHESTRATION LOGIC                                               
+     Set of activities coordinating the flow of messages across the    
+     services integrated within this business process                  
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  -->
+  <sequence name="main">
+
+    <!-- Receive input from requestor. (Note: This maps to operation defined in OrderAttribute.wsdl) -->
+    <receive name="receiveInput" partnerLink="orderattribute_client" portType="client:OrderAttribute" operation="process" variable="inputVariable" createInstance="yes"/>
+    <assign name="AssignSetValuesforLogging">
+      <copy>
+        <from expression="'DOO'"/>
+        <to variable="LOG_APP_SHORT_NAME"/>
+      </copy>
+      <copy>
+        <from expression="concat('SourceOrder id  =' ,bpws:getVariableData('inputVariable','payload','/ns1:orderStatusUpdateHeaderTR/ns1:SourceOrderId'))"/>
+        <to variable="LOG_MODULE_ID"/>
+      </copy>
+      <copy>
+        <from expression="ora:setCompositeInstanceTitle(concat('SOURCE_ORDER_NUMBER=',bpws:getVariableData('inputVariable','payload','/ns1:orderStatusUpdateHeaderTR/ns1:SourceOrderNumber')))"/>
+        <to variable="COMPOSITE_TITLE_VAR"/>
+      </copy>
+      <copy>
+        <from expression="concat ( ora:getComponentName(), ' begins')"/>
+        <to variable="LOG_FINEST_VAR"/>
+      </copy>
+      <copy>
+        <from expression="concat('EBM Header  Id =' , bpws:getVariableData('inputVariable','payload','/ns1:orderStatusUpdateHeaderTR/ns1:SourceOrderId'))"/>
+        <to variable="LOG_TOKEN_MAP"/>
+      </copy>
+    </assign>
+  </sequence>
+</process>

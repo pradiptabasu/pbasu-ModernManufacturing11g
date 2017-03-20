@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="FulFillLineEventServiceWrapper" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEvent" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/processOrder/service/" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/FulFillLineEvent" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <wsdl:documentation>
+      <name>FulfillLine Event Service</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <plnk:partnerLinkType name="FulfillLineEvent">
+      <plnk:role name="FulfillLineEventProvider" portType="client:FulfillLineEvent"/>
+   </plnk:partnerLinkType>
+   <wsdl:types>
+      <xsd:schema>
+         <xsd:import namespace="http://xmlns.oracle.com/apps/scm/doo/processOrder/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/processOrder/service/FulfillLine.xsd"/>
+      </xsd:schema>
+   </wsdl:types>
+   <wsdl:message name="FulfillLineEventRequestMessage">
+      <wsdl:part name="payload" element="ns1:fulfillLine"/>
+   </wsdl:message>
+   <wsdl:portType name="FulfillLineEvent">
+      <wsdl:operation name="process">
+         <wsdl:input message="client:FulfillLineEventRequestMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+</wsdl:definitions>

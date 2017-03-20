@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions targetNamespace="http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:targetNamespace="http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:bpws="http://docs.oasis-open.org/wsbpel/2.0/process/executable" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <wsdl:documentation>
+      <name>External Interface Virtual Partners Composite - BigMachines</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <plnk:partnerLinkType name="BigMachineProcess">
+      <plnk:role name="CommerceServicePortType" portType="targetNamespace:CommerceServicePortType"/>
+   </plnk:partnerLinkType>
+   <wsdl:import namespace="http://xmlns.oracle.com/cpqcloud/commerce/oraclecpqo" location="oramds:/apps/com/bigmachines/soap/1.0/commerce.wsdl"/>
+</wsdl:definitions>

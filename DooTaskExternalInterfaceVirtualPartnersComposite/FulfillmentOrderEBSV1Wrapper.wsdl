@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="FulfillmentOrderEBSV1" targetNamespace="http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:bpws="http://schemas.xmlsoap.org/ws/2003/03/business-process/" xmlns:ebs="http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <wsdl:documentation>
+      <name>External Interface Virtual Partners Composite - Receiving EBO</name>
+      <docCategories>
+         <category>Other</category>
+      </docCategories>
+   </wsdl:documentation>
+   <plnk:partnerLinkType name="FulfillmentOrder">
+      <plnk:role name="FulfillmentOrderEBS">
+         <plnk:portType name="ebs:FulfillmentOrderEBS"/>
+      </plnk:role>
+      <plnk:role name="FulfillmentOrderEBSResponse">
+         <plnk:portType name="ebs:FulfillmentOrderEBSResponse"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+   <wsdl:import namespace="http://xmlns.oracle.com/EnterpriseServices/Core/FulfillmentOrder/V1" location="oramds:/apps/aia/EnterpriseBusinessServiceLibrary/Core/EBO/FulfillmentOrder/V1/FulfillmentOrderEBSV1.wsdl"/>
+</wsdl:definitions>

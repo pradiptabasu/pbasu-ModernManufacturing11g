@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions name="JeopardyEvent" targetNamespace="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://xmlns.oracle.com/apps/scm/doo/taskLayer/externalInterfaceLayer/DooTaskExternalInterfaceVirtualPartnersComposite/JeopardyEvent" xmlns:ns1="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/">
+   <wsdl:documentation>
+      <name>Jeopardy Event Service</name>
+      <docCategories>
+         <category>None</category>
+      </docCategories>
+   </wsdl:documentation>
+   <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema">
+         <import namespace="http://xmlns.oracle.com/apps/scm/doo/common/events/service/" schemaLocation="oramds:/apps/oracle/apps/scm/doo/common/events/service/EventHeaderTR.xsd"/>
+      </schema>
+   </wsdl:types>
+   <wsdl:message name="JeopardyEventRequestMessage">
+      <wsdl:part name="payload" element="ns1:eventHeaderTR"/>
+   </wsdl:message>
+   <wsdl:portType name="JeopardyEvent">
+      <wsdl:operation name="process">
+         <wsdl:input message="client:JeopardyEventRequestMessage"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <plnk:partnerLinkType name="JeopardyEvent">
+      <plnk:role name="JeopardyEventProvider">
+         <plnk:portType name="client:JeopardyEvent"/>
+      </plnk:role>
+   </plnk:partnerLinkType>
+</wsdl:definitions>
